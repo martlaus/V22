@@ -1,0 +1,14 @@
+2015-11-29 13:31:44.748 [main] INFO  ee.v22.guice.GuiceInjector  - Loading modules annotated with @Module...
+2015-11-29 13:31:45.676 [main] INFO  org.reflections.Reflections  - Reflections took 690 ms to scan 1 urls, producing 36 keys and 116 values 
+2015-11-29 13:31:45.714 [main] INFO  ee.v22.guice.GuiceInjector  - 3 modules loaded.
+2015-11-29 13:31:46.855 [main] INFO  ee.v22.guice.provider.ConfigurationProvider  - No custom configuration file set.
+2015-11-29 13:31:46.946 [main] INFO  ee.v22.guice.provider.ConfigurationProvider  - Default configuration loaded from [file:/home/mart/vorgurakendused22/target/classes/default.properties]
+2015-11-29 13:31:46.953 [main] INFO  ee.v22.ApplicationManager  - Application is not running.
+2015-11-29 13:31:46.954 [main] INFO  ee.v22.ApplicationLauncher  - Starting application server on port [8080]
+2015-11-29 13:31:46.958 [main] INFO  ee.v22.server.EmbeddedJetty  - Starting jetty on port 8080
+2015-11-29 13:31:46.993 [main] INFO  org.eclipse.jetty.util.log  - Logging initialized @2854ms
+2015-11-29 13:31:47.220 [main] INFO  org.eclipse.jetty.server.Server  - jetty-9.2.10.v20150310
+2015-11-29 13:31:48.373 [main] INFO  org.eclipse.jetty.server.handler.ContextHandler  - Started o.e.j.s.ServletContextHandler@609640d5{/,null,AVAILABLE}
+2015-11-29 13:31:48.392 [main] INFO  org.eclipse.jetty.server.ServerConnector  - Started ServerConnector@1e63ec0b{HTTP/1.1}{0.0.0.0:8080}
+2015-11-29 13:31:48.392 [main] INFO  org.eclipse.jetty.server.Server  - Started @4257ms
+2015-11-29 13:31:48.395 [command-listener] INFO  ee.v22.ApplicationManager  - Command listener started on port [9999]

@@ -2,252 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c23d3812-57e6-476d-9fb9-d1276e64336e" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ee/v22/dao/AuthorDAO.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ee/v22/dao/LanguageDAO.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ee/v22/dao/LicenseTypeDAO.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ee/v22/dao/MaterialDAO.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ee/v22/dao/PageDAO.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ee/v22/dao/PortfolioDAO.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ee/v22/dao/RepositoryDAO.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ee/v22/dao/ResourceTypeDAO.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ee/v22/dao/TagDAO.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ee/v22/dao/TaxonDAO.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ee/v22/dao/TranslationDAO.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ee/v22/model/Author.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ee/v22/model/Chapter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ee/v22/model/Comment.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ee/v22/model/EstCoreTaxonMapping.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ee/v22/model/IssueDate.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ee/v22/model/Language.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ee/v22/model/LanguageString.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ee/v22/model/LicenseType.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ee/v22/model/Material.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ee/v22/model/Page.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ee/v22/model/Portfolio.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ee/v22/model/Publisher.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ee/v22/model/Repository.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ee/v22/model/ResourceType.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ee/v22/model/SearchFilter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ee/v22/model/SearchResult.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ee/v22/model/Searchable.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ee/v22/model/Tag.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ee/v22/model/TargetGroup.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ee/v22/model/TranslationGroup.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ee/v22/model/WaramuTaxonMapping.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ee/v22/model/solr/Document.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ee/v22/model/solr/Response.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ee/v22/model/solr/ResponseHeader.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ee/v22/model/solr/SearchResponse.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ee/v22/model/taxon/Domain.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ee/v22/model/taxon/EducationalContext.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ee/v22/model/taxon/Module.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ee/v22/model/taxon/Specialization.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ee/v22/model/taxon/Subject.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ee/v22/model/taxon/Subtopic.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ee/v22/model/taxon/Taxon.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ee/v22/model/taxon/Topic.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ee/v22/rest/CommentResource.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ee/v22/rest/DevelopmentLoginResource.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ee/v22/rest/LearningMaterialMetadataResource.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ee/v22/rest/MaterialResource.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ee/v22/rest/PageResource.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ee/v22/rest/PortfolioResource.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ee/v22/rest/TranslationResource.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ee/v22/rest/jackson/map/LanguageDeserializer.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ee/v22/rest/jackson/map/LanguageSerializer.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ee/v22/service/AuthorService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ee/v22/service/LanguageService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ee/v22/service/LicenseTypeService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ee/v22/service/MaterialService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ee/v22/service/PageService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ee/v22/service/PortfolioService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ee/v22/service/ResourceTypeService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ee/v22/service/TagService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ee/v22/service/TaxonService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ee/v22/service/TranslationService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/ee/v22/dao/AuthorDAOTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/ee/v22/dao/LanguageDAOTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/ee/v22/dao/LicenseTypeDAOTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/ee/v22/dao/MaterialDAOTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/ee/v22/dao/PageDAOTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/ee/v22/dao/PortfolioDAOTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/ee/v22/dao/RepositoryDAOTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/ee/v22/dao/ResourceTypeDAOTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/ee/v22/dao/TagDAOTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/ee/v22/dao/TaxonDAOTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/ee/v22/dao/TranslationDAOTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/ee/v22/model/IssueDateTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/ee/v22/model/LanguageStringTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/ee/v22/model/LanguageTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/ee/v22/model/RepositoryTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/ee/v22/model/SearchResponseTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/ee/v22/model/TagTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/ee/v22/model/taxon/TaxonTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/ee/v22/rest/CommentResourceTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/ee/v22/rest/DevelopmentLoginResourceTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/ee/v22/rest/LearningMaterialMetadataResourceTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/ee/v22/rest/MaterialResourceTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/ee/v22/rest/PageResourceTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/ee/v22/rest/PortfolioResourceTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/ee/v22/rest/SearchResourceTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/ee/v22/rest/TranslationResourceTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/ee/v22/service/AuthorServiceTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/ee/v22/service/MaterialServiceTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/ee/v22/service/PageServiceTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/ee/v22/service/PortfolioServiceTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/ee/v22/service/ResourceTypeServiceTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/ee/v22/service/TagServiceTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/ee/v22/service/TaxonServiceTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/ee/v22/service/TranslationServiceTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ee/v22/dao/AuthorDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ee/v22/dao/LanguageDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ee/v22/dao/LicenseTypeDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ee/v22/dao/MaterialDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ee/v22/dao/PageDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ee/v22/dao/PortfolioDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ee/v22/dao/RepositoryDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ee/v22/dao/ResourceTypeDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ee/v22/dao/TagDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ee/v22/dao/TaxonDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ee/v22/dao/TranslationDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ee/v22/model/Author.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ee/v22/model/Chapter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ee/v22/model/Comment.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ee/v22/model/EstCoreTaxonMapping.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ee/v22/model/IssueDate.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ee/v22/model/Language.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ee/v22/model/LanguageString.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ee/v22/model/LicenseType.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ee/v22/model/Material.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ee/v22/model/Page.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ee/v22/model/Portfolio.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ee/v22/model/Publisher.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ee/v22/model/Repository.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ee/v22/model/ResourceType.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ee/v22/model/SearchFilter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ee/v22/model/SearchResult.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ee/v22/model/Searchable.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ee/v22/model/Tag.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ee/v22/model/TargetGroup.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ee/v22/model/TranslationGroup.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ee/v22/model/WaramuTaxonMapping.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ee/v22/model/solr/Document.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ee/v22/model/solr/Response.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ee/v22/model/solr/ResponseHeader.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ee/v22/model/solr/SearchResponse.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ee/v22/model/taxon/Domain.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ee/v22/model/taxon/EducationalContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ee/v22/model/taxon/Module.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ee/v22/model/taxon/Specialization.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ee/v22/model/taxon/Subject.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ee/v22/model/taxon/Subtopic.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ee/v22/model/taxon/Taxon.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ee/v22/model/taxon/Topic.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ee/v22/rest/CommentResource$AddCommentForm.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ee/v22/rest/CommentResource.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ee/v22/rest/DevelopmentLoginResource.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ee/v22/rest/LearningMaterialMetadataResource.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ee/v22/rest/MaterialResource.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ee/v22/rest/PageResource.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ee/v22/rest/PortfolioResource$CreatePortfolioForm.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ee/v22/rest/PortfolioResource.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ee/v22/rest/TranslationResource.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ee/v22/rest/jackson/map/LanguageDeserializer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ee/v22/rest/jackson/map/LanguageSerializer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ee/v22/service/AuthorService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ee/v22/service/LanguageService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ee/v22/service/LicenseTypeService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ee/v22/service/MaterialService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ee/v22/service/PageService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ee/v22/service/PortfolioService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ee/v22/service/ResourceTypeService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ee/v22/service/TagService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ee/v22/service/TaxonService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ee/v22/service/TranslationService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/ee/v22/dao/AuthorDAOTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/ee/v22/dao/LanguageDAOTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/ee/v22/dao/LicenseTypeDAOTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/ee/v22/dao/MaterialDAOTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/ee/v22/dao/PageDAOTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/ee/v22/dao/PortfolioDAOTest$1IncreaseViewCountThread.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/ee/v22/dao/PortfolioDAOTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/ee/v22/dao/RepositoryDAOTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/ee/v22/dao/ResourceTypeDAOTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/ee/v22/dao/TagDAOTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/ee/v22/dao/TaxonDAOTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/ee/v22/dao/TranslationDAOTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/ee/v22/model/IssueDateTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/ee/v22/model/LanguageStringTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/ee/v22/model/LanguageTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/ee/v22/model/RepositoryTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/ee/v22/model/SearchResponseTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/ee/v22/model/TagTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/ee/v22/model/taxon/TaxonTest$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/ee/v22/model/taxon/TaxonTest$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/ee/v22/model/taxon/TaxonTest$TaxonImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/ee/v22/model/taxon/TaxonTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/ee/v22/rest/CommentResourceTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/ee/v22/rest/DevelopmentLoginResourceTest$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/ee/v22/rest/DevelopmentLoginResourceTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/ee/v22/rest/LearningMaterialMetadataResourceTest$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/ee/v22/rest/LearningMaterialMetadataResourceTest$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/ee/v22/rest/LearningMaterialMetadataResourceTest$3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/ee/v22/rest/LearningMaterialMetadataResourceTest$4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/ee/v22/rest/LearningMaterialMetadataResourceTest$5.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/ee/v22/rest/LearningMaterialMetadataResourceTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/ee/v22/rest/MaterialResourceTest$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/ee/v22/rest/MaterialResourceTest$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/ee/v22/rest/MaterialResourceTest$3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/ee/v22/rest/MaterialResourceTest$4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/ee/v22/rest/MaterialResourceTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/ee/v22/rest/PageResourceTest$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/ee/v22/rest/PageResourceTest$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/ee/v22/rest/PageResourceTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/ee/v22/rest/PortfolioResourceTest$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/ee/v22/rest/PortfolioResourceTest$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/ee/v22/rest/PortfolioResourceTest$3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/ee/v22/rest/PortfolioResourceTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/ee/v22/rest/SearchResourceTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/ee/v22/rest/TranslationResourceTest$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/ee/v22/rest/TranslationResourceTest$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/ee/v22/rest/TranslationResourceTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/ee/v22/service/AuthorServiceTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/ee/v22/service/MaterialServiceTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/ee/v22/service/PageServiceTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/ee/v22/service/PortfolioServiceTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/ee/v22/service/ResourceTypeServiceTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/ee/v22/service/TagServiceTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/ee/v22/service/TaxonServiceTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/ee/v22/service/TranslationServiceTest.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/logs/materialImport.log" afterPath="$PROJECT_DIR$/misc/database/testData.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ee/v22/rest/LogInResource.class" afterPath="$PROJECT_DIR$/target/classes/ee/v22/rest/LogInResource.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ee/v22/service/LoginService.class" afterPath="$PROJECT_DIR$/target/classes/ee/v22/service/LoginService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ee/v22/service/MobileIDLoginService.class" afterPath="$PROJECT_DIR$/target/classes/ee/v22/service/MobileIDLoginService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/ee/v22/service/MobileIDLoginServiceTest$1.class" afterPath="$PROJECT_DIR$/target/test-classes/ee/v22/service/MobileIDLoginServiceTest$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/ee/v22/service/MobileIDLoginServiceTest.class" afterPath="$PROJECT_DIR$/target/test-classes/ee/v22/service/MobileIDLoginServiceTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ee/v22/service/MobileIDSOAPService.class" afterPath="$PROJECT_DIR$/target/classes/ee/v22/service/MobileIDSOAPService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/ee/v22/service/MobileIDSOAPServiceTest$MobileIDSOAPServicePartialMock.class" afterPath="$PROJECT_DIR$/target/test-classes/ee/v22/service/MobileIDSOAPServiceTest$MobileIDSOAPServicePartialMock.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/ee/v22/service/MobileIDSOAPServiceTest.class" afterPath="$PROJECT_DIR$/target/test-classes/ee/v22/service/MobileIDSOAPServiceTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ee/v22/guice/module/RestModule.class" afterPath="$PROJECT_DIR$/target/classes/ee/v22/guice/module/RestModule.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ee/v22/rest/filter/SecurityFilter.class" afterPath="$PROJECT_DIR$/target/classes/ee/v22/rest/filter/SecurityFilter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ee/v22/config/V22Application.class" afterPath="$PROJECT_DIR$/target/classes/ee/v22/config/V22Application.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ee/v22/rest/LogInResource.java" afterPath="$PROJECT_DIR$/src/main/java/ee/v22/rest/LogInResource.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ee/v22/service/LoginService.java" afterPath="$PROJECT_DIR$/src/main/java/ee/v22/service/LoginService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ee/v22/service/MobileIDLoginService.java" afterPath="$PROJECT_DIR$/src/main/java/ee/v22/service/MobileIDLoginService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/ee/v22/service/MobileIDLoginServiceTest.java" afterPath="$PROJECT_DIR$/src/test/java/ee/v22/service/MobileIDLoginServiceTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ee/v22/service/MobileIDSOAPService.java" afterPath="$PROJECT_DIR$/src/main/java/ee/v22/service/MobileIDSOAPService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/ee/v22/rest/LoginResourceTest.java" afterPath="$PROJECT_DIR$/src/test/java/ee/v22/rest/LoginResourceTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/ee/v22/rest/LogoutResourceTest.java" afterPath="$PROJECT_DIR$/src/test/java/ee/v22/rest/LogoutResourceTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/ee/v22/service/MobileIDSOAPServiceTest.java" afterPath="$PROJECT_DIR$/src/test/java/ee/v22/service/MobileIDSOAPServiceTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ee/v22/guice/module/RestModule.java" afterPath="$PROJECT_DIR$/src/main/java/ee/v22/guice/module/RestModule.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ee/v22/rest/filter/SecurityFilter.java" afterPath="$PROJECT_DIR$/src/main/java/ee/v22/rest/filter/SecurityFilter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ee/v22/config/V22Application.java" afterPath="$PROJECT_DIR$/src/main/java/ee/v22/config/V22Application.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/hibernate.log" afterPath="$PROJECT_DIR$/logs/hibernate.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/import.sql" afterPath="$PROJECT_DIR$/src/test/resources/import.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/import.sql" afterPath="$PROJECT_DIR$/target/test-classes/import.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/log4j.properties" afterPath="$PROJECT_DIR$/target/classes/log4j.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v22.iml" afterPath="$PROJECT_DIR$/v22.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/v22.log" afterPath="$PROJECT_DIR$/logs/v22.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -314,11 +72,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MobileIDSOAPServiceTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MobileIDSOAPServiceTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/ee/v22/service/MobileIDSOAPServiceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="286" column="116" selection-start-line="286" selection-start-column="116" selection-end-line="286" selection-end-column="116" />
+            <state vertical-scroll-proportion="0.64444447">
+              <caret line="139" column="0" selection-start-line="97" selection-start-column="6" selection-end-line="139" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -338,11 +96,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserResource.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UserResource.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ee/v22/rest/UserResource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33147633">
+            <state vertical-scroll-proportion="0.0">
               <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginResourceTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ee/v22/rest/LoginResourceTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-4.819672">
+              <caret line="158" column="7" selection-start-line="134" selection-start-column="2" selection-end-line="158" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LogoutResourceTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ee/v22/rest/LogoutResourceTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -372,33 +150,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LogInResource.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ee/v22/rest/LogInResource.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="30" column="12" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="SecurityFilter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ee/v22/rest/filter/SecurityFilter.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="38" column="34" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="V22Application.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ee/v22/config/V22Application.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -445,8 +201,10 @@
         <option value="$PROJECT_DIR$/src/main/java/ee/v22/service/MobileIDSOAPService.java" />
         <option value="$PROJECT_DIR$/src/main/java/ee/v22/service/LoginService.java" />
         <option value="$PROJECT_DIR$/src/main/java/ee/v22/service/MobileIDLoginService.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ee/v22/service/MobileIDSOAPServiceTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/ee/v22/service/MobileIDLoginServiceTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ee/v22/rest/LoginResourceTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ee/v22/rest/LogoutResourceTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ee/v22/service/MobileIDSOAPServiceTest.java" />
       </list>
     </option>
   </component>
@@ -1062,59 +820,7 @@
     <property name="dynamic.classpath" value="false" />
     <property name="FullScreen" value="false" />
   </component>
-  <component name="RunManager" selected="JUnit.UserResourceTest.get">
-    <configuration default="false" name="ee.v22.common.test in v22" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="ee.v22.common.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="v22" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="ee.v22.common.test" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="package" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="ee.v22.guice in v22" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="ee.v22.guice.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="v22" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="ee.v22.guice" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="package" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.All in v22">
     <configuration default="false" name="ee.v22.rest in v22" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -1180,6 +886,53 @@
       <option name="PACKAGE_NAME" value="ee.v22.rest" />
       <option name="MAIN_CLASS_NAME" value="ee.v22.rest.UserResourceTest" />
       <option name="METHOD_NAME" value="get" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="All in v22" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="v22" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="LogoutResourceTest.testLogout" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="ee.v22.rest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="v22" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="ee.v22.rest" />
+      <option name="MAIN_CLASS_NAME" value="ee.v22.rest.LogoutResourceTest" />
+      <option name="METHOD_NAME" value="testLogout" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -1475,19 +1228,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Application.main" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.ee.v22.common.test in v22" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.ee.v22.guice in v22" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.ee.v22.rest in v22" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.UserResourceTest" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.UserResourceTest.get" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.ee.v22.rest in v22" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.UserResourceTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.UserResourceTest.get" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.All in v22" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.LogoutResourceTest.testLogout" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.UserResourceTest.get" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.UserResourceTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.ee.v22.rest in v22" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.ee.v22.guice in v22" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.ee.v22.common.test in v22" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.All in v22" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.LogoutResourceTest.testLogout" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.UserResourceTest.get" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.UserResourceTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.ee.v22.rest in v22" />
       </list>
     </recent_temporary>
   </component>
@@ -1503,12 +1256,19 @@
       <updated>1448795366274</updated>
       <workItem from="1448795386689" duration="2167000" />
       <workItem from="1448876911030" duration="36000" />
-      <workItem from="1449145178255" duration="2649000" />
+      <workItem from="1449145178255" duration="3251000" />
     </task>
+    <task id="LOCAL-00001" summary="töötab, nt localhost:8080/rest/user?username=mati.maasikas">
+      <created>1449147856057</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1449147856057</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4852000" />
+    <option name="totallyTimeSpent" value="5454000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="24" width="1366" height="744" extended-state="6" />
@@ -1523,13 +1283,13 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39969134" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39969134" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3287037" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Sequence" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1557,6 +1317,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="töötab, nt localhost:8080/rest/user?username=mati.maasikas" />
+    <option name="LAST_COMMIT_MESSAGE" value="töötab, nt localhost:8080/rest/user?username=mati.maasikas" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <option name="time" value="4" />
@@ -1568,22 +1332,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/misc/database/createTables.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ee/v22/rest/UserResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ee/v22/guice/module/RestModule.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1993,16 +1741,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ee/v22/service/MobileIDSOAPServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="286" column="116" selection-start-line="286" selection-start-column="116" selection-end-line="286" selection-end-column="116" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ee/v22/service/MobileIDLoginServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -2023,9 +1761,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ee/v22/rest/UserResource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33147633">
+        <state vertical-scroll-proportion="0.0">
           <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ee/v22/rest/LoginResourceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.819672">
+          <caret line="158" column="7" selection-start-line="134" selection-start-column="2" selection-end-line="158" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ee/v22/rest/LogoutResourceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ee/v22/service/MobileIDSOAPServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.64444447">
+          <caret line="139" column="0" selection-start-line="97" selection-start-column="6" selection-end-line="139" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

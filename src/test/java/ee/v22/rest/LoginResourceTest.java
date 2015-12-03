@@ -90,85 +90,9 @@ public class LoginResourceTest extends ResourceIntegrationTestBase {
         assertEquals("peeter.paan2", authenticatedUser.getUser().getUsername());
     }
 
-    @Test
-    public void makeTaatRequest() throws Exception {
-        Response response = doGet("login/taat");
-        assertNotNull(response);
 
-        String location = response.getHeaderString("Location");
 
-        URI locationURI = new URI(location);
-        String path = locationURI.getPath();
-        String host = locationURI.getHost();
-        String scheme = locationURI.getScheme();
-        String actualTaatSSO = scheme + "://" + host + path;
-        assertEquals(actualTaatSSO, configuration.getString(ConfigurationProperties.TAAT_SSO));
 
-        String samlRequest = null;
-        String token = null;
-        String signature = null;
-        String signatureAlgorithm = null;
-
-        List<NameValuePair> parameters = URLEncodedUtils.parse(new URI(location), "UTF-8");
-        for (NameValuePair parameter : parameters) {
-            switch (parameter.getName()) {
-                case "SAMLRequest":
-                    samlRequest = parameter.getValue();
-                    break;
-                case "RelayState":
-                    token = parameter.getValue();
-                    break;
-                case "Signature":
-                    signature = parameter.getValue();
-                    break;
-                case "SigAlg":
-                    signatureAlgorithm = parameter.getValue();
-                    break;
-                default:
-                    fail("Unexpected parameter in request URL.");
-                    break;
-            }
-        }
-
-        assertNotNull(samlRequest);
-
-        AuthnRequest authnRequest = decodeAuthnRequest(samlRequest);
-        assertNotNull(authnRequest);
-        assertEquals(configuration.getString(ConfigurationProperties.TAAT_CONNECTION_ID), authnRequest.getIssuer().getValue());
-
-        Interval interval = new Interval(authnRequest.getIssueInstant(), new DateTime());
-        assertFalse(authnRequest.getIssueInstant().isAfterNow());
-        assertTrue(interval.toDurationMillis() < 10000);
-
-        assertEquals(Integer.valueOf(configuration.getString(ConfigurationProperties.TAAT_ASSERTION_CONSUMER_SERVICE_INDEX)),
-                authnRequest.getAssertionConsumerServiceIndex());
-
-        assertNotNull(signature);
-        assertNotNull(signatureAlgorithm);
-
-        AuthenticationState authenticationState = authenticationStateDAO.findAuthenticationStateByToken(token);
-        assertNotNull(authenticationState);
-
-        authenticationStateDAO.delete(authenticationState);
-    }
-
-    @Test
-    public void authenticateNoSAMLResponse() {
-        MultivaluedMap<String, String> formParams = new MultivaluedStringMap();
-        formParams.add("key", "value");
-
-        Response response = doPost("login/taat", Entity.entity(formParams, MediaType.WILDCARD_TYPE));
-        assertEquals(500, response.getStatus());
-    }
-
-    @Test
-    public void authenticateWrongData() {
-        MultivaluedMap<String, String> formParams = new MultivaluedStringMap();
-        formParams.add("SAMLResponse", "wrongResponse");
-
-        Response response = doPost("login/taat", Entity.entity(formParams, MediaType.WILDCARD_TYPE));
-        assertEquals(500, response.getStatus());
-    }
 
     @Test
     public void authenticateNoRelayState() {
@@ -189,19 +113,6 @@ public class LoginResourceTest extends ResourceIntegrationTestBase {
         assertNull(response.getHeaderString("Location"));
     }
 
-    @Test
-    public void taatAuthenticate() {
-        MultivaluedMap<String, String> formParams = new MultivaluedStringMap();
-        formParams.add("SAMLResponse", getSAMLResponse());
-        formParams.add("RelayState", "taatAuthenticateTestToken");
-
-        Response response = doPost("login/taat", Entity.entity(formParams, MediaType.WILDCARD_TYPE));
-        String url = response.getHeaderString("Location");
-        String[] tokens = url.split("=");
-        tokens = tokens[0].split("\\/");
-        assertEquals(307, response.getStatus());
-        assertEquals("loginRedirect?token", tokens[4]);
-    }
 
     @Test
     public void getAuthenticatedUser() {
@@ -221,48 +132,48 @@ public class LoginResourceTest extends ResourceIntegrationTestBase {
         });
         assertNull(authenticatedUser);
     }
+//
+//    @Test
+//    public void mobileIDAuthenticate() {
+//        String phoneNumber = "+37255551234";
+//        String idCode = "22334455667";
+//        String language = "est";
+//        Response response = doGet(String.format("login/mobileId?phoneNumber=%s&idCode=%s&language=%s",
+//                encodeQuery(phoneNumber), idCode, language));
+//        MobileIDSecurityCodes mobileIDSecurityCodes = response.readEntity(new GenericType<MobileIDSecurityCodes>() {
+//        });
+//
+//        assertNotNull(mobileIDSecurityCodes.getToken());
+//        assertNotNull(mobileIDSecurityCodes.getChallengeId());
+//
+//        Response isValid = doGet(String.format("login/mobileId/isValid?token=%s", mobileIDSecurityCodes.getToken()));
+//        AuthenticatedUser authenticatedUser = isValid.readEntity(new GenericType<AuthenticatedUser>() {
+//        });
+//
+//        assertNotNull(authenticatedUser.getToken());
+//        User user = authenticatedUser.getUser();
+//        assertEquals(idCode, user.getIdCode());
+//        assertEquals("Matt", user.getName());
+//        assertEquals("Smith", user.getSurname());
+//        assertNotNull(user.getUsername());
+//    }
 
-    @Test
-    public void mobileIDAuthenticate() {
-        String phoneNumber = "+37255551234";
-        String idCode = "22334455667";
-        String language = "est";
-        Response response = doGet(String.format("login/mobileId?phoneNumber=%s&idCode=%s&language=%s",
-                encodeQuery(phoneNumber), idCode, language));
-        MobileIDSecurityCodes mobileIDSecurityCodes = response.readEntity(new GenericType<MobileIDSecurityCodes>() {
-        });
-
-        assertNotNull(mobileIDSecurityCodes.getToken());
-        assertNotNull(mobileIDSecurityCodes.getChallengeId());
-
-        Response isValid = doGet(String.format("login/mobileId/isValid?token=%s", mobileIDSecurityCodes.getToken()));
-        AuthenticatedUser authenticatedUser = isValid.readEntity(new GenericType<AuthenticatedUser>() {
-        });
-
-        assertNotNull(authenticatedUser.getToken());
-        User user = authenticatedUser.getUser();
-        assertEquals(idCode, user.getIdCode());
-        assertEquals("Matt", user.getName());
-        assertEquals("Smith", user.getSurname());
-        assertNotNull(user.getUsername());
-    }
-
-    @Test
-    public void mobileIDAuthenticateNotValid() {
-        String phoneNumber = "+37244441234";
-        String idCode = "33445566778";
-        String language = "est";
-        Response response = doGet(String.format("login/mobileId?phoneNumber=%s&idCode=%s&language=%s",
-                encodeQuery(phoneNumber), idCode, language));
-        MobileIDSecurityCodes mobileIDSecurityCodes = response.readEntity(new GenericType<MobileIDSecurityCodes>() {
-        });
-
-        assertNotNull(mobileIDSecurityCodes.getToken());
-        assertNotNull(mobileIDSecurityCodes.getChallengeId());
-
-        Response isValid = doGet(String.format("login/mobileId/isValid?token=%s", mobileIDSecurityCodes.getToken()));
-        assertEquals(204, isValid.getStatus());
-    }
+//    @Test
+//    public void mobileIDAuthenticateNotValid() {
+//        String phoneNumber = "+37244441234";
+//        String idCode = "33445566778";
+//        String language = "est";
+//        Response response = doGet(String.format("login/mobileId?phoneNumber=%s&idCode=%s&language=%s",
+//                encodeQuery(phoneNumber), idCode, language));
+//        MobileIDSecurityCodes mobileIDSecurityCodes = response.readEntity(new GenericType<MobileIDSecurityCodes>() {
+//        });
+//
+//        assertNotNull(mobileIDSecurityCodes.getToken());
+//        assertNotNull(mobileIDSecurityCodes.getChallengeId());
+//
+//        Response isValid = doGet(String.format("login/mobileId/isValid?token=%s", mobileIDSecurityCodes.getToken()));
+//        assertEquals(204, isValid.getStatus());
+//    }
 
     @Test
     public void mobileIDAuthenticateMissingResponseFields() {
@@ -284,15 +195,15 @@ public class LoginResourceTest extends ResourceIntegrationTestBase {
         assertEquals(204, response.getStatus());
     }
 
-    @Test
-    public void mobileIDAuthenticateNonEstonianPhoneNumber() {
-        String phoneNumber = "+37077778888";
-        String idCode = "66778899001";
-        String language = "eng";
-        Response response = doGet(String.format("login/mobileId?phoneNumber=%s&idCode=%s&language=%s",
-                encodeQuery(phoneNumber), idCode, language));
-        assertEquals(204, response.getStatus());
-    }
+//    @Test
+//    public void mobileIDAuthenticateNonEstonianPhoneNumber() {
+//        String phoneNumber = "+37077778888";
+//        String idCode = "66778899001";
+//        String language = "eng";
+//        Response response = doGet(String.format("login/mobileId?phoneNumber=%s&idCode=%s&language=%s",
+//                encodeQuery(phoneNumber), idCode, language));
+//        assertEquals(204, response.getStatus());
+//    }
 
     @Test
     public void mobileIDIsAuthenticatedInvalidSessionCode() {

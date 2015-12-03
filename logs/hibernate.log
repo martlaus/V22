@@ -2785,3 +2785,621 @@ insert into User (id, idCode, name, role, surname, username) values (null, ?, ?,
 2015-12-03 15:20:11.333 [qtp874981105-22] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [voldemar.vapustav]
 2015-12-03 15:22:39.009 [qtp1414967210-18] DEBUG org.hibernate.SQL  - select user0_.id as id1_2_, user0_.idCode as idCode2_2_, user0_.name as name3_2_, user0_.role as role4_2_, user0_.surname as surname5_2_, user0_.username as username6_2_ from User user0_ where user0_.username=?
 2015-12-03 15:22:39.012 [qtp1414967210-18] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [mati.maasikas]
+2015-12-03 17:48:55.364 [qtp1354003114-20] WARN  org.hibernate.ejb.HibernatePersistence  - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2015-12-03 17:48:55.366 [qtp1354003114-20] WARN  org.hibernate.ejb.HibernatePersistence  - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2015-12-03 17:48:55.366 [qtp1354003114-20] WARN  org.hibernate.ejb.HibernatePersistence  - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2015-12-03 17:48:55.407 [qtp1354003114-20] INFO  org.hibernate.jpa.internal.util.LogHelper  - HHH000204: Processing PersistenceUnitInfo [
+	name: v22
+	...]
+2015-12-03 17:48:55.608 [qtp1354003114-20] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.10.Final}
+2015-12-03 17:48:55.609 [qtp1354003114-20] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2015-12-03 17:48:55.611 [qtp1354003114-20] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2015-12-03 17:48:55.795 [qtp1354003114-20] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-12-03 17:48:55.844 [qtp1354003114-20] INFO  org.hibernate.c3p0.internal.C3P0ConnectionProvider  - HHH010002: C3P0 using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://127.0.0.1/v22
+2015-12-03 17:48:55.845 [qtp1354003114-20] INFO  org.hibernate.c3p0.internal.C3P0ConnectionProvider  - HHH000046: Connection properties: {user=root, password=****}
+2015-12-03 17:48:55.845 [qtp1354003114-20] INFO  org.hibernate.c3p0.internal.C3P0ConnectionProvider  - HHH000006: Autocommit mode: false
+2015-12-03 17:48:56.595 [qtp1354003114-20] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2015-12-03 17:48:56.603 [qtp1354003114-20] INFO  org.hibernate.engine.jdbc.internal.LobCreatorBuilder  - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2015-12-03 17:48:56.744 [qtp1354003114-20] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2015-12-03 17:48:56.984 [qtp1354003114-20] INFO  org.hibernate.tool.hbm2ddl.SchemaValidator  - HHH000229: Running schema validator
+2015-12-03 17:48:56.984 [qtp1354003114-20] INFO  org.hibernate.tool.hbm2ddl.SchemaValidator  - HHH000102: Fetching database metadata
+2015-12-03 17:48:57.005 [qtp1354003114-20] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000261: Table found: v22.AuthenticatedUser
+2015-12-03 17:48:57.006 [qtp1354003114-20] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000037: Columns: [mails, scopedaffiliations, user_id, firstlogin, homeorganization, affiliations, id, token]
+2015-12-03 17:48:57.011 [qtp1354003114-20] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000261: Table found: v22.AuthenticationState
+2015-12-03 17:48:57.011 [qtp1354003114-20] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000037: Columns: [idcode, created, surname, name, id, sessioncode, token]
+2015-12-03 17:48:57.016 [qtp1354003114-20] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000261: Table found: v22.User
+2015-12-03 17:48:57.016 [qtp1354003114-20] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000037: Columns: [role, idcode, surname, name, id, username]
+2015-12-03 17:48:57.228 [qtp1354003114-20] DEBUG org.hibernate.SQL  - select user0_.id as id1_2_, user0_.idCode as idCode2_2_, user0_.name as name3_2_, user0_.role as role4_2_, user0_.surname as surname5_2_, user0_.username as username6_2_ from User user0_ where user0_.username=?
+2015-12-03 17:48:57.251 [qtp1354003114-20] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [mati.maasikas]
+2015-12-03 17:49:00.652 [qtp1354003114-17] DEBUG org.hibernate.SQL  - select user0_.id as id1_2_, user0_.idCode as idCode2_2_, user0_.name as name3_2_, user0_.role as role4_2_, user0_.surname as surname5_2_, user0_.username as username6_2_ from User user0_ where user0_.username=?
+2015-12-03 17:49:00.653 [qtp1354003114-17] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [mati.maasikas]
+2015-12-03 17:49:38.546 [qtp1354003114-17] DEBUG org.hibernate.SQL  - select user0_.id as id1_2_, user0_.idCode as idCode2_2_, user0_.name as name3_2_, user0_.role as role4_2_, user0_.surname as surname5_2_, user0_.username as username6_2_ from User user0_ where user0_.username=?
+2015-12-03 17:49:38.546 [qtp1354003114-17] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [mati.maasikas]
+2015-12-03 17:51:40.609 [qtp1178587240-20] WARN  org.hibernate.ejb.HibernatePersistence  - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2015-12-03 17:51:40.610 [qtp1178587240-20] WARN  org.hibernate.ejb.HibernatePersistence  - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2015-12-03 17:51:40.610 [qtp1178587240-20] WARN  org.hibernate.ejb.HibernatePersistence  - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2015-12-03 17:51:40.670 [qtp1178587240-20] INFO  org.hibernate.jpa.internal.util.LogHelper  - HHH000204: Processing PersistenceUnitInfo [
+	name: v22
+	...]
+2015-12-03 17:51:40.889 [qtp1178587240-20] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.10.Final}
+2015-12-03 17:51:40.891 [qtp1178587240-20] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2015-12-03 17:51:40.893 [qtp1178587240-20] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2015-12-03 17:51:41.124 [qtp1178587240-20] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-12-03 17:51:41.199 [qtp1178587240-20] INFO  org.hibernate.c3p0.internal.C3P0ConnectionProvider  - HHH010002: C3P0 using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://127.0.0.1/v22
+2015-12-03 17:51:41.199 [qtp1178587240-20] INFO  org.hibernate.c3p0.internal.C3P0ConnectionProvider  - HHH000046: Connection properties: {user=root, password=****}
+2015-12-03 17:51:41.200 [qtp1178587240-20] INFO  org.hibernate.c3p0.internal.C3P0ConnectionProvider  - HHH000006: Autocommit mode: false
+2015-12-03 17:51:42.204 [qtp1178587240-20] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2015-12-03 17:51:42.216 [qtp1178587240-20] INFO  org.hibernate.engine.jdbc.internal.LobCreatorBuilder  - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2015-12-03 17:51:42.398 [qtp1178587240-20] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2015-12-03 17:51:42.713 [qtp1178587240-20] INFO  org.hibernate.tool.hbm2ddl.SchemaValidator  - HHH000229: Running schema validator
+2015-12-03 17:51:42.714 [qtp1178587240-20] INFO  org.hibernate.tool.hbm2ddl.SchemaValidator  - HHH000102: Fetching database metadata
+2015-12-03 17:51:42.737 [qtp1178587240-20] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000261: Table found: v22.AuthenticatedUser
+2015-12-03 17:51:42.737 [qtp1178587240-20] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000037: Columns: [mails, scopedaffiliations, user_id, firstlogin, homeorganization, affiliations, id, token]
+2015-12-03 17:51:42.744 [qtp1178587240-20] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000261: Table found: v22.AuthenticationState
+2015-12-03 17:51:42.745 [qtp1178587240-20] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000037: Columns: [idcode, created, surname, name, id, sessioncode, token]
+2015-12-03 17:51:42.748 [qtp1178587240-20] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000261: Table found: v22.User
+2015-12-03 17:51:42.749 [qtp1178587240-20] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000037: Columns: [role, idcode, surname, name, id, username]
+2015-12-03 17:51:53.685 [qtp1178587240-20] DEBUG org.hibernate.SQL  - select user0_.id as id1_2_, user0_.idCode as idCode2_2_, user0_.name as name3_2_, user0_.role as role4_2_, user0_.surname as surname5_2_, user0_.username as username6_2_ from User user0_ where user0_.username=?
+2015-12-03 17:51:53.741 [qtp1178587240-20] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [mati.maasikas]
+2015-12-03 17:52:18.600 [qtp1178587240-22] DEBUG org.hibernate.SQL  - select user0_.id as id1_2_, user0_.idCode as idCode2_2_, user0_.name as name3_2_, user0_.role as role4_2_, user0_.surname as surname5_2_, user0_.username as username6_2_ from User user0_ where user0_.username=?
+2015-12-03 17:52:18.602 [qtp1178587240-22] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [mati.maasikas]
+2015-12-03 17:53:59.880 [qtp1178587240-22] DEBUG org.hibernate.SQL  - select user0_.id as id1_2_, user0_.idCode as idCode2_2_, user0_.name as name3_2_, user0_.role as role4_2_, user0_.surname as surname5_2_, user0_.username as username6_2_ from User user0_ where user0_.username=?
+2015-12-03 17:53:59.880 [qtp1178587240-22] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [mati.maasikas]
+2015-12-03 17:54:34.124 [main] WARN  org.hibernate.ejb.HibernatePersistence  - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2015-12-03 17:54:34.124 [main] WARN  org.hibernate.ejb.HibernatePersistence  - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2015-12-03 17:54:34.124 [main] WARN  org.hibernate.ejb.HibernatePersistence  - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2015-12-03 17:54:34.153 [main] INFO  org.hibernate.jpa.internal.util.LogHelper  - HHH000204: Processing PersistenceUnitInfo [
+	name: v22
+	...]
+2015-12-03 17:54:34.271 [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.10.Final}
+2015-12-03 17:54:34.272 [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2015-12-03 17:54:34.273 [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2015-12-03 17:54:34.416 [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-12-03 17:54:34.449 [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2015-12-03 17:54:34.455 [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [org.h2.Driver] at URL [jdbc:h2:mem:test;MODE=MySQL]
+2015-12-03 17:54:34.456 [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {}
+2015-12-03 17:54:34.456 [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2015-12-03 17:54:34.457 [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2015-12-03 17:54:34.669 [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2015-12-03 17:54:34.913 [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2015-12-03 17:54:35.148 [main] INFO  org.hibernate.tool.hbm2ddl.SchemaExport  - HHH000227: Running hbm2ddl schema export
+2015-12-03 17:54:35.150 [main] DEBUG org.hibernate.SQL  - drop table AuthenticatedUser if exists
+2015-12-03 17:54:35.150 [main] DEBUG org.hibernate.SQL  - drop table AuthenticationState if exists
+2015-12-03 17:54:35.151 [main] DEBUG org.hibernate.SQL  - drop table User if exists
+2015-12-03 17:54:35.151 [main] DEBUG org.hibernate.SQL  - create table AuthenticatedUser (id bigint generated by default as identity, affiliations varchar(255), firstLogin boolean, homeOrganization varchar(255), mails varchar(255), scopedAffiliations varchar(255), token varchar(255) not null, user_id bigint not null, primary key (id))
+2015-12-03 17:54:35.160 [main] DEBUG org.hibernate.SQL  - create table AuthenticationState (id bigint generated by default as identity, created timestamp not null, idCode varchar(255), name varchar(255), sessionCode varchar(255), surname varchar(255), token varchar(255) not null, primary key (id))
+2015-12-03 17:54:35.162 [main] DEBUG org.hibernate.SQL  - create table User (id bigint generated by default as identity, idCode varchar(255) not null, name varchar(255) not null, role varchar(255), surname varchar(255) not null, username varchar(255) not null, primary key (id))
+2015-12-03 17:54:35.164 [main] DEBUG org.hibernate.SQL  - alter table AuthenticatedUser add constraint UK_6hhrtitdoxlsbd7rtxdkkidb1  unique (token)
+2015-12-03 17:54:35.168 [main] DEBUG org.hibernate.SQL  - alter table AuthenticationState add constraint UK_k1ye5ewccvfx8v6bqxmtr9fpe  unique (token)
+2015-12-03 17:54:35.169 [main] DEBUG org.hibernate.SQL  - alter table User add constraint UK_p9x0orcq3ktns77gq8kmlvjh  unique (idCode)
+2015-12-03 17:54:35.170 [main] DEBUG org.hibernate.SQL  - alter table User add constraint UK_jreodf78a7pl5qidfh43axdfb  unique (username)
+2015-12-03 17:54:35.171 [main] DEBUG org.hibernate.SQL  - alter table AuthenticatedUser add constraint FK_p8go15iph52lx15qoh2aypu20 foreign key (user_id) references User
+2015-12-03 17:54:35.189 [main] INFO  org.hibernate.tool.hbm2ddl.SchemaExport  - HHH000230: Schema export complete
+2015-12-03 17:54:35.718 [qtp1233705144-19] DEBUG org.hibernate.SQL  - select authentica0_.id as id1_0_, authentica0_.affiliations as affiliat2_0_, authentica0_.firstLogin as firstLog3_0_, authentica0_.homeOrganization as homeOrga4_0_, authentica0_.mails as mails5_0_, authentica0_.scopedAffiliations as scopedAf6_0_, authentica0_.token as token7_0_, authentica0_.user_id as user_id8_0_ from AuthenticatedUser authentica0_ where authentica0_.token=?
+2015-12-03 17:54:35.722 [qtp1233705144-19] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [wrongToken]
+2015-12-03 17:54:35.779 [qtp1233705144-17] DEBUG org.hibernate.SQL  - select authentica0_.id as id1_0_, authentica0_.affiliations as affiliat2_0_, authentica0_.firstLogin as firstLog3_0_, authentica0_.homeOrganization as homeOrga4_0_, authentica0_.mails as mails5_0_, authentica0_.scopedAffiliations as scopedAf6_0_, authentica0_.token as token7_0_, authentica0_.user_id as user_id8_0_ from AuthenticatedUser authentica0_ where authentica0_.token=?
+2015-12-03 17:54:35.779 [qtp1233705144-17] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [token]
+2015-12-03 17:54:35.794 [qtp1233705144-17] DEBUG org.hibernate.SQL  - select user0_.id as id1_2_0_, user0_.idCode as idCode2_2_0_, user0_.name as name3_2_0_, user0_.role as role4_2_0_, user0_.surname as surname5_2_0_, user0_.username as username6_2_0_ from User user0_ where user0_.id=?
+2015-12-03 17:54:35.795 [qtp1233705144-17] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [BIGINT] - [1]
+2015-12-03 17:54:36.080 [qtp1233705144-16] DEBUG org.hibernate.SQL  - select user0_.id as id1_2_, user0_.idCode as idCode2_2_, user0_.name as name3_2_, user0_.role as role4_2_, user0_.surname as surname5_2_, user0_.username as username6_2_ from User user0_ where user0_.idCode=?
+2015-12-03 17:54:36.080 [qtp1233705144-16] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [55555555555]
+2015-12-03 17:54:36.106 [qtp1233705144-16] DEBUG org.hibernate.SQL  - select user0_.id as id1_2_, user0_.idCode as idCode2_2_, user0_.name as name3_2_, user0_.role as role4_2_, user0_.surname as surname5_2_, user0_.username as username6_2_ from User user0_ where user0_.username like ?
+2015-12-03 17:54:36.107 [qtp1233705144-16] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [peeter.paan%]
+2015-12-03 17:54:36.124 [qtp1233705144-16] DEBUG org.hibernate.SQL  - insert into User (id, idCode, name, role, surname, username) values (null, ?, ?, ?, ?, ?)
+2015-12-03 17:54:36.125 [qtp1233705144-16] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [55555555555]
+2015-12-03 17:54:36.126 [qtp1233705144-16] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [2] as [VARCHAR] - [Peeter]
+2015-12-03 17:54:36.126 [qtp1233705144-16] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [4] as [VARCHAR] - [Pããn]
+2015-12-03 17:54:36.126 [qtp1233705144-16] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [5] as [VARCHAR] - [peeter.paan2]
+2015-12-03 17:54:36.138 [qtp1233705144-16] DEBUG org.hibernate.SQL  - select user0_.id as id1_2_, user0_.idCode as idCode2_2_, user0_.name as name3_2_, user0_.role as role4_2_, user0_.surname as surname5_2_, user0_.username as username6_2_ from User user0_ where user0_.idCode=?
+2015-12-03 17:54:36.139 [qtp1233705144-16] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [55555555555]
+2015-12-03 17:54:36.140 [qtp1233705144-16] DEBUG org.hibernate.SQL  - insert into AuthenticatedUser (id, affiliations, firstLogin, homeOrganization, mails, scopedAffiliations, token, user_id) values (null, ?, ?, ?, ?, ?, ?, ?)
+2015-12-03 17:54:36.141 [qtp1233705144-16] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [null]
+2015-12-03 17:54:36.142 [qtp1233705144-16] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [2] as [BOOLEAN] - [false]
+2015-12-03 17:54:36.142 [qtp1233705144-16] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [3] as [VARCHAR] - [null]
+2015-12-03 17:54:36.142 [qtp1233705144-16] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [4] as [VARCHAR] - [null]
+2015-12-03 17:54:36.143 [qtp1233705144-16] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [5] as [VARCHAR] - [null]
+2015-12-03 17:54:36.143 [qtp1233705144-16] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [6] as [VARCHAR] - [cn63qncnq72f3rfa3ddb5ag9pq]
+2015-12-03 17:54:36.143 [qtp1233705144-16] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [7] as [BIGINT] - [7]
+2015-12-03 17:54:36.158 [qtp1233705144-16] DEBUG org.hibernate.SQL  - update AuthenticatedUser set affiliations=?, firstLogin=?, homeOrganization=?, mails=?, scopedAffiliations=?, token=?, user_id=? where id=?
+2015-12-03 17:54:36.159 [qtp1233705144-16] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [null]
+2015-12-03 17:54:36.159 [qtp1233705144-16] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [2] as [BOOLEAN] - [true]
+2015-12-03 17:54:36.159 [qtp1233705144-16] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [3] as [VARCHAR] - [null]
+2015-12-03 17:54:36.159 [qtp1233705144-16] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [4] as [VARCHAR] - [null]
+2015-12-03 17:54:36.159 [qtp1233705144-16] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [5] as [VARCHAR] - [null]
+2015-12-03 17:54:36.159 [qtp1233705144-16] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [6] as [VARCHAR] - [cn63qncnq72f3rfa3ddb5ag9pq]
+2015-12-03 17:54:36.159 [qtp1233705144-16] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [7] as [BIGINT] - [7]
+2015-12-03 17:54:36.159 [qtp1233705144-16] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [8] as [BIGINT] - [2]
+2015-12-03 17:54:36.231 [qtp1233705144-17] DEBUG org.hibernate.SQL  - select user0_.id as id1_2_, user0_.idCode as idCode2_2_, user0_.name as name3_2_, user0_.role as role4_2_, user0_.surname as surname5_2_, user0_.username as username6_2_ from User user0_ where user0_.idCode=?
+2015-12-03 17:54:36.232 [qtp1233705144-17] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [39011220011]
+2015-12-03 17:54:36.233 [qtp1233705144-17] DEBUG org.hibernate.SQL  - insert into AuthenticatedUser (id, affiliations, firstLogin, homeOrganization, mails, scopedAffiliations, token, user_id) values (null, ?, ?, ?, ?, ?, ?, ?)
+2015-12-03 17:54:36.233 [qtp1233705144-17] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [null]
+2015-12-03 17:54:36.233 [qtp1233705144-17] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [2] as [BOOLEAN] - [false]
+2015-12-03 17:54:36.233 [qtp1233705144-17] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [3] as [VARCHAR] - [null]
+2015-12-03 17:54:36.234 [qtp1233705144-17] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [4] as [VARCHAR] - [null]
+2015-12-03 17:54:36.234 [qtp1233705144-17] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [5] as [VARCHAR] - [null]
+2015-12-03 17:54:36.234 [qtp1233705144-17] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [6] as [VARCHAR] - [6dv002p45ks0auloac5637dbge]
+2015-12-03 17:54:36.234 [qtp1233705144-17] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [7] as [BIGINT] - [1]
+2015-12-03 17:54:36.369 [qtp1233705144-16] DEBUG org.hibernate.SQL  - select authentica0_.id as id1_1_, authentica0_.created as created2_1_, authentica0_.idCode as idCode3_1_, authentica0_.name as name4_1_, authentica0_.sessionCode as sessionC5_1_, authentica0_.surname as surname6_1_, authentica0_.token as token7_1_ from AuthenticationState authentica0_ where authentica0_.token=?
+2015-12-03 17:54:36.370 [qtp1233705144-16] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [2]
+2015-12-03 17:54:36.486 [main] DEBUG org.hibernate.SQL  - insert into AuthenticationState (id, created, idCode, name, sessionCode, surname, token) values (null, ?, ?, ?, ?, ?, ?)
+2015-12-03 17:54:36.488 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [TIMESTAMP] - [2015-12-03 17:54:36.485]
+2015-12-03 17:54:36.488 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [2] as [VARCHAR] - [null]
+2015-12-03 17:54:36.488 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [3] as [VARCHAR] - [null]
+2015-12-03 17:54:36.488 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [4] as [VARCHAR] - [null]
+2015-12-03 17:54:36.488 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [5] as [VARCHAR] - [null]
+2015-12-03 17:54:36.488 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [6] as [VARCHAR] - [superTOKEN]
+2015-12-03 17:54:36.491 [main] DEBUG org.hibernate.SQL  - delete from AuthenticationState where id=?
+2015-12-03 17:54:36.492 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [BIGINT] - [3]
+2015-12-03 17:54:36.493 [main] DEBUG org.hibernate.SQL  - select authentica0_.id as id1_1_, authentica0_.created as created2_1_, authentica0_.idCode as idCode3_1_, authentica0_.name as name4_1_, authentica0_.sessionCode as sessionC5_1_, authentica0_.surname as surname6_1_, authentica0_.token as token7_1_ from AuthenticationState authentica0_ where authentica0_.token=?
+2015-12-03 17:54:36.493 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [superTOKEN]
+2015-12-03 17:54:36.494 [main] DEBUG org.hibernate.SQL  - insert into AuthenticationState (id, created, idCode, name, sessionCode, surname, token) values (null, ?, ?, ?, ?, ?, ?)
+2015-12-03 17:54:36.494 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [TIMESTAMP] - [2015-12-03 17:54:36.494]
+2015-12-03 17:54:36.494 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [2] as [VARCHAR] - [null]
+2015-12-03 17:54:36.494 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [3] as [VARCHAR] - [null]
+2015-12-03 17:54:36.495 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [4] as [VARCHAR] - [null]
+2015-12-03 17:54:36.495 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [5] as [VARCHAR] - [null]
+2015-12-03 17:54:36.495 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [6] as [VARCHAR] - [superTOKEN]
+2015-12-03 17:54:36.495 [main] DEBUG org.hibernate.SQL  - insert into AuthenticationState (id, created, idCode, name, sessionCode, surname, token) values (null, ?, ?, ?, ?, ?, ?)
+2015-12-03 17:54:36.496 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [TIMESTAMP] - [2015-12-03 17:54:36.494]
+2015-12-03 17:54:36.496 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [2] as [VARCHAR] - [null]
+2015-12-03 17:54:36.496 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [3] as [VARCHAR] - [null]
+2015-12-03 17:54:36.496 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [4] as [VARCHAR] - [null]
+2015-12-03 17:54:36.496 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [5] as [VARCHAR] - [null]
+2015-12-03 17:54:36.496 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [6] as [VARCHAR] - [superTOKEN]
+2015-12-03 17:54:36.498 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Error: 23505, SQLState: 23505
+2015-12-03 17:54:36.498 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Unique index or primary key violation: "UK_K1YE5EWCCVFX8V6BQXMTR9FPE_INDEX_4 ON PUBLIC.AUTHENTICATIONSTATE(TOKEN) VALUES ('superTOKEN', 4)"; SQL statement:
+insert into AuthenticationState (id, created, idCode, name, sessionCode, surname, token) values (null, ?, ?, ?, ?, ?, ?) [23505-187]
+2015-12-03 17:54:36.502 [main] DEBUG org.hibernate.SQL  - insert into AuthenticationState (id, created, idCode, name, sessionCode, surname, token) values (null, ?, ?, ?, ?, ?, ?)
+2015-12-03 17:54:36.502 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [TIMESTAMP] - [2015-12-03 17:54:36.501]
+2015-12-03 17:54:36.502 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [2] as [VARCHAR] - [null]
+2015-12-03 17:54:36.502 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [3] as [VARCHAR] - [null]
+2015-12-03 17:54:36.502 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [4] as [VARCHAR] - [null]
+2015-12-03 17:54:36.502 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [5] as [VARCHAR] - [null]
+2015-12-03 17:54:36.502 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [6] as [VARCHAR] - [superTOKEN]
+2015-12-03 17:54:36.503 [main] DEBUG org.hibernate.SQL  - delete from AuthenticationState where id=?
+2015-12-03 17:54:36.503 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [BIGINT] - [6]
+2015-12-03 17:54:36.505 [main] DEBUG org.hibernate.SQL  - select authentica0_.id as id1_1_, authentica0_.created as created2_1_, authentica0_.idCode as idCode3_1_, authentica0_.name as name4_1_, authentica0_.sessionCode as sessionC5_1_, authentica0_.surname as surname6_1_, authentica0_.token as token7_1_ from AuthenticationState authentica0_ where authentica0_.token=?
+2015-12-03 17:54:36.505 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [testTOKEN]
+2015-12-03 17:54:37.043 [main] DEBUG org.hibernate.SQL  - insert into User (id, idCode, name, role, surname, username) values (null, ?, ?, ?, ?, ?)
+2015-12-03 17:54:37.043 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [12345678969]
+2015-12-03 17:54:37.044 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [2] as [VARCHAR] - [Mati2]
+2015-12-03 17:54:37.044 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [4] as [VARCHAR] - [Maasikas2]
+2015-12-03 17:54:37.044 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [5] as [VARCHAR] - [mati2.maasikas2]
+2015-12-03 17:54:37.046 [main] DEBUG org.hibernate.SQL  - insert into AuthenticatedUser (id, affiliations, firstLogin, homeOrganization, mails, scopedAffiliations, token, user_id) values (null, ?, ?, ?, ?, ?, ?, ?)
+2015-12-03 17:54:37.046 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [null]
+2015-12-03 17:54:37.046 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [2] as [BOOLEAN] - [false]
+2015-12-03 17:54:37.046 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [3] as [VARCHAR] - [null]
+2015-12-03 17:54:37.046 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [4] as [VARCHAR] - [null]
+2015-12-03 17:54:37.046 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [5] as [VARCHAR] - [null]
+2015-12-03 17:54:37.047 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [6] as [VARCHAR] - [token1]
+2015-12-03 17:54:37.047 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [7] as [BIGINT] - [8]
+2015-12-03 17:54:37.047 [main] DEBUG org.hibernate.SQL  - insert into AuthenticatedUser (id, affiliations, firstLogin, homeOrganization, mails, scopedAffiliations, token, user_id) values (null, ?, ?, ?, ?, ?, ?, ?)
+2015-12-03 17:54:37.047 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [null]
+2015-12-03 17:54:37.048 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [2] as [BOOLEAN] - [false]
+2015-12-03 17:54:37.048 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [3] as [VARCHAR] - [null]
+2015-12-03 17:54:37.048 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [4] as [VARCHAR] - [null]
+2015-12-03 17:54:37.048 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [5] as [VARCHAR] - [null]
+2015-12-03 17:54:37.048 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [6] as [VARCHAR] - [token2]
+2015-12-03 17:54:37.048 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [7] as [BIGINT] - [8]
+2015-12-03 17:54:37.049 [main] DEBUG org.hibernate.SQL  - select authentica0_.id as id1_0_, authentica0_.affiliations as affiliat2_0_, authentica0_.firstLogin as firstLog3_0_, authentica0_.homeOrganization as homeOrga4_0_, authentica0_.mails as mails5_0_, authentica0_.scopedAffiliations as scopedAf6_0_, authentica0_.token as token7_0_, authentica0_.user_id as user_id8_0_ from AuthenticatedUser authentica0_ where authentica0_.token=?
+2015-12-03 17:54:37.049 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [token1]
+2015-12-03 17:54:37.050 [main] DEBUG org.hibernate.SQL  - select authentica0_.id as id1_0_, authentica0_.affiliations as affiliat2_0_, authentica0_.firstLogin as firstLog3_0_, authentica0_.homeOrganization as homeOrga4_0_, authentica0_.mails as mails5_0_, authentica0_.scopedAffiliations as scopedAf6_0_, authentica0_.token as token7_0_, authentica0_.user_id as user_id8_0_ from AuthenticatedUser authentica0_ where authentica0_.token=?
+2015-12-03 17:54:37.051 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [token2]
+2015-12-03 17:54:37.052 [main] DEBUG org.hibernate.SQL  - delete from AuthenticatedUser where id=?
+2015-12-03 17:54:37.052 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [BIGINT] - [4]
+2015-12-03 17:54:37.053 [main] DEBUG org.hibernate.SQL  - delete from AuthenticatedUser where id=?
+2015-12-03 17:54:37.053 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [BIGINT] - [5]
+2015-12-03 17:54:37.053 [main] DEBUG org.hibernate.SQL  - delete from User where id=?
+2015-12-03 17:54:37.053 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [BIGINT] - [8]
+2015-12-03 17:54:37.055 [main] DEBUG org.hibernate.SQL  - insert into User (id, idCode, name, role, surname, username) values (null, ?, ?, ?, ?, ?)
+2015-12-03 17:54:37.055 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [12345678969]
+2015-12-03 17:54:37.055 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [2] as [VARCHAR] - [Mati2]
+2015-12-03 17:54:37.055 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [4] as [VARCHAR] - [Maasikas2]
+2015-12-03 17:54:37.055 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [5] as [VARCHAR] - [mati2.maasikas2]
+2015-12-03 17:54:37.056 [main] DEBUG org.hibernate.SQL  - insert into AuthenticatedUser (id, affiliations, firstLogin, homeOrganization, mails, scopedAffiliations, token, user_id) values (null, ?, ?, ?, ?, ?, ?, ?)
+2015-12-03 17:54:37.056 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [null]
+2015-12-03 17:54:37.056 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [2] as [BOOLEAN] - [false]
+2015-12-03 17:54:37.056 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [3] as [VARCHAR] - [null]
+2015-12-03 17:54:37.056 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [4] as [VARCHAR] - [null]
+2015-12-03 17:54:37.056 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [5] as [VARCHAR] - [null]
+2015-12-03 17:54:37.056 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [6] as [VARCHAR] - [123123]
+2015-12-03 17:54:37.057 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [7] as [BIGINT] - [9]
+2015-12-03 17:54:37.058 [main] DEBUG org.hibernate.SQL  - delete from AuthenticatedUser where id=?
+2015-12-03 17:54:37.058 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [BIGINT] - [6]
+2015-12-03 17:54:37.058 [main] DEBUG org.hibernate.SQL  - delete from User where id=?
+2015-12-03 17:54:37.058 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [BIGINT] - [9]
+2015-12-03 17:54:37.060 [main] DEBUG org.hibernate.SQL  - insert into User (id, idCode, name, role, surname, username) values (null, ?, ?, ?, ?, ?)
+2015-12-03 17:54:37.060 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [12345678969]
+2015-12-03 17:54:37.060 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [2] as [VARCHAR] - [Mati2]
+2015-12-03 17:54:37.060 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [4] as [VARCHAR] - [Maasikas2]
+2015-12-03 17:54:37.060 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [5] as [VARCHAR] - [mati2.maasikas2]
+2015-12-03 17:54:37.061 [main] DEBUG org.hibernate.SQL  - insert into AuthenticatedUser (id, affiliations, firstLogin, homeOrganization, mails, scopedAffiliations, token, user_id) values (null, ?, ?, ?, ?, ?, ?, ?)
+2015-12-03 17:54:37.061 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [null]
+2015-12-03 17:54:37.061 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [2] as [BOOLEAN] - [false]
+2015-12-03 17:54:37.061 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [3] as [VARCHAR] - [null]
+2015-12-03 17:54:37.061 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [4] as [VARCHAR] - [null]
+2015-12-03 17:54:37.061 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [5] as [VARCHAR] - [null]
+2015-12-03 17:54:37.061 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [6] as [VARCHAR] - [123123]
+2015-12-03 17:54:37.061 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [7] as [BIGINT] - [10]
+2015-12-03 17:54:37.062 [main] DEBUG org.hibernate.SQL  - delete from AuthenticatedUser where id=?
+2015-12-03 17:54:37.062 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [BIGINT] - [7]
+2015-12-03 17:54:37.062 [main] DEBUG org.hibernate.SQL  - select authentica0_.id as id1_0_, authentica0_.affiliations as affiliat2_0_, authentica0_.firstLogin as firstLog3_0_, authentica0_.homeOrganization as homeOrga4_0_, authentica0_.mails as mails5_0_, authentica0_.scopedAffiliations as scopedAf6_0_, authentica0_.token as token7_0_, authentica0_.user_id as user_id8_0_ from AuthenticatedUser authentica0_ where authentica0_.token=?
+2015-12-03 17:54:37.063 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [123123]
+2015-12-03 17:54:37.063 [main] DEBUG org.hibernate.SQL  - delete from User where id=?
+2015-12-03 17:54:37.063 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [BIGINT] - [10]
+2015-12-03 17:54:37.064 [main] DEBUG org.hibernate.SQL  - insert into User (id, idCode, name, role, surname, username) values (null, ?, ?, ?, ?, ?)
+2015-12-03 17:54:37.064 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [12345678969]
+2015-12-03 17:54:37.064 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [2] as [VARCHAR] - [Mati2]
+2015-12-03 17:54:37.065 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [4] as [VARCHAR] - [Maasikas2]
+2015-12-03 17:54:37.065 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [5] as [VARCHAR] - [mati2.maasikas2]
+2015-12-03 17:54:37.065 [main] DEBUG org.hibernate.SQL  - insert into AuthenticatedUser (id, affiliations, firstLogin, homeOrganization, mails, scopedAffiliations, token, user_id) values (null, ?, ?, ?, ?, ?, ?, ?)
+2015-12-03 17:54:37.066 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [null]
+2015-12-03 17:54:37.066 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [2] as [BOOLEAN] - [false]
+2015-12-03 17:54:37.066 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [3] as [VARCHAR] - [null]
+2015-12-03 17:54:37.066 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [4] as [VARCHAR] - [null]
+2015-12-03 17:54:37.066 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [5] as [VARCHAR] - [null]
+2015-12-03 17:54:37.066 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [6] as [VARCHAR] - [123123]
+2015-12-03 17:54:37.066 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [7] as [BIGINT] - [11]
+2015-12-03 17:54:37.067 [main] DEBUG org.hibernate.SQL  - select authentica0_.id as id1_0_, authentica0_.affiliations as affiliat2_0_, authentica0_.firstLogin as firstLog3_0_, authentica0_.homeOrganization as homeOrga4_0_, authentica0_.mails as mails5_0_, authentica0_.scopedAffiliations as scopedAf6_0_, authentica0_.token as token7_0_, authentica0_.user_id as user_id8_0_ from AuthenticatedUser authentica0_ where authentica0_.token=?
+2015-12-03 17:54:37.067 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [123123]
+2015-12-03 17:54:37.068 [main] DEBUG org.hibernate.SQL  - delete from AuthenticatedUser where id=?
+2015-12-03 17:54:37.068 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [BIGINT] - [8]
+2015-12-03 17:54:37.068 [main] DEBUG org.hibernate.SQL  - delete from User where id=?
+2015-12-03 17:54:37.068 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [BIGINT] - [11]
+2015-12-03 17:54:37.069 [main] DEBUG org.hibernate.SQL  - insert into User (id, idCode, name, role, surname, username) values (null, ?, ?, ?, ?, ?)
+2015-12-03 17:54:37.069 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [12345678969]
+2015-12-03 17:54:37.069 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [2] as [VARCHAR] - [Mati2]
+2015-12-03 17:54:37.069 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [4] as [VARCHAR] - [Maasikas2]
+2015-12-03 17:54:37.069 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [5] as [VARCHAR] - [mati2.maasikas2]
+2015-12-03 17:54:37.070 [main] DEBUG org.hibernate.SQL  - insert into AuthenticatedUser (id, affiliations, firstLogin, homeOrganization, mails, scopedAffiliations, token, user_id) values (null, ?, ?, ?, ?, ?, ?, ?)
+2015-12-03 17:54:37.070 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [null]
+2015-12-03 17:54:37.070 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [2] as [BOOLEAN] - [false]
+2015-12-03 17:54:37.070 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [3] as [VARCHAR] - [null]
+2015-12-03 17:54:37.070 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [4] as [VARCHAR] - [null]
+2015-12-03 17:54:37.070 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [5] as [VARCHAR] - [null]
+2015-12-03 17:54:37.071 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [6] as [VARCHAR] - [123123]
+2015-12-03 17:54:37.071 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [7] as [BIGINT] - [12]
+2015-12-03 17:54:37.071 [main] DEBUG org.hibernate.SQL  - insert into AuthenticatedUser (id, affiliations, firstLogin, homeOrganization, mails, scopedAffiliations, token, user_id) values (null, ?, ?, ?, ?, ?, ?, ?)
+2015-12-03 17:54:37.071 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [null]
+2015-12-03 17:54:37.071 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [2] as [BOOLEAN] - [false]
+2015-12-03 17:54:37.071 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [3] as [VARCHAR] - [null]
+2015-12-03 17:54:37.072 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [4] as [VARCHAR] - [null]
+2015-12-03 17:54:37.072 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [5] as [VARCHAR] - [null]
+2015-12-03 17:54:37.072 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [6] as [VARCHAR] - [123123]
+2015-12-03 17:54:37.072 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [7] as [BIGINT] - [12]
+2015-12-03 17:54:37.072 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Error: 23505, SQLState: 23505
+2015-12-03 17:54:37.072 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Unique index or primary key violation: "UK_6HHRTITDOXLSBD7RTXDKKIDB1_INDEX_8 ON PUBLIC.AUTHENTICATEDUSER(TOKEN) VALUES ('123123', 9)"; SQL statement:
+insert into AuthenticatedUser (id, affiliations, firstLogin, homeOrganization, mails, scopedAffiliations, token, user_id) values (null, ?, ?, ?, ?, ?, ?, ?) [23505-187]
+2015-12-03 17:54:37.211 [qtp1233705144-16] DEBUG org.hibernate.SQL  - select authentica0_.id as id1_0_, authentica0_.affiliations as affiliat2_0_, authentica0_.firstLogin as firstLog3_0_, authentica0_.homeOrganization as homeOrga4_0_, authentica0_.mails as mails5_0_, authentica0_.scopedAffiliations as scopedAf6_0_, authentica0_.token as token7_0_, authentica0_.user_id as user_id8_0_ from AuthenticatedUser authentica0_ where authentica0_.token=?
+2015-12-03 17:54:37.211 [qtp1233705144-16] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [token]
+2015-12-03 17:54:37.212 [qtp1233705144-16] DEBUG org.hibernate.SQL  - select user0_.id as id1_2_0_, user0_.idCode as idCode2_2_0_, user0_.name as name3_2_0_, user0_.role as role4_2_0_, user0_.surname as surname5_2_0_, user0_.username as username6_2_0_ from User user0_ where user0_.id=?
+2015-12-03 17:54:37.212 [qtp1233705144-16] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [BIGINT] - [1]
+2015-12-03 17:54:37.310 [qtp1233705144-17] DEBUG org.hibernate.SQL  - select user0_.id as id1_2_, user0_.idCode as idCode2_2_, user0_.name as name3_2_, user0_.role as role4_2_, user0_.surname as surname5_2_, user0_.username as username6_2_ from User user0_ where user0_.username=?
+2015-12-03 17:54:37.311 [qtp1233705144-17] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [notexisting.user]
+2015-12-03 17:54:37.417 [qtp1233705144-17] DEBUG org.hibernate.SQL  - select user0_.id as id1_2_, user0_.idCode as idCode2_2_, user0_.name as name3_2_, user0_.role as role4_2_, user0_.surname as surname5_2_, user0_.username as username6_2_ from User user0_ where user0_.username=?
+2015-12-03 17:54:37.417 [qtp1233705144-17] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [mati.maasikas]
+2015-12-03 17:54:37.447 [qtp1233705144-16] DEBUG org.hibernate.SQL  - select user0_.id as id1_2_, user0_.idCode as idCode2_2_, user0_.name as name3_2_, user0_.role as role4_2_, user0_.surname as surname5_2_, user0_.username as username6_2_ from User user0_ where user0_.username=?
+2015-12-03 17:54:37.448 [qtp1233705144-16] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [peeter.paan]
+2015-12-03 17:54:37.474 [qtp1233705144-19] DEBUG org.hibernate.SQL  - select user0_.id as id1_2_, user0_.idCode as idCode2_2_, user0_.name as name3_2_, user0_.role as role4_2_, user0_.surname as surname5_2_, user0_.username as username6_2_ from User user0_ where user0_.username=?
+2015-12-03 17:54:37.474 [qtp1233705144-19] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [voldemar.vapustav]
+2015-12-03 17:54:37.785 [main] DEBUG org.hibernate.SQL  - select user0_.id as id1_2_, user0_.idCode as idCode2_2_, user0_.name as name3_2_, user0_.role as role4_2_, user0_.surname as surname5_2_, user0_.username as username6_2_ from User user0_ where user0_.username like ?
+2015-12-03 17:54:37.785 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [mati.maasikas%]
+2015-12-03 17:54:37.787 [main] DEBUG org.hibernate.SQL  - select user0_.id as id1_2_, user0_.idCode as idCode2_2_, user0_.name as name3_2_, user0_.role as role4_2_, user0_.surname as surname5_2_, user0_.username as username6_2_ from User user0_ where user0_.username like ?
+2015-12-03 17:54:37.787 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [there.is.no.such.username%]
+2015-12-03 17:54:37.789 [main] DEBUG org.hibernate.SQL  - insert into User (id, idCode, name, role, surname, username) values (null, ?, ?, ?, ?, ?)
+2015-12-03 17:54:37.789 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [12345678969]
+2015-12-03 17:54:37.789 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [2] as [VARCHAR] - [Mati2]
+2015-12-03 17:54:37.789 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [4] as [VARCHAR] - [Maasikas2]
+2015-12-03 17:54:37.789 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [5] as [VARCHAR] - [mati2.maasikas2]
+2015-12-03 17:54:37.790 [main] DEBUG org.hibernate.SQL  - delete from User where id=?
+2015-12-03 17:54:37.791 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [BIGINT] - [13]
+2015-12-03 17:54:37.791 [main] DEBUG org.hibernate.SQL  - select user0_.id as id1_2_, user0_.idCode as idCode2_2_, user0_.name as name3_2_, user0_.role as role4_2_, user0_.surname as surname5_2_, user0_.username as username6_2_ from User user0_ where user0_.idCode=?
+2015-12-03 17:54:37.791 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [12345678969]
+2015-12-03 17:54:37.793 [main] DEBUG org.hibernate.SQL  - insert into User (id, idCode, name, role, surname, username) values (null, ?, ?, ?, ?, ?)
+2015-12-03 17:54:37.793 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [12345678969]
+2015-12-03 17:54:37.793 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [2] as [VARCHAR] - [Mati2]
+2015-12-03 17:54:37.793 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [4] as [VARCHAR] - [Maasikas2]
+2015-12-03 17:54:37.793 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [5] as [VARCHAR] - [mati2.maasikas2]
+2015-12-03 17:54:37.794 [main] DEBUG org.hibernate.SQL  - select user0_.id as id1_2_, user0_.idCode as idCode2_2_, user0_.name as name3_2_, user0_.role as role4_2_, user0_.surname as surname5_2_, user0_.username as username6_2_ from User user0_ where user0_.idCode=?
+2015-12-03 17:54:37.794 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [12345678969]
+2015-12-03 17:54:37.795 [main] DEBUG org.hibernate.SQL  - delete from User where id=?
+2015-12-03 17:54:37.795 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [BIGINT] - [14]
+2015-12-03 17:54:37.796 [main] DEBUG org.hibernate.SQL  - insert into User (id, idCode, name, role, surname, username) values (null, ?, ?, ?, ?, ?)
+2015-12-03 17:54:37.796 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [12345678901]
+2015-12-03 17:54:37.796 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [2] as [VARCHAR] - [Mati]
+2015-12-03 17:54:37.796 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [4] as [VARCHAR] - [Maasikas]
+2015-12-03 17:54:37.796 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [5] as [VARCHAR] - [mati.maasikas]
+2015-12-03 17:54:37.797 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Error: 23505, SQLState: 23505
+2015-12-03 17:54:37.797 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Unique index or primary key violation: "UK_JREODF78A7PL5QIDFH43AXDFB_INDEX_2 ON PUBLIC.USER(USERNAME) VALUES ('mati.maasikas', 1)"; SQL statement:
+insert into User (id, idCode, name, role, surname, username) values (null, ?, ?, ?, ?, ?) [23505-187]
+2015-12-03 17:54:37.798 [main] DEBUG org.hibernate.SQL  - select user0_.id as id1_2_, user0_.idCode as idCode2_2_, user0_.name as name3_2_, user0_.role as role4_2_, user0_.surname as surname5_2_, user0_.username as username6_2_ from User user0_ where user0_.idCode=?
+2015-12-03 17:54:37.798 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [39011220011]
+2015-12-03 17:54:37.799 [main] DEBUG org.hibernate.SQL  - select user0_.id as id1_2_, user0_.idCode as idCode2_2_, user0_.name as name3_2_, user0_.role as role4_2_, user0_.surname as surname5_2_, user0_.username as username6_2_ from User user0_ where user0_.idCode=?
+2015-12-03 17:54:37.799 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [39011220011]
+2015-12-03 17:54:37.800 [main] DEBUG org.hibernate.SQL  - select user0_.id as id1_2_, user0_.idCode as idCode2_2_, user0_.name as name3_2_, user0_.role as role4_2_, user0_.surname as surname5_2_, user0_.username as username6_2_ from User user0_ where user0_.idCode=?
+2015-12-03 17:54:37.800 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [39011220011]
+2015-12-03 17:54:37.802 [main] DEBUG org.hibernate.SQL  - select user0_.id as id1_2_, user0_.idCode as idCode2_2_, user0_.name as name3_2_, user0_.role as role4_2_, user0_.surname as surname5_2_, user0_.username as username6_2_ from User user0_ where user0_.username=?
+2015-12-03 17:54:37.802 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [mati.maasikas]
+2015-12-03 17:54:37.803 [main] DEBUG org.hibernate.SQL  - select user0_.id as id1_2_, user0_.idCode as idCode2_2_, user0_.name as name3_2_, user0_.role as role4_2_, user0_.surname as surname5_2_, user0_.username as username6_2_ from User user0_ where user0_.username=?
+2015-12-03 17:54:37.803 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [peeter.paan]
+2015-12-03 17:54:37.804 [main] DEBUG org.hibernate.SQL  - select user0_.id as id1_2_, user0_.idCode as idCode2_2_, user0_.name as name3_2_, user0_.role as role4_2_, user0_.surname as surname5_2_, user0_.username as username6_2_ from User user0_ where user0_.username=?
+2015-12-03 17:54:37.804 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [voldemar.vapustav]
+2015-12-03 18:06:59.370 [main] WARN  org.hibernate.ejb.HibernatePersistence  - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2015-12-03 18:06:59.370 [main] WARN  org.hibernate.ejb.HibernatePersistence  - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2015-12-03 18:06:59.371 [main] WARN  org.hibernate.ejb.HibernatePersistence  - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2015-12-03 18:06:59.404 [main] INFO  org.hibernate.jpa.internal.util.LogHelper  - HHH000204: Processing PersistenceUnitInfo [
+	name: v22
+	...]
+2015-12-03 18:06:59.544 [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.10.Final}
+2015-12-03 18:06:59.545 [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2015-12-03 18:06:59.546 [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2015-12-03 18:06:59.706 [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-12-03 18:06:59.738 [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2015-12-03 18:06:59.748 [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [org.h2.Driver] at URL [jdbc:h2:mem:test;MODE=MySQL]
+2015-12-03 18:06:59.749 [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {}
+2015-12-03 18:06:59.749 [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2015-12-03 18:06:59.751 [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2015-12-03 18:06:59.971 [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2015-12-03 18:07:00.290 [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2015-12-03 18:07:00.556 [main] INFO  org.hibernate.tool.hbm2ddl.SchemaExport  - HHH000227: Running hbm2ddl schema export
+2015-12-03 18:07:00.558 [main] DEBUG org.hibernate.SQL  - drop table AuthenticatedUser if exists
+2015-12-03 18:07:00.558 [main] DEBUG org.hibernate.SQL  - drop table AuthenticationState if exists
+2015-12-03 18:07:00.559 [main] DEBUG org.hibernate.SQL  - drop table User if exists
+2015-12-03 18:07:00.559 [main] DEBUG org.hibernate.SQL  - create table AuthenticatedUser (id bigint generated by default as identity, affiliations varchar(255), firstLogin boolean, homeOrganization varchar(255), mails varchar(255), scopedAffiliations varchar(255), token varchar(255) not null, user_id bigint not null, primary key (id))
+2015-12-03 18:07:00.566 [main] DEBUG org.hibernate.SQL  - create table AuthenticationState (id bigint generated by default as identity, created timestamp not null, idCode varchar(255), name varchar(255), sessionCode varchar(255), surname varchar(255), token varchar(255) not null, primary key (id))
+2015-12-03 18:07:00.568 [main] DEBUG org.hibernate.SQL  - create table User (id bigint generated by default as identity, idCode varchar(255) not null, name varchar(255) not null, role varchar(255), surname varchar(255) not null, username varchar(255) not null, primary key (id))
+2015-12-03 18:07:00.570 [main] DEBUG org.hibernate.SQL  - alter table AuthenticatedUser add constraint UK_6hhrtitdoxlsbd7rtxdkkidb1  unique (token)
+2015-12-03 18:07:00.573 [main] DEBUG org.hibernate.SQL  - alter table AuthenticationState add constraint UK_k1ye5ewccvfx8v6bqxmtr9fpe  unique (token)
+2015-12-03 18:07:00.574 [main] DEBUG org.hibernate.SQL  - alter table User add constraint UK_p9x0orcq3ktns77gq8kmlvjh  unique (idCode)
+2015-12-03 18:07:00.575 [main] DEBUG org.hibernate.SQL  - alter table User add constraint UK_jreodf78a7pl5qidfh43axdfb  unique (username)
+2015-12-03 18:07:00.575 [main] DEBUG org.hibernate.SQL  - alter table AuthenticatedUser add constraint FK_p8go15iph52lx15qoh2aypu20 foreign key (user_id) references User
+2015-12-03 18:07:00.595 [main] INFO  org.hibernate.tool.hbm2ddl.SchemaExport  - HHH000230: Schema export complete
+2015-12-03 18:07:01.142 [qtp202125197-21] DEBUG org.hibernate.SQL  - select authentica0_.id as id1_0_, authentica0_.affiliations as affiliat2_0_, authentica0_.firstLogin as firstLog3_0_, authentica0_.homeOrganization as homeOrga4_0_, authentica0_.mails as mails5_0_, authentica0_.scopedAffiliations as scopedAf6_0_, authentica0_.token as token7_0_, authentica0_.user_id as user_id8_0_ from AuthenticatedUser authentica0_ where authentica0_.token=?
+2015-12-03 18:07:01.147 [qtp202125197-21] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [wrongToken]
+2015-12-03 18:07:01.200 [qtp202125197-19] DEBUG org.hibernate.SQL  - select authentica0_.id as id1_0_, authentica0_.affiliations as affiliat2_0_, authentica0_.firstLogin as firstLog3_0_, authentica0_.homeOrganization as homeOrga4_0_, authentica0_.mails as mails5_0_, authentica0_.scopedAffiliations as scopedAf6_0_, authentica0_.token as token7_0_, authentica0_.user_id as user_id8_0_ from AuthenticatedUser authentica0_ where authentica0_.token=?
+2015-12-03 18:07:01.201 [qtp202125197-19] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [token]
+2015-12-03 18:07:01.215 [qtp202125197-19] DEBUG org.hibernate.SQL  - select user0_.id as id1_2_0_, user0_.idCode as idCode2_2_0_, user0_.name as name3_2_0_, user0_.role as role4_2_0_, user0_.surname as surname5_2_0_, user0_.username as username6_2_0_ from User user0_ where user0_.id=?
+2015-12-03 18:07:01.217 [qtp202125197-19] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [BIGINT] - [1]
+2015-12-03 18:07:01.534 [qtp202125197-15] DEBUG org.hibernate.SQL  - select user0_.id as id1_2_, user0_.idCode as idCode2_2_, user0_.name as name3_2_, user0_.role as role4_2_, user0_.surname as surname5_2_, user0_.username as username6_2_ from User user0_ where user0_.idCode=?
+2015-12-03 18:07:01.534 [qtp202125197-15] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [55555555555]
+2015-12-03 18:07:01.552 [qtp202125197-15] DEBUG org.hibernate.SQL  - select user0_.id as id1_2_, user0_.idCode as idCode2_2_, user0_.name as name3_2_, user0_.role as role4_2_, user0_.surname as surname5_2_, user0_.username as username6_2_ from User user0_ where user0_.username like ?
+2015-12-03 18:07:01.554 [qtp202125197-15] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [peeter.paan%]
+2015-12-03 18:07:01.572 [qtp202125197-15] DEBUG org.hibernate.SQL  - insert into User (id, idCode, name, role, surname, username) values (null, ?, ?, ?, ?, ?)
+2015-12-03 18:07:01.573 [qtp202125197-15] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [55555555555]
+2015-12-03 18:07:01.573 [qtp202125197-15] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [2] as [VARCHAR] - [Peeter]
+2015-12-03 18:07:01.573 [qtp202125197-15] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [4] as [VARCHAR] - [Pããn]
+2015-12-03 18:07:01.573 [qtp202125197-15] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [5] as [VARCHAR] - [peeter.paan2]
+2015-12-03 18:07:01.581 [qtp202125197-15] DEBUG org.hibernate.SQL  - select user0_.id as id1_2_, user0_.idCode as idCode2_2_, user0_.name as name3_2_, user0_.role as role4_2_, user0_.surname as surname5_2_, user0_.username as username6_2_ from User user0_ where user0_.idCode=?
+2015-12-03 18:07:01.581 [qtp202125197-15] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [55555555555]
+2015-12-03 18:07:01.582 [qtp202125197-15] DEBUG org.hibernate.SQL  - insert into AuthenticatedUser (id, affiliations, firstLogin, homeOrganization, mails, scopedAffiliations, token, user_id) values (null, ?, ?, ?, ?, ?, ?, ?)
+2015-12-03 18:07:01.583 [qtp202125197-15] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [null]
+2015-12-03 18:07:01.583 [qtp202125197-15] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [2] as [BOOLEAN] - [false]
+2015-12-03 18:07:01.583 [qtp202125197-15] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [3] as [VARCHAR] - [null]
+2015-12-03 18:07:01.584 [qtp202125197-15] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [4] as [VARCHAR] - [null]
+2015-12-03 18:07:01.584 [qtp202125197-15] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [5] as [VARCHAR] - [null]
+2015-12-03 18:07:01.584 [qtp202125197-15] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [6] as [VARCHAR] - [gnla3ra79olpfd3n4s5v9nls52]
+2015-12-03 18:07:01.584 [qtp202125197-15] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [7] as [BIGINT] - [7]
+2015-12-03 18:07:01.595 [qtp202125197-15] DEBUG org.hibernate.SQL  - update AuthenticatedUser set affiliations=?, firstLogin=?, homeOrganization=?, mails=?, scopedAffiliations=?, token=?, user_id=? where id=?
+2015-12-03 18:07:01.596 [qtp202125197-15] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [null]
+2015-12-03 18:07:01.596 [qtp202125197-15] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [2] as [BOOLEAN] - [true]
+2015-12-03 18:07:01.596 [qtp202125197-15] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [3] as [VARCHAR] - [null]
+2015-12-03 18:07:01.596 [qtp202125197-15] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [4] as [VARCHAR] - [null]
+2015-12-03 18:07:01.596 [qtp202125197-15] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [5] as [VARCHAR] - [null]
+2015-12-03 18:07:01.596 [qtp202125197-15] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [6] as [VARCHAR] - [gnla3ra79olpfd3n4s5v9nls52]
+2015-12-03 18:07:01.597 [qtp202125197-15] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [7] as [BIGINT] - [7]
+2015-12-03 18:07:01.597 [qtp202125197-15] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [8] as [BIGINT] - [2]
+2015-12-03 18:07:01.691 [qtp202125197-19] DEBUG org.hibernate.SQL  - select user0_.id as id1_2_, user0_.idCode as idCode2_2_, user0_.name as name3_2_, user0_.role as role4_2_, user0_.surname as surname5_2_, user0_.username as username6_2_ from User user0_ where user0_.idCode=?
+2015-12-03 18:07:01.691 [qtp202125197-19] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [39011220011]
+2015-12-03 18:07:01.692 [qtp202125197-19] DEBUG org.hibernate.SQL  - insert into AuthenticatedUser (id, affiliations, firstLogin, homeOrganization, mails, scopedAffiliations, token, user_id) values (null, ?, ?, ?, ?, ?, ?, ?)
+2015-12-03 18:07:01.692 [qtp202125197-19] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [null]
+2015-12-03 18:07:01.692 [qtp202125197-19] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [2] as [BOOLEAN] - [false]
+2015-12-03 18:07:01.692 [qtp202125197-19] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [3] as [VARCHAR] - [null]
+2015-12-03 18:07:01.692 [qtp202125197-19] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [4] as [VARCHAR] - [null]
+2015-12-03 18:07:01.693 [qtp202125197-19] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [5] as [VARCHAR] - [null]
+2015-12-03 18:07:01.693 [qtp202125197-19] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [6] as [VARCHAR] - [mo9jofds3l57p3374rlknq2n8i]
+2015-12-03 18:07:01.693 [qtp202125197-19] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [7] as [BIGINT] - [1]
+2015-12-03 18:07:01.840 [qtp202125197-15] DEBUG org.hibernate.SQL  - select authentica0_.id as id1_1_, authentica0_.created as created2_1_, authentica0_.idCode as idCode3_1_, authentica0_.name as name4_1_, authentica0_.sessionCode as sessionC5_1_, authentica0_.surname as surname6_1_, authentica0_.token as token7_1_ from AuthenticationState authentica0_ where authentica0_.token=?
+2015-12-03 18:07:01.841 [qtp202125197-15] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [2]
+2015-12-03 18:07:01.980 [main] DEBUG org.hibernate.SQL  - insert into AuthenticationState (id, created, idCode, name, sessionCode, surname, token) values (null, ?, ?, ?, ?, ?, ?)
+2015-12-03 18:07:01.982 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [TIMESTAMP] - [2015-12-03 18:07:01.979]
+2015-12-03 18:07:01.983 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [2] as [VARCHAR] - [null]
+2015-12-03 18:07:01.983 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [3] as [VARCHAR] - [null]
+2015-12-03 18:07:01.983 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [4] as [VARCHAR] - [null]
+2015-12-03 18:07:01.983 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [5] as [VARCHAR] - [null]
+2015-12-03 18:07:01.983 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [6] as [VARCHAR] - [superTOKEN]
+2015-12-03 18:07:01.988 [main] DEBUG org.hibernate.SQL  - delete from AuthenticationState where id=?
+2015-12-03 18:07:01.989 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [BIGINT] - [3]
+2015-12-03 18:07:01.990 [main] DEBUG org.hibernate.SQL  - select authentica0_.id as id1_1_, authentica0_.created as created2_1_, authentica0_.idCode as idCode3_1_, authentica0_.name as name4_1_, authentica0_.sessionCode as sessionC5_1_, authentica0_.surname as surname6_1_, authentica0_.token as token7_1_ from AuthenticationState authentica0_ where authentica0_.token=?
+2015-12-03 18:07:01.991 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [superTOKEN]
+2015-12-03 18:07:01.993 [main] DEBUG org.hibernate.SQL  - insert into AuthenticationState (id, created, idCode, name, sessionCode, surname, token) values (null, ?, ?, ?, ?, ?, ?)
+2015-12-03 18:07:01.993 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [TIMESTAMP] - [2015-12-03 18:07:01.992]
+2015-12-03 18:07:01.993 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [2] as [VARCHAR] - [null]
+2015-12-03 18:07:01.993 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [3] as [VARCHAR] - [null]
+2015-12-03 18:07:01.994 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [4] as [VARCHAR] - [null]
+2015-12-03 18:07:01.994 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [5] as [VARCHAR] - [null]
+2015-12-03 18:07:01.994 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [6] as [VARCHAR] - [superTOKEN]
+2015-12-03 18:07:01.995 [main] DEBUG org.hibernate.SQL  - insert into AuthenticationState (id, created, idCode, name, sessionCode, surname, token) values (null, ?, ?, ?, ?, ?, ?)
+2015-12-03 18:07:01.995 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [TIMESTAMP] - [2015-12-03 18:07:01.992]
+2015-12-03 18:07:01.995 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [2] as [VARCHAR] - [null]
+2015-12-03 18:07:01.995 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [3] as [VARCHAR] - [null]
+2015-12-03 18:07:01.995 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [4] as [VARCHAR] - [null]
+2015-12-03 18:07:01.996 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [5] as [VARCHAR] - [null]
+2015-12-03 18:07:01.996 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [6] as [VARCHAR] - [superTOKEN]
+2015-12-03 18:07:01.998 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Error: 23505, SQLState: 23505
+2015-12-03 18:07:01.998 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Unique index or primary key violation: "UK_K1YE5EWCCVFX8V6BQXMTR9FPE_INDEX_4 ON PUBLIC.AUTHENTICATIONSTATE(TOKEN) VALUES ('superTOKEN', 4)"; SQL statement:
+insert into AuthenticationState (id, created, idCode, name, sessionCode, surname, token) values (null, ?, ?, ?, ?, ?, ?) [23505-187]
+2015-12-03 18:07:02.004 [main] DEBUG org.hibernate.SQL  - insert into AuthenticationState (id, created, idCode, name, sessionCode, surname, token) values (null, ?, ?, ?, ?, ?, ?)
+2015-12-03 18:07:02.004 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [TIMESTAMP] - [2015-12-03 18:07:02.004]
+2015-12-03 18:07:02.005 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [2] as [VARCHAR] - [null]
+2015-12-03 18:07:02.005 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [3] as [VARCHAR] - [null]
+2015-12-03 18:07:02.005 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [4] as [VARCHAR] - [null]
+2015-12-03 18:07:02.005 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [5] as [VARCHAR] - [null]
+2015-12-03 18:07:02.005 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [6] as [VARCHAR] - [superTOKEN]
+2015-12-03 18:07:02.007 [main] DEBUG org.hibernate.SQL  - delete from AuthenticationState where id=?
+2015-12-03 18:07:02.008 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [BIGINT] - [6]
+2015-12-03 18:07:02.009 [main] DEBUG org.hibernate.SQL  - select authentica0_.id as id1_1_, authentica0_.created as created2_1_, authentica0_.idCode as idCode3_1_, authentica0_.name as name4_1_, authentica0_.sessionCode as sessionC5_1_, authentica0_.surname as surname6_1_, authentica0_.token as token7_1_ from AuthenticationState authentica0_ where authentica0_.token=?
+2015-12-03 18:07:02.010 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [testTOKEN]
+2015-12-03 18:07:02.662 [main] DEBUG org.hibernate.SQL  - insert into User (id, idCode, name, role, surname, username) values (null, ?, ?, ?, ?, ?)
+2015-12-03 18:07:02.662 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [12345678969]
+2015-12-03 18:07:02.662 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [2] as [VARCHAR] - [Mati2]
+2015-12-03 18:07:02.662 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [4] as [VARCHAR] - [Maasikas2]
+2015-12-03 18:07:02.662 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [5] as [VARCHAR] - [mati2.maasikas2]
+2015-12-03 18:07:02.663 [main] DEBUG org.hibernate.SQL  - insert into AuthenticatedUser (id, affiliations, firstLogin, homeOrganization, mails, scopedAffiliations, token, user_id) values (null, ?, ?, ?, ?, ?, ?, ?)
+2015-12-03 18:07:02.664 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [null]
+2015-12-03 18:07:02.664 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [2] as [BOOLEAN] - [false]
+2015-12-03 18:07:02.664 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [3] as [VARCHAR] - [null]
+2015-12-03 18:07:02.664 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [4] as [VARCHAR] - [null]
+2015-12-03 18:07:02.664 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [5] as [VARCHAR] - [null]
+2015-12-03 18:07:02.664 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [6] as [VARCHAR] - [token1]
+2015-12-03 18:07:02.664 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [7] as [BIGINT] - [8]
+2015-12-03 18:07:02.665 [main] DEBUG org.hibernate.SQL  - insert into AuthenticatedUser (id, affiliations, firstLogin, homeOrganization, mails, scopedAffiliations, token, user_id) values (null, ?, ?, ?, ?, ?, ?, ?)
+2015-12-03 18:07:02.665 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [null]
+2015-12-03 18:07:02.665 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [2] as [BOOLEAN] - [false]
+2015-12-03 18:07:02.665 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [3] as [VARCHAR] - [null]
+2015-12-03 18:07:02.665 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [4] as [VARCHAR] - [null]
+2015-12-03 18:07:02.665 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [5] as [VARCHAR] - [null]
+2015-12-03 18:07:02.665 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [6] as [VARCHAR] - [token2]
+2015-12-03 18:07:02.665 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [7] as [BIGINT] - [8]
+2015-12-03 18:07:02.666 [main] DEBUG org.hibernate.SQL  - select authentica0_.id as id1_0_, authentica0_.affiliations as affiliat2_0_, authentica0_.firstLogin as firstLog3_0_, authentica0_.homeOrganization as homeOrga4_0_, authentica0_.mails as mails5_0_, authentica0_.scopedAffiliations as scopedAf6_0_, authentica0_.token as token7_0_, authentica0_.user_id as user_id8_0_ from AuthenticatedUser authentica0_ where authentica0_.token=?
+2015-12-03 18:07:02.667 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [token1]
+2015-12-03 18:07:02.668 [main] DEBUG org.hibernate.SQL  - select authentica0_.id as id1_0_, authentica0_.affiliations as affiliat2_0_, authentica0_.firstLogin as firstLog3_0_, authentica0_.homeOrganization as homeOrga4_0_, authentica0_.mails as mails5_0_, authentica0_.scopedAffiliations as scopedAf6_0_, authentica0_.token as token7_0_, authentica0_.user_id as user_id8_0_ from AuthenticatedUser authentica0_ where authentica0_.token=?
+2015-12-03 18:07:02.668 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [token2]
+2015-12-03 18:07:02.669 [main] DEBUG org.hibernate.SQL  - delete from AuthenticatedUser where id=?
+2015-12-03 18:07:02.669 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [BIGINT] - [4]
+2015-12-03 18:07:02.670 [main] DEBUG org.hibernate.SQL  - delete from AuthenticatedUser where id=?
+2015-12-03 18:07:02.670 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [BIGINT] - [5]
+2015-12-03 18:07:02.670 [main] DEBUG org.hibernate.SQL  - delete from User where id=?
+2015-12-03 18:07:02.670 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [BIGINT] - [8]
+2015-12-03 18:07:02.672 [main] DEBUG org.hibernate.SQL  - insert into User (id, idCode, name, role, surname, username) values (null, ?, ?, ?, ?, ?)
+2015-12-03 18:07:02.672 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [12345678969]
+2015-12-03 18:07:02.672 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [2] as [VARCHAR] - [Mati2]
+2015-12-03 18:07:02.672 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [4] as [VARCHAR] - [Maasikas2]
+2015-12-03 18:07:02.672 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [5] as [VARCHAR] - [mati2.maasikas2]
+2015-12-03 18:07:02.673 [main] DEBUG org.hibernate.SQL  - insert into AuthenticatedUser (id, affiliations, firstLogin, homeOrganization, mails, scopedAffiliations, token, user_id) values (null, ?, ?, ?, ?, ?, ?, ?)
+2015-12-03 18:07:02.673 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [null]
+2015-12-03 18:07:02.673 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [2] as [BOOLEAN] - [false]
+2015-12-03 18:07:02.673 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [3] as [VARCHAR] - [null]
+2015-12-03 18:07:02.673 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [4] as [VARCHAR] - [null]
+2015-12-03 18:07:02.673 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [5] as [VARCHAR] - [null]
+2015-12-03 18:07:02.673 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [6] as [VARCHAR] - [123123]
+2015-12-03 18:07:02.673 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [7] as [BIGINT] - [9]
+2015-12-03 18:07:02.674 [main] DEBUG org.hibernate.SQL  - delete from AuthenticatedUser where id=?
+2015-12-03 18:07:02.674 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [BIGINT] - [6]
+2015-12-03 18:07:02.675 [main] DEBUG org.hibernate.SQL  - delete from User where id=?
+2015-12-03 18:07:02.675 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [BIGINT] - [9]
+2015-12-03 18:07:02.676 [main] DEBUG org.hibernate.SQL  - insert into User (id, idCode, name, role, surname, username) values (null, ?, ?, ?, ?, ?)
+2015-12-03 18:07:02.676 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [12345678969]
+2015-12-03 18:07:02.676 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [2] as [VARCHAR] - [Mati2]
+2015-12-03 18:07:02.676 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [4] as [VARCHAR] - [Maasikas2]
+2015-12-03 18:07:02.676 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [5] as [VARCHAR] - [mati2.maasikas2]
+2015-12-03 18:07:02.677 [main] DEBUG org.hibernate.SQL  - insert into AuthenticatedUser (id, affiliations, firstLogin, homeOrganization, mails, scopedAffiliations, token, user_id) values (null, ?, ?, ?, ?, ?, ?, ?)
+2015-12-03 18:07:02.677 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [null]
+2015-12-03 18:07:02.677 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [2] as [BOOLEAN] - [false]
+2015-12-03 18:07:02.677 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [3] as [VARCHAR] - [null]
+2015-12-03 18:07:02.677 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [4] as [VARCHAR] - [null]
+2015-12-03 18:07:02.677 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [5] as [VARCHAR] - [null]
+2015-12-03 18:07:02.677 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [6] as [VARCHAR] - [123123]
+2015-12-03 18:07:02.678 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [7] as [BIGINT] - [10]
+2015-12-03 18:07:02.678 [main] DEBUG org.hibernate.SQL  - delete from AuthenticatedUser where id=?
+2015-12-03 18:07:02.679 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [BIGINT] - [7]
+2015-12-03 18:07:02.679 [main] DEBUG org.hibernate.SQL  - select authentica0_.id as id1_0_, authentica0_.affiliations as affiliat2_0_, authentica0_.firstLogin as firstLog3_0_, authentica0_.homeOrganization as homeOrga4_0_, authentica0_.mails as mails5_0_, authentica0_.scopedAffiliations as scopedAf6_0_, authentica0_.token as token7_0_, authentica0_.user_id as user_id8_0_ from AuthenticatedUser authentica0_ where authentica0_.token=?
+2015-12-03 18:07:02.679 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [123123]
+2015-12-03 18:07:02.679 [main] DEBUG org.hibernate.SQL  - delete from User where id=?
+2015-12-03 18:07:02.679 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [BIGINT] - [10]
+2015-12-03 18:07:02.681 [main] DEBUG org.hibernate.SQL  - insert into User (id, idCode, name, role, surname, username) values (null, ?, ?, ?, ?, ?)
+2015-12-03 18:07:02.681 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [12345678969]
+2015-12-03 18:07:02.681 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [2] as [VARCHAR] - [Mati2]
+2015-12-03 18:07:02.681 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [4] as [VARCHAR] - [Maasikas2]
+2015-12-03 18:07:02.681 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [5] as [VARCHAR] - [mati2.maasikas2]
+2015-12-03 18:07:02.682 [main] DEBUG org.hibernate.SQL  - insert into AuthenticatedUser (id, affiliations, firstLogin, homeOrganization, mails, scopedAffiliations, token, user_id) values (null, ?, ?, ?, ?, ?, ?, ?)
+2015-12-03 18:07:02.682 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [null]
+2015-12-03 18:07:02.682 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [2] as [BOOLEAN] - [false]
+2015-12-03 18:07:02.682 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [3] as [VARCHAR] - [null]
+2015-12-03 18:07:02.682 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [4] as [VARCHAR] - [null]
+2015-12-03 18:07:02.682 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [5] as [VARCHAR] - [null]
+2015-12-03 18:07:02.682 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [6] as [VARCHAR] - [123123]
+2015-12-03 18:07:02.682 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [7] as [BIGINT] - [11]
+2015-12-03 18:07:02.683 [main] DEBUG org.hibernate.SQL  - select authentica0_.id as id1_0_, authentica0_.affiliations as affiliat2_0_, authentica0_.firstLogin as firstLog3_0_, authentica0_.homeOrganization as homeOrga4_0_, authentica0_.mails as mails5_0_, authentica0_.scopedAffiliations as scopedAf6_0_, authentica0_.token as token7_0_, authentica0_.user_id as user_id8_0_ from AuthenticatedUser authentica0_ where authentica0_.token=?
+2015-12-03 18:07:02.683 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [123123]
+2015-12-03 18:07:02.684 [main] DEBUG org.hibernate.SQL  - delete from AuthenticatedUser where id=?
+2015-12-03 18:07:02.684 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [BIGINT] - [8]
+2015-12-03 18:07:02.684 [main] DEBUG org.hibernate.SQL  - delete from User where id=?
+2015-12-03 18:07:02.684 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [BIGINT] - [11]
+2015-12-03 18:07:02.685 [main] DEBUG org.hibernate.SQL  - insert into User (id, idCode, name, role, surname, username) values (null, ?, ?, ?, ?, ?)
+2015-12-03 18:07:02.686 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [12345678969]
+2015-12-03 18:07:02.686 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [2] as [VARCHAR] - [Mati2]
+2015-12-03 18:07:02.686 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [4] as [VARCHAR] - [Maasikas2]
+2015-12-03 18:07:02.686 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [5] as [VARCHAR] - [mati2.maasikas2]
+2015-12-03 18:07:02.686 [main] DEBUG org.hibernate.SQL  - insert into AuthenticatedUser (id, affiliations, firstLogin, homeOrganization, mails, scopedAffiliations, token, user_id) values (null, ?, ?, ?, ?, ?, ?, ?)
+2015-12-03 18:07:02.687 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [null]
+2015-12-03 18:07:02.687 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [2] as [BOOLEAN] - [false]
+2015-12-03 18:07:02.687 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [3] as [VARCHAR] - [null]
+2015-12-03 18:07:02.687 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [4] as [VARCHAR] - [null]
+2015-12-03 18:07:02.687 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [5] as [VARCHAR] - [null]
+2015-12-03 18:07:02.687 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [6] as [VARCHAR] - [123123]
+2015-12-03 18:07:02.687 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [7] as [BIGINT] - [12]
+2015-12-03 18:07:02.687 [main] DEBUG org.hibernate.SQL  - insert into AuthenticatedUser (id, affiliations, firstLogin, homeOrganization, mails, scopedAffiliations, token, user_id) values (null, ?, ?, ?, ?, ?, ?, ?)
+2015-12-03 18:07:02.688 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [null]
+2015-12-03 18:07:02.688 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [2] as [BOOLEAN] - [false]
+2015-12-03 18:07:02.688 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [3] as [VARCHAR] - [null]
+2015-12-03 18:07:02.688 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [4] as [VARCHAR] - [null]
+2015-12-03 18:07:02.688 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [5] as [VARCHAR] - [null]
+2015-12-03 18:07:02.688 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [6] as [VARCHAR] - [123123]
+2015-12-03 18:07:02.688 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [7] as [BIGINT] - [12]
+2015-12-03 18:07:02.688 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Error: 23505, SQLState: 23505
+2015-12-03 18:07:02.688 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Unique index or primary key violation: "UK_6HHRTITDOXLSBD7RTXDKKIDB1_INDEX_8 ON PUBLIC.AUTHENTICATEDUSER(TOKEN) VALUES ('123123', 9)"; SQL statement:
+insert into AuthenticatedUser (id, affiliations, firstLogin, homeOrganization, mails, scopedAffiliations, token, user_id) values (null, ?, ?, ?, ?, ?, ?, ?) [23505-187]
+2015-12-03 18:07:02.778 [qtp202125197-15] DEBUG org.hibernate.SQL  - select authentica0_.id as id1_0_, authentica0_.affiliations as affiliat2_0_, authentica0_.firstLogin as firstLog3_0_, authentica0_.homeOrganization as homeOrga4_0_, authentica0_.mails as mails5_0_, authentica0_.scopedAffiliations as scopedAf6_0_, authentica0_.token as token7_0_, authentica0_.user_id as user_id8_0_ from AuthenticatedUser authentica0_ where authentica0_.token=?
+2015-12-03 18:07:02.778 [qtp202125197-15] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [token]
+2015-12-03 18:07:02.779 [qtp202125197-15] DEBUG org.hibernate.SQL  - select user0_.id as id1_2_0_, user0_.idCode as idCode2_2_0_, user0_.name as name3_2_0_, user0_.role as role4_2_0_, user0_.surname as surname5_2_0_, user0_.username as username6_2_0_ from User user0_ where user0_.id=?
+2015-12-03 18:07:02.779 [qtp202125197-15] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [BIGINT] - [1]
+2015-12-03 18:07:02.853 [qtp202125197-19] DEBUG org.hibernate.SQL  - select user0_.id as id1_2_, user0_.idCode as idCode2_2_, user0_.name as name3_2_, user0_.role as role4_2_, user0_.surname as surname5_2_, user0_.username as username6_2_ from User user0_ where user0_.username=?
+2015-12-03 18:07:02.854 [qtp202125197-19] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [notexisting.user]
+2015-12-03 18:07:02.943 [qtp202125197-19] DEBUG org.hibernate.SQL  - select user0_.id as id1_2_, user0_.idCode as idCode2_2_, user0_.name as name3_2_, user0_.role as role4_2_, user0_.surname as surname5_2_, user0_.username as username6_2_ from User user0_ where user0_.username=?
+2015-12-03 18:07:02.944 [qtp202125197-19] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [mati.maasikas]
+2015-12-03 18:07:02.970 [qtp202125197-15] DEBUG org.hibernate.SQL  - select user0_.id as id1_2_, user0_.idCode as idCode2_2_, user0_.name as name3_2_, user0_.role as role4_2_, user0_.surname as surname5_2_, user0_.username as username6_2_ from User user0_ where user0_.username=?
+2015-12-03 18:07:02.970 [qtp202125197-15] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [peeter.paan]
+2015-12-03 18:07:02.994 [qtp202125197-21] DEBUG org.hibernate.SQL  - select user0_.id as id1_2_, user0_.idCode as idCode2_2_, user0_.name as name3_2_, user0_.role as role4_2_, user0_.surname as surname5_2_, user0_.username as username6_2_ from User user0_ where user0_.username=?
+2015-12-03 18:07:02.994 [qtp202125197-21] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [voldemar.vapustav]
+2015-12-03 18:07:03.300 [main] DEBUG org.hibernate.SQL  - select user0_.id as id1_2_, user0_.idCode as idCode2_2_, user0_.name as name3_2_, user0_.role as role4_2_, user0_.surname as surname5_2_, user0_.username as username6_2_ from User user0_ where user0_.username like ?
+2015-12-03 18:07:03.301 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [mati.maasikas%]
+2015-12-03 18:07:03.304 [main] DEBUG org.hibernate.SQL  - select user0_.id as id1_2_, user0_.idCode as idCode2_2_, user0_.name as name3_2_, user0_.role as role4_2_, user0_.surname as surname5_2_, user0_.username as username6_2_ from User user0_ where user0_.username like ?
+2015-12-03 18:07:03.304 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [there.is.no.such.username%]
+2015-12-03 18:07:03.305 [main] DEBUG org.hibernate.SQL  - insert into User (id, idCode, name, role, surname, username) values (null, ?, ?, ?, ?, ?)
+2015-12-03 18:07:03.305 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [12345678969]
+2015-12-03 18:07:03.306 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [2] as [VARCHAR] - [Mati2]
+2015-12-03 18:07:03.306 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [4] as [VARCHAR] - [Maasikas2]
+2015-12-03 18:07:03.306 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [5] as [VARCHAR] - [mati2.maasikas2]
+2015-12-03 18:07:03.307 [main] DEBUG org.hibernate.SQL  - delete from User where id=?
+2015-12-03 18:07:03.307 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [BIGINT] - [13]
+2015-12-03 18:07:03.307 [main] DEBUG org.hibernate.SQL  - select user0_.id as id1_2_, user0_.idCode as idCode2_2_, user0_.name as name3_2_, user0_.role as role4_2_, user0_.surname as surname5_2_, user0_.username as username6_2_ from User user0_ where user0_.idCode=?
+2015-12-03 18:07:03.307 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [12345678969]
+2015-12-03 18:07:03.308 [main] DEBUG org.hibernate.SQL  - insert into User (id, idCode, name, role, surname, username) values (null, ?, ?, ?, ?, ?)
+2015-12-03 18:07:03.309 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [12345678969]
+2015-12-03 18:07:03.309 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [2] as [VARCHAR] - [Mati2]
+2015-12-03 18:07:03.309 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [4] as [VARCHAR] - [Maasikas2]
+2015-12-03 18:07:03.309 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [5] as [VARCHAR] - [mati2.maasikas2]
+2015-12-03 18:07:03.310 [main] DEBUG org.hibernate.SQL  - select user0_.id as id1_2_, user0_.idCode as idCode2_2_, user0_.name as name3_2_, user0_.role as role4_2_, user0_.surname as surname5_2_, user0_.username as username6_2_ from User user0_ where user0_.idCode=?
+2015-12-03 18:07:03.310 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [12345678969]
+2015-12-03 18:07:03.311 [main] DEBUG org.hibernate.SQL  - delete from User where id=?
+2015-12-03 18:07:03.311 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [BIGINT] - [14]
+2015-12-03 18:07:03.315 [main] DEBUG org.hibernate.SQL  - insert into User (id, idCode, name, role, surname, username) values (null, ?, ?, ?, ?, ?)
+2015-12-03 18:07:03.315 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [12345678901]
+2015-12-03 18:07:03.315 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [2] as [VARCHAR] - [Mati]
+2015-12-03 18:07:03.315 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [4] as [VARCHAR] - [Maasikas]
+2015-12-03 18:07:03.315 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [5] as [VARCHAR] - [mati.maasikas]
+2015-12-03 18:07:03.316 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Error: 23505, SQLState: 23505
+2015-12-03 18:07:03.316 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Unique index or primary key violation: "UK_JREODF78A7PL5QIDFH43AXDFB_INDEX_2 ON PUBLIC.USER(USERNAME) VALUES ('mati.maasikas', 1)"; SQL statement:
+insert into User (id, idCode, name, role, surname, username) values (null, ?, ?, ?, ?, ?) [23505-187]
+2015-12-03 18:07:03.317 [main] DEBUG org.hibernate.SQL  - select user0_.id as id1_2_, user0_.idCode as idCode2_2_, user0_.name as name3_2_, user0_.role as role4_2_, user0_.surname as surname5_2_, user0_.username as username6_2_ from User user0_ where user0_.idCode=?
+2015-12-03 18:07:03.317 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [39011220011]
+2015-12-03 18:07:03.318 [main] DEBUG org.hibernate.SQL  - select user0_.id as id1_2_, user0_.idCode as idCode2_2_, user0_.name as name3_2_, user0_.role as role4_2_, user0_.surname as surname5_2_, user0_.username as username6_2_ from User user0_ where user0_.idCode=?
+2015-12-03 18:07:03.319 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [39011220011]
+2015-12-03 18:07:03.319 [main] DEBUG org.hibernate.SQL  - select user0_.id as id1_2_, user0_.idCode as idCode2_2_, user0_.name as name3_2_, user0_.role as role4_2_, user0_.surname as surname5_2_, user0_.username as username6_2_ from User user0_ where user0_.idCode=?
+2015-12-03 18:07:03.319 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [39011220011]
+2015-12-03 18:07:03.321 [main] DEBUG org.hibernate.SQL  - select user0_.id as id1_2_, user0_.idCode as idCode2_2_, user0_.name as name3_2_, user0_.role as role4_2_, user0_.surname as surname5_2_, user0_.username as username6_2_ from User user0_ where user0_.username=?
+2015-12-03 18:07:03.321 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [mati.maasikas]
+2015-12-03 18:07:03.322 [main] DEBUG org.hibernate.SQL  - select user0_.id as id1_2_, user0_.idCode as idCode2_2_, user0_.name as name3_2_, user0_.role as role4_2_, user0_.surname as surname5_2_, user0_.username as username6_2_ from User user0_ where user0_.username=?
+2015-12-03 18:07:03.322 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [peeter.paan]
+2015-12-03 18:07:03.322 [main] DEBUG org.hibernate.SQL  - select user0_.id as id1_2_, user0_.idCode as idCode2_2_, user0_.name as name3_2_, user0_.role as role4_2_, user0_.surname as surname5_2_, user0_.username as username6_2_ from User user0_ where user0_.username=?
+2015-12-03 18:07:03.323 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [voldemar.vapustav]

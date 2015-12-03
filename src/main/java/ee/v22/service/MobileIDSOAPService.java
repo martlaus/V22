@@ -35,6 +35,7 @@ public class MobileIDSOAPService {
     protected static final String MOBILE_AUTHENTICATE_MESSAGING_MODE = "asynchClientServer";
     protected static final String AUTHENTICATION_COMPLETE = "USER_AUTHENTICATED";
     protected static final String AUTHENTICATION_IN_PROGRESS = "OUTSTANDING_TRANSACTION";
+    protected static final String MOBILE_LANGUAGE = "EST";
 
     private static final int POLLING_INTERVAL_IN_MILLISECONDS = 5000;
 
@@ -42,7 +43,7 @@ public class MobileIDSOAPService {
      * Mobile-ID supports only these four languages
      */
     private static final Collection<String> supportedLanguages = Arrays.asList("est", "eng", "rus", "lit");
-
+    
 
     @Inject
     private Configuration configuration;
@@ -53,10 +54,10 @@ public class MobileIDSOAPService {
     public MobileAuthenticateResponse authenticate(String phoneNumber, String idCode)
             throws SOAPException {
 
-
         Map<String, String> childElements = new HashMap<>();
         childElements.put("IDCode", idCode);
         childElements.put("PhoneNo", phoneNumber);
+        childElements.put("Language", MOBILE_LANGUAGE);
         childElements.put("ServiceName", configuration.getString(ConfigurationProperties.MOBILEID_SERVICENAME));
         childElements.put("MessagingMode", MOBILE_AUTHENTICATE_MESSAGING_MODE);
         String messageToDisplay = configuration.getString(ConfigurationProperties.MOBILEID_MESSAGE_TO_DISPLAY);

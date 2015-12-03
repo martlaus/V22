@@ -4290,3 +4290,436 @@ javax.ws.rs.NotAuthorizedException: HTTP 401 Unauthorized
 2015-12-03 15:20:13.717 [shutdown-hook] INFO  ee.v22.ApplicationLauncher  - Stopping server...
 2015-12-03 15:20:13.737 [shutdown-hook] INFO  org.eclipse.jetty.server.ServerConnector  - Stopped ServerConnector@2052f095{HTTP/1.1}{0.0.0.0:1986}
 2015-12-03 15:20:13.752 [shutdown-hook] INFO  org.eclipse.jetty.server.handler.ContextHandler  - Stopped o.e.j.s.ServletContextHandler@4544ab46{/,null,UNAVAILABLE}
+2015-12-03 17:48:41.301 [main] INFO  ee.v22.guice.GuiceInjector  - Loading modules annotated with @Module...
+2015-12-03 17:48:41.457 [main] INFO  org.reflections.Reflections  - Reflections took 110 ms to scan 1 urls, producing 27 keys and 53 values 
+2015-12-03 17:48:41.472 [main] INFO  ee.v22.guice.GuiceInjector  - 3 modules loaded.
+2015-12-03 17:48:41.755 [main] INFO  ee.v22.guice.provider.ConfigurationProvider  - No custom configuration file set.
+2015-12-03 17:48:41.786 [main] INFO  ee.v22.guice.provider.ConfigurationProvider  - Default configuration loaded from [file:/home/oliver/git/V22/target/classes/default.properties]
+2015-12-03 17:48:41.793 [main] INFO  ee.v22.ApplicationManager  - Application is not running.
+2015-12-03 17:48:41.794 [main] INFO  ee.v22.ApplicationLauncher  - Starting application server on port [8080]
+2015-12-03 17:48:41.796 [main] INFO  ee.v22.server.EmbeddedJetty  - Starting jetty on port 8080
+2015-12-03 17:48:41.809 [main] INFO  org.eclipse.jetty.util.log  - Logging initialized @792ms
+2015-12-03 17:48:41.867 [main] INFO  org.eclipse.jetty.server.Server  - jetty-9.2.10.v20150310
+2015-12-03 17:48:42.512 [main] INFO  org.eclipse.jetty.server.handler.ContextHandler  - Started o.e.j.s.ServletContextHandler@7e38a7fe{/,null,AVAILABLE}
+2015-12-03 17:48:42.522 [main] INFO  org.eclipse.jetty.server.ServerConnector  - Started ServerConnector@36676c1a{HTTP/1.1}{0.0.0.0:8080}
+2015-12-03 17:48:42.522 [main] INFO  org.eclipse.jetty.server.Server  - Started @1507ms
+2015-12-03 17:48:42.524 [command-listener] INFO  ee.v22.ApplicationManager  - Command listener started on port [9999]
+2015-12-03 17:48:55.311 [qtp1354003114-20] INFO  ee.v22.guice.provider.EntityManagerFactoryProvider  - Initializing EntityManagerFactory properties [{hibernate.connection.driver_class=com.mysql.jdbc.Driver, hibernate.hbm2ddl.auto=validate, hibernate.c3p0.initialpoolsize=5, hibernate.c3p0.max_size=100, hibernate.c3p0.max_statements=50, hibernate.c3p0.idle_test_period=400, hibernate.c3p0.preferredTestQuery=SELECT 1, hibernate.dialect=org.hibernate.dialect.MySQLDialect, hibernate.c3p0.min_size=5, hibernate.connection.password=root, hibernate.connection.username=root, hibernate.connection.url=jdbc:mysql://127.0.0.1/v22, hibernate.c3p0.timeout=300, hibernate.c3p0.testConnectionOnCheckin=true, hibernate.show_sql=false, hibernate.c3p0.acquire_increment=1}]
+2015-12-03 17:48:55.869 [qtp1354003114-20] INFO  com.mchange.v2.log.MLog  - MLog clients using log4j logging.
+2015-12-03 17:48:56.007 [qtp1354003114-20] INFO  com.mchange.v2.c3p0.C3P0Registry  - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+2015-12-03 17:48:56.120 [qtp1354003114-20] INFO  com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource  - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@cd7e259d [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@48a22612 [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsx9dt053odkh6z3s|70548b19, idleConnectionTestPeriod -> 400, initialPoolSize -> 5, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 300, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 50, maxStatementsPerConnection -> 0, minPoolSize -> 5, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@f6afcfbc [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> z8kfsx9dt053odkh6z3s|41eeef57, jdbcUrl -> jdbc:mysql://127.0.0.1/v22, properties -> {user=******, password=******} ], preferredTestQuery -> SELECT 1, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> true, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> z8kfsx9dt053odkh6z3s|21aaf77f, numHelperThreads -> 3 ]
+2015-12-03 17:51:24.172 [shutdown-hook] INFO  ee.v22.ApplicationLauncher  - Stopping server...
+2015-12-03 17:51:24.176 [shutdown-hook] INFO  org.eclipse.jetty.server.ServerConnector  - Stopped ServerConnector@36676c1a{HTTP/1.1}{0.0.0.0:8080}
+2015-12-03 17:51:24.182 [shutdown-hook] INFO  org.eclipse.jetty.server.handler.ContextHandler  - Stopped o.e.j.s.ServletContextHandler@7e38a7fe{/,null,UNAVAILABLE}
+2015-12-03 17:51:32.670 [main] INFO  ee.v22.guice.GuiceInjector  - Loading modules annotated with @Module...
+2015-12-03 17:51:32.858 [main] INFO  org.reflections.Reflections  - Reflections took 138 ms to scan 1 urls, producing 27 keys and 53 values 
+2015-12-03 17:51:32.874 [main] INFO  ee.v22.guice.GuiceInjector  - 3 modules loaded.
+2015-12-03 17:51:33.231 [main] INFO  ee.v22.guice.provider.ConfigurationProvider  - No custom configuration file set.
+2015-12-03 17:51:33.270 [main] INFO  ee.v22.guice.provider.ConfigurationProvider  - Default configuration loaded from [file:/home/oliver/git/V22/target/classes/default.properties]
+2015-12-03 17:51:33.279 [main] INFO  ee.v22.ApplicationManager  - Application is not running.
+2015-12-03 17:51:33.280 [main] INFO  ee.v22.ApplicationLauncher  - Starting application server on port [8080]
+2015-12-03 17:51:33.283 [main] INFO  ee.v22.server.EmbeddedJetty  - Starting jetty on port 8080
+2015-12-03 17:51:33.302 [main] INFO  org.eclipse.jetty.util.log  - Logging initialized @1103ms
+2015-12-03 17:51:33.375 [main] INFO  org.eclipse.jetty.server.Server  - jetty-9.2.10.v20150310
+2015-12-03 17:51:34.178 [main] INFO  org.eclipse.jetty.server.handler.ContextHandler  - Started o.e.j.s.ServletContextHandler@2788d0fe{/,null,AVAILABLE}
+2015-12-03 17:51:34.189 [main] INFO  org.eclipse.jetty.server.ServerConnector  - Started ServerConnector@6a2eea2a{HTTP/1.1}{0.0.0.0:8080}
+2015-12-03 17:51:34.189 [main] INFO  org.eclipse.jetty.server.Server  - Started @1992ms
+2015-12-03 17:51:34.191 [command-listener] INFO  ee.v22.ApplicationManager  - Command listener started on port [9999]
+2015-12-03 17:51:40.551 [qtp1178587240-20] INFO  ee.v22.guice.provider.EntityManagerFactoryProvider  - Initializing EntityManagerFactory properties [{hibernate.connection.driver_class=com.mysql.jdbc.Driver, hibernate.hbm2ddl.auto=validate, hibernate.c3p0.initialpoolsize=5, hibernate.c3p0.max_size=100, hibernate.c3p0.max_statements=50, hibernate.c3p0.idle_test_period=400, hibernate.c3p0.preferredTestQuery=SELECT 1, hibernate.dialect=org.hibernate.dialect.MySQLDialect, hibernate.c3p0.min_size=5, hibernate.connection.password=root, hibernate.connection.username=root, hibernate.connection.url=jdbc:mysql://127.0.0.1/v22, hibernate.c3p0.timeout=300, hibernate.c3p0.testConnectionOnCheckin=true, hibernate.show_sql=false, hibernate.c3p0.acquire_increment=1}]
+2015-12-03 17:51:41.231 [qtp1178587240-20] INFO  com.mchange.v2.log.MLog  - MLog clients using log4j logging.
+2015-12-03 17:51:41.431 [qtp1178587240-20] INFO  com.mchange.v2.c3p0.C3P0Registry  - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+2015-12-03 17:51:41.639 [qtp1178587240-20] INFO  com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource  - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@5ca067c0 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@232fd515 [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsx9dt08nabihbgjp|159da3a, idleConnectionTestPeriod -> 400, initialPoolSize -> 5, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 300, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 50, maxStatementsPerConnection -> 0, minPoolSize -> 5, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@b47099a6 [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> z8kfsx9dt08nabihbgjp|838880b, jdbcUrl -> jdbc:mysql://127.0.0.1/v22, properties -> {user=******, password=******} ], preferredTestQuery -> SELECT 1, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> true, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> z8kfsx9dt08nabihbgjp|3f5226d9, numHelperThreads -> 3 ]
+2015-12-03 17:54:28.666 [main] INFO  ee.v22.guice.GuiceInjector  - Loading modules annotated with @Module...
+2015-12-03 17:54:28.844 [main] INFO  org.reflections.Reflections  - Reflections took 132 ms to scan 2 urls, producing 41 keys and 113 values 
+2015-12-03 17:54:28.858 [main] INFO  ee.v22.guice.GuiceInjector  - 5 modules loaded.
+2015-12-03 17:54:29.128 [main] INFO  ee.v22.guice.provider.ConfigurationTestProvider  - No custom configuration file set.
+2015-12-03 17:54:29.163 [main] INFO  ee.v22.guice.provider.ConfigurationTestProvider  - Default configuration loaded from [file:/home/oliver/git/V22/target/test-classes/test.properties]
+2015-12-03 17:54:29.219 [main] INFO  ee.v22.ApplicationManager  - Application is not running.
+2015-12-03 17:54:29.220 [main] INFO  ee.v22.ApplicationLauncher  - Starting application server on port [1986]
+2015-12-03 17:54:29.222 [main] INFO  ee.v22.server.EmbeddedJetty  - Starting jetty on port 1986
+2015-12-03 17:54:29.243 [main] INFO  org.eclipse.jetty.util.log  - Logging initialized @932ms
+2015-12-03 17:54:29.313 [main] INFO  org.eclipse.jetty.server.Server  - jetty-9.2.10.v20150310
+2015-12-03 17:54:29.959 [main] INFO  org.eclipse.jetty.server.handler.ContextHandler  - Started o.e.j.s.ServletContextHandler@63cd604c{/,null,AVAILABLE}
+2015-12-03 17:54:29.969 [main] INFO  org.eclipse.jetty.server.ServerConnector  - Started ServerConnector@3a1d593e{HTTP/1.1}{0.0.0.0:1986}
+2015-12-03 17:54:29.970 [main] INFO  org.eclipse.jetty.server.Server  - Started @1660ms
+2015-12-03 17:54:29.971 [command-listener] INFO  ee.v22.ApplicationManager  - Command listener started on port [1987]
+2015-12-03 17:54:34.071 [main] INFO  ee.v22.guice.provider.EntityManagerFactoryTestProvider  - Initializing EntityManagerFactory properties [{hibernate.connection.driver_class=org.h2.Driver, hibernate.hbm2ddl.auto=create, hibernate.connection.url=jdbc:h2:mem:test;MODE=MySQL, hibernate.dialect=org.hibernate.dialect.H2Dialect, hibernate.show_sql=true}]
+2015-12-03 17:54:35.504 [qtp1233705144-16] ERROR ee.v22.rest.errorhandling.GenericExceptionMapper  - Handling error
+javax.ws.rs.NotFoundException: HTTP 404 Not Found
+	at org.glassfish.jersey.server.ServerRuntime$2.run(ServerRuntime.java:306)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:271)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:267)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:315)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:297)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:267)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:317)
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:292)
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:1139)
+	at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:460)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:386)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:334)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:221)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:808)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1669)
+	at com.google.inject.servlet.FilterChainInvocation.doFilter(FilterChainInvocation.java:89)
+	at com.google.inject.servlet.ManagedFilterPipeline.dispatch(ManagedFilterPipeline.java:119)
+	at com.google.inject.servlet.GuiceFilter$1.call(GuiceFilter.java:133)
+	at com.google.inject.servlet.GuiceFilter$1.call(GuiceFilter.java:130)
+	at com.google.inject.servlet.GuiceFilter$Context.call(GuiceFilter.java:203)
+	at com.google.inject.servlet.GuiceFilter.doFilter(GuiceFilter.java:130)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:585)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.eclipse.jetty.server.Server.handle(Server.java:497)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:310)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:257)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	at java.lang.Thread.run(Thread.java:745)
+2015-12-03 17:54:36.081 [qtp1233705144-16] INFO  ee.v22.service.LoginService  - User with id 55555555555 could not log in, trying to create account. 
+2015-12-03 17:54:36.115 [qtp1233705144-16] INFO  ee.v22.service.UserService  - Creating user: username = peeter.paan2; name = Peeter; surname = Pããn; idCode = 55555555555
+2015-12-03 17:54:36.146 [qtp1233705144-16] INFO  ee.v22.service.LoginService  - User peeter.paan2 with id 55555555555 logged in for the first time.
+2015-12-03 17:54:36.235 [qtp1233705144-17] INFO  ee.v22.service.LoginService  - User mati.maasikas with id 39011220011 logged in.
+2015-12-03 17:54:36.336 [qtp1233705144-17] ERROR ee.v22.rest.errorhandling.GenericExceptionMapper  - Handling error
+javax.ws.rs.NotFoundException: HTTP 404 Not Found
+	at org.glassfish.jersey.server.ServerRuntime$2.run(ServerRuntime.java:306)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:271)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:267)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:315)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:297)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:267)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:317)
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:292)
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:1139)
+	at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:460)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:386)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:334)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:221)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:808)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1669)
+	at com.google.inject.servlet.FilterChainInvocation.doFilter(FilterChainInvocation.java:89)
+	at com.google.inject.servlet.ManagedFilterPipeline.dispatch(ManagedFilterPipeline.java:119)
+	at com.google.inject.servlet.GuiceFilter$1.call(GuiceFilter.java:133)
+	at com.google.inject.servlet.GuiceFilter$1.call(GuiceFilter.java:130)
+	at com.google.inject.servlet.GuiceFilter$Context.call(GuiceFilter.java:203)
+	at com.google.inject.servlet.GuiceFilter.doFilter(GuiceFilter.java:130)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:585)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.eclipse.jetty.server.Server.handle(Server.java:497)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:310)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:257)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	at java.lang.Thread.run(Thread.java:745)
+2015-12-03 17:54:36.371 [qtp1233705144-16] INFO  ee.v22.service.MobileIDLoginService  - Invalid token.
+2015-12-03 17:54:36.371 [qtp1233705144-16] INFO  ee.v22.service.LoginService  - Authentication not valid.
+2015-12-03 17:54:36.456 [main] INFO  ee.v22.utils.FileUtils  - Getting file from test.keystore
+2015-12-03 17:54:36.457 [main] INFO  ee.v22.utils.FileUtils  - File test.keystore does not exist. Trying to load from classpath.
+2015-12-03 17:54:36.481 [main] INFO  ee.v22.utils.FileUtils  - Getting file from test.keystore
+2015-12-03 17:54:36.481 [main] INFO  ee.v22.utils.FileUtils  - File test.keystore does not exist. Trying to load from classpath.
+2015-12-03 17:54:36.680 [main] INFO  ee.v22.utils.FileUtils  - Getting file from reos_metadata.xml
+2015-12-03 17:54:36.680 [main] INFO  ee.v22.utils.FileUtils  - File reos_metadata.xml does not exist. Trying to load from classpath.
+2015-12-03 17:54:36.851 [main] INFO  ee.v22.utils.FileUtils  - Getting file from notValid.xml
+2015-12-03 17:54:36.851 [main] INFO  ee.v22.utils.FileUtils  - File notValid.xml does not exist. Trying to load from classpath.
+2015-12-03 17:54:36.973 [main] INFO  ee.v22.utils.FileUtils  - Getting file from test.keystore
+2015-12-03 17:54:36.973 [main] INFO  ee.v22.utils.FileUtils  - File test.keystore does not exist. Trying to load from classpath.
+2015-12-03 17:54:37.021 [main] INFO  ee.v22.utils.FileUtils  - Getting file from test.keystore
+2015-12-03 17:54:37.021 [main] INFO  ee.v22.utils.FileUtils  - File test.keystore does not exist. Trying to load from classpath.
+2015-12-03 17:54:37.040 [main] INFO  ee.v22.utils.FileUtils  - Getting file from test.keystore
+2015-12-03 17:54:37.040 [main] INFO  ee.v22.utils.FileUtils  - File test.keystore does not exist. Trying to load from classpath.
+2015-12-03 17:54:37.093 [main] INFO  ee.v22.service.MobileIDLoginService  - Non-Estonian mobile numbers are not allowed.
+2015-12-03 17:54:37.097 [main] INFO  ee.v22.service.MobileIDLoginService  - Invalid token.
+2015-12-03 17:54:37.104 [main] INFO  ee.v22.utils.FileUtils  - Getting file from test.keystore
+2015-12-03 17:54:37.104 [main] INFO  ee.v22.utils.FileUtils  - File test.keystore does not exist. Trying to load from classpath.
+2015-12-03 17:54:37.121 [main] INFO  ee.v22.utils.FileUtils  - Getting file from /tmp/testFileForGetFileAsStrem7311439212007446690.v22
+2015-12-03 17:54:37.122 [main] INFO  ee.v22.utils.FileUtils  - Getting file from wrong.xml
+2015-12-03 17:54:37.122 [main] INFO  ee.v22.utils.FileUtils  - File wrong.xml does not exist. Trying to load from classpath.
+2015-12-03 17:54:37.342 [qtp1233705144-16] ERROR ee.v22.rest.errorhandling.GenericExceptionMapper  - Handling error
+javax.ws.rs.NotAuthorizedException: HTTP 401 Unauthorized
+	at org.glassfish.jersey.server.filter.RolesAllowedDynamicFeature$RolesAllowedRequestFilter.filter(RolesAllowedDynamicFeature.java:140)
+	at org.glassfish.jersey.server.ContainerFilteringStage.apply(ContainerFilteringStage.java:132)
+	at org.glassfish.jersey.server.ContainerFilteringStage.apply(ContainerFilteringStage.java:68)
+	at org.glassfish.jersey.process.internal.Stages.process(Stages.java:197)
+	at org.glassfish.jersey.server.ServerRuntime$2.run(ServerRuntime.java:301)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:271)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:267)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:315)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:297)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:267)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:317)
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:292)
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:1139)
+	at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:460)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:386)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:334)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:221)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:808)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1669)
+	at com.google.inject.servlet.FilterChainInvocation.doFilter(FilterChainInvocation.java:89)
+	at com.google.inject.servlet.ManagedFilterPipeline.dispatch(ManagedFilterPipeline.java:119)
+	at com.google.inject.servlet.GuiceFilter$1.call(GuiceFilter.java:133)
+	at com.google.inject.servlet.GuiceFilter$1.call(GuiceFilter.java:130)
+	at com.google.inject.servlet.GuiceFilter$Context.call(GuiceFilter.java:203)
+	at com.google.inject.servlet.GuiceFilter.doFilter(GuiceFilter.java:130)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:585)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.eclipse.jetty.server.Server.handle(Server.java:497)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:310)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:257)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	at java.lang.Thread.run(Thread.java:745)
+2015-12-03 17:54:37.549 [main] INFO  ee.v22.service.MobileIDSOAPService  - GetMobileAuthenticateStatusResponse response is missing a Status field.
+2015-12-03 17:54:37.555 [main] INFO  ee.v22.service.MobileIDSOAPService  - SOAPResponse Fault 301: User is not a Mobile-ID client
+2015-12-03 17:54:37.559 [main] WARN  ee.v22.service.MobileIDSOAPService  - MobileAuthenticate response is not OK.
+2015-12-03 17:54:37.777 [main] WARN  ee.v22.service.MobileIDSOAPService  - MobileAuthenticate response is missing one or more required fields.
+2015-12-03 17:54:37.783 [main] INFO  ee.v22.service.UserService  - Creating user: username = john.smith; name = John; surname = Smith; idCode = idCode
+2015-12-03 17:54:37.826 [main] INFO  ee.v22.service.LoginService  - User null with id 66677788899 logged in.
+2015-12-03 17:54:37.827 [main] INFO  ee.v22.service.LoginService  - Authentication not valid.
+2015-12-03 17:54:37.832 [main] INFO  org.eclipse.jetty.server.ServerConnector  - Stopped ServerConnector@3a1d593e{HTTP/1.1}{0.0.0.0:1986}
+2015-12-03 17:54:37.834 [main] INFO  org.eclipse.jetty.server.handler.ContextHandler  - Stopped o.e.j.s.ServletContextHandler@63cd604c{/,null,UNAVAILABLE}
+2015-12-03 17:54:37.836 [main] INFO  ee.v22.server.EmbeddedJetty  - Starting jetty on port 0
+2015-12-03 17:54:37.836 [main] INFO  org.eclipse.jetty.server.Server  - jetty-9.2.10.v20150310
+2015-12-03 17:54:37.924 [main] INFO  org.eclipse.jetty.server.handler.ContextHandler  - Started o.e.j.s.ServletContextHandler@343d1d25{/,null,AVAILABLE}
+2015-12-03 17:54:37.925 [main] INFO  org.eclipse.jetty.server.ServerConnector  - Started ServerConnector@762da62b{HTTP/1.1}{0.0.0.0:43211}
+2015-12-03 17:54:37.925 [main] INFO  org.eclipse.jetty.server.Server  - Started @9616ms
+2015-12-03 17:54:37.926 [main] INFO  org.eclipse.jetty.server.ServerConnector  - Stopped ServerConnector@762da62b{HTTP/1.1}{0.0.0.0:0}
+2015-12-03 17:54:37.927 [main] INFO  org.eclipse.jetty.server.handler.ContextHandler  - Stopped o.e.j.s.ServletContextHandler@343d1d25{/,null,UNAVAILABLE}
+2015-12-03 17:54:37.929 [main] INFO  ee.v22.server.EmbeddedJetty  - Starting jetty on port 0
+2015-12-03 17:54:37.930 [main] INFO  org.eclipse.jetty.server.Server  - jetty-9.2.10.v20150310
+2015-12-03 17:54:38.021 [main] INFO  org.eclipse.jetty.server.handler.ContextHandler  - Started o.e.j.s.ServletContextHandler@6b6fd0{/,null,AVAILABLE}
+2015-12-03 17:54:38.022 [main] INFO  org.eclipse.jetty.server.ServerConnector  - Started ServerConnector@3d718248{HTTP/1.1}{0.0.0.0:33186}
+2015-12-03 17:54:38.022 [main] INFO  org.eclipse.jetty.server.Server  - Started @9713ms
+2015-12-03 17:54:38.023 [main] INFO  org.eclipse.jetty.server.ServerConnector  - Stopped ServerConnector@3d718248{HTTP/1.1}{0.0.0.0:0}
+2015-12-03 17:54:38.024 [main] INFO  org.eclipse.jetty.server.handler.ContextHandler  - Stopped o.e.j.s.ServletContextHandler@6b6fd0{/,null,UNAVAILABLE}
+2015-12-03 17:54:38.025 [main] INFO  ee.v22.server.EmbeddedJetty  - Starting jetty on port 1986
+2015-12-03 17:54:38.025 [main] INFO  org.eclipse.jetty.server.Server  - jetty-9.2.10.v20150310
+2015-12-03 17:54:38.112 [main] INFO  org.eclipse.jetty.server.handler.ContextHandler  - Started o.e.j.s.ServletContextHandler@27fc0217{/,null,AVAILABLE}
+2015-12-03 17:54:38.113 [main] INFO  org.eclipse.jetty.server.ServerConnector  - Started ServerConnector@e993715{HTTP/1.1}{0.0.0.0:1986}
+2015-12-03 17:54:38.113 [main] INFO  org.eclipse.jetty.server.Server  - Started @9804ms
+2015-12-03 17:54:38.131 [Thread-11] INFO  ee.v22.ApplicationManager  - Stopping application on port [1987]
+2015-12-03 17:54:38.132 [Thread-11] INFO  ee.v22.ApplicationManager  - Stop command sent to application
+2015-12-03 17:54:38.131 [shutdown-hook] INFO  ee.v22.ApplicationLauncher  - Stopping server...
+2015-12-03 17:54:38.142 [shutdown-hook] INFO  org.eclipse.jetty.server.ServerConnector  - Stopped ServerConnector@e993715{HTTP/1.1}{0.0.0.0:1986}
+2015-12-03 17:54:38.148 [shutdown-hook] INFO  org.eclipse.jetty.server.handler.ContextHandler  - Stopped o.e.j.s.ServletContextHandler@27fc0217{/,null,UNAVAILABLE}
+2015-12-03 17:55:47.909 [main] INFO  ee.v22.service.MobileIDSOAPService  - GetMobileAuthenticateStatusResponse response is missing a Status field.
+2015-12-03 17:55:47.918 [main] INFO  ee.v22.service.MobileIDSOAPService  - SOAPResponse Fault 301: User is not a Mobile-ID client
+2015-12-03 17:55:47.924 [main] WARN  ee.v22.service.MobileIDSOAPService  - MobileAuthenticate response is not OK.
+2015-12-03 17:55:48.164 [main] WARN  ee.v22.service.MobileIDSOAPService  - MobileAuthenticate response is missing one or more required fields.
+2015-12-03 18:03:43.551 [main] INFO  ee.v22.service.MobileIDSOAPService  - GetMobileAuthenticateStatusResponse response is missing a Status field.
+2015-12-03 18:03:43.562 [main] INFO  ee.v22.service.MobileIDSOAPService  - SOAPResponse Fault 301: User is not a Mobile-ID client
+2015-12-03 18:03:43.568 [main] WARN  ee.v22.service.MobileIDSOAPService  - MobileAuthenticate response is not OK.
+2015-12-03 18:03:43.796 [main] WARN  ee.v22.service.MobileIDSOAPService  - MobileAuthenticate response is missing one or more required fields.
+2015-12-03 18:06:15.023 [main] INFO  ee.v22.service.MobileIDSOAPService  - GetMobileAuthenticateStatusResponse response is missing a Status field.
+2015-12-03 18:06:15.034 [main] INFO  ee.v22.service.MobileIDSOAPService  - SOAPResponse Fault 301: User is not a Mobile-ID client
+2015-12-03 18:06:15.041 [main] WARN  ee.v22.service.MobileIDSOAPService  - MobileAuthenticate response is not OK.
+2015-12-03 18:06:15.272 [main] WARN  ee.v22.service.MobileIDSOAPService  - MobileAuthenticate response is missing one or more required fields.
+2015-12-03 18:06:20.700 [main] INFO  ee.v22.service.MobileIDLoginService  - Non-Estonian mobile numbers are not allowed.
+2015-12-03 18:06:20.783 [main] INFO  ee.v22.service.MobileIDLoginService  - Invalid token.
+2015-12-03 18:06:53.705 [main] INFO  ee.v22.guice.GuiceInjector  - Loading modules annotated with @Module...
+2015-12-03 18:06:53.917 [main] INFO  org.reflections.Reflections  - Reflections took 153 ms to scan 2 urls, producing 41 keys and 113 values 
+2015-12-03 18:06:53.943 [main] INFO  ee.v22.guice.GuiceInjector  - 5 modules loaded.
+2015-12-03 18:06:54.254 [main] INFO  ee.v22.guice.provider.ConfigurationTestProvider  - No custom configuration file set.
+2015-12-03 18:06:54.288 [main] INFO  ee.v22.guice.provider.ConfigurationTestProvider  - Default configuration loaded from [file:/home/oliver/git/V22/target/test-classes/test.properties]
+2015-12-03 18:06:54.351 [main] INFO  ee.v22.ApplicationManager  - Application is not running.
+2015-12-03 18:06:54.351 [main] INFO  ee.v22.ApplicationLauncher  - Starting application server on port [1986]
+2015-12-03 18:06:54.353 [main] INFO  ee.v22.server.EmbeddedJetty  - Starting jetty on port 1986
+2015-12-03 18:06:54.370 [main] INFO  org.eclipse.jetty.util.log  - Logging initialized @1239ms
+2015-12-03 18:06:54.440 [main] INFO  org.eclipse.jetty.server.Server  - jetty-9.2.10.v20150310
+2015-12-03 18:06:55.116 [main] INFO  org.eclipse.jetty.server.handler.ContextHandler  - Started o.e.j.s.ServletContextHandler@40dd3977{/,null,AVAILABLE}
+2015-12-03 18:06:55.127 [main] INFO  org.eclipse.jetty.server.ServerConnector  - Started ServerConnector@4a8a60bc{HTTP/1.1}{0.0.0.0:1986}
+2015-12-03 18:06:55.127 [main] INFO  org.eclipse.jetty.server.Server  - Started @1997ms
+2015-12-03 18:06:55.129 [command-listener] INFO  ee.v22.ApplicationManager  - Command listener started on port [1987]
+2015-12-03 18:06:59.312 [main] INFO  ee.v22.guice.provider.EntityManagerFactoryTestProvider  - Initializing EntityManagerFactory properties [{hibernate.connection.driver_class=org.h2.Driver, hibernate.hbm2ddl.auto=create, hibernate.connection.url=jdbc:h2:mem:test;MODE=MySQL, hibernate.dialect=org.hibernate.dialect.H2Dialect, hibernate.show_sql=true}]
+2015-12-03 18:07:00.935 [qtp202125197-15] ERROR ee.v22.rest.errorhandling.GenericExceptionMapper  - Handling error
+javax.ws.rs.NotFoundException: HTTP 404 Not Found
+	at org.glassfish.jersey.server.ServerRuntime$2.run(ServerRuntime.java:306)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:271)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:267)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:315)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:297)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:267)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:317)
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:292)
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:1139)
+	at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:460)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:386)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:334)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:221)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:808)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1669)
+	at com.google.inject.servlet.FilterChainInvocation.doFilter(FilterChainInvocation.java:89)
+	at com.google.inject.servlet.ManagedFilterPipeline.dispatch(ManagedFilterPipeline.java:119)
+	at com.google.inject.servlet.GuiceFilter$1.call(GuiceFilter.java:133)
+	at com.google.inject.servlet.GuiceFilter$1.call(GuiceFilter.java:130)
+	at com.google.inject.servlet.GuiceFilter$Context.call(GuiceFilter.java:203)
+	at com.google.inject.servlet.GuiceFilter.doFilter(GuiceFilter.java:130)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:585)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.eclipse.jetty.server.Server.handle(Server.java:497)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:310)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:257)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	at java.lang.Thread.run(Thread.java:745)
+2015-12-03 18:07:01.535 [qtp202125197-15] INFO  ee.v22.service.LoginService  - User with id 55555555555 could not log in, trying to create account. 
+2015-12-03 18:07:01.562 [qtp202125197-15] INFO  ee.v22.service.UserService  - Creating user: username = peeter.paan2; name = Peeter; surname = Pããn; idCode = 55555555555
+2015-12-03 18:07:01.586 [qtp202125197-15] INFO  ee.v22.service.LoginService  - User peeter.paan2 with id 55555555555 logged in for the first time.
+2015-12-03 18:07:01.693 [qtp202125197-19] INFO  ee.v22.service.LoginService  - User mati.maasikas with id 39011220011 logged in.
+2015-12-03 18:07:01.799 [qtp202125197-19] ERROR ee.v22.rest.errorhandling.GenericExceptionMapper  - Handling error
+javax.ws.rs.NotFoundException: HTTP 404 Not Found
+	at org.glassfish.jersey.server.ServerRuntime$2.run(ServerRuntime.java:306)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:271)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:267)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:315)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:297)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:267)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:317)
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:292)
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:1139)
+	at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:460)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:386)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:334)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:221)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:808)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1669)
+	at com.google.inject.servlet.FilterChainInvocation.doFilter(FilterChainInvocation.java:89)
+	at com.google.inject.servlet.ManagedFilterPipeline.dispatch(ManagedFilterPipeline.java:119)
+	at com.google.inject.servlet.GuiceFilter$1.call(GuiceFilter.java:133)
+	at com.google.inject.servlet.GuiceFilter$1.call(GuiceFilter.java:130)
+	at com.google.inject.servlet.GuiceFilter$Context.call(GuiceFilter.java:203)
+	at com.google.inject.servlet.GuiceFilter.doFilter(GuiceFilter.java:130)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:585)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.eclipse.jetty.server.Server.handle(Server.java:497)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:310)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:257)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	at java.lang.Thread.run(Thread.java:745)
+2015-12-03 18:07:01.841 [qtp202125197-15] INFO  ee.v22.service.MobileIDLoginService  - Invalid token.
+2015-12-03 18:07:01.841 [qtp202125197-15] INFO  ee.v22.service.LoginService  - Authentication not valid.
+2015-12-03 18:07:01.940 [main] INFO  ee.v22.utils.FileUtils  - Getting file from test.keystore
+2015-12-03 18:07:01.941 [main] INFO  ee.v22.utils.FileUtils  - File test.keystore does not exist. Trying to load from classpath.
+2015-12-03 18:07:01.974 [main] INFO  ee.v22.utils.FileUtils  - Getting file from test.keystore
+2015-12-03 18:07:01.975 [main] INFO  ee.v22.utils.FileUtils  - File test.keystore does not exist. Trying to load from classpath.
+2015-12-03 18:07:02.211 [main] INFO  ee.v22.utils.FileUtils  - Getting file from reos_metadata.xml
+2015-12-03 18:07:02.212 [main] INFO  ee.v22.utils.FileUtils  - File reos_metadata.xml does not exist. Trying to load from classpath.
+2015-12-03 18:07:02.400 [main] INFO  ee.v22.utils.FileUtils  - Getting file from notValid.xml
+2015-12-03 18:07:02.400 [main] INFO  ee.v22.utils.FileUtils  - File notValid.xml does not exist. Trying to load from classpath.
+2015-12-03 18:07:02.578 [main] INFO  ee.v22.utils.FileUtils  - Getting file from test.keystore
+2015-12-03 18:07:02.578 [main] INFO  ee.v22.utils.FileUtils  - File test.keystore does not exist. Trying to load from classpath.
+2015-12-03 18:07:02.640 [main] INFO  ee.v22.utils.FileUtils  - Getting file from test.keystore
+2015-12-03 18:07:02.640 [main] INFO  ee.v22.utils.FileUtils  - File test.keystore does not exist. Trying to load from classpath.
+2015-12-03 18:07:02.659 [main] INFO  ee.v22.utils.FileUtils  - Getting file from test.keystore
+2015-12-03 18:07:02.659 [main] INFO  ee.v22.utils.FileUtils  - File test.keystore does not exist. Trying to load from classpath.
+2015-12-03 18:07:02.712 [main] INFO  ee.v22.service.MobileIDLoginService  - Non-Estonian mobile numbers are not allowed.
+2015-12-03 18:07:02.716 [main] INFO  ee.v22.service.MobileIDLoginService  - Invalid token.
+2015-12-03 18:07:02.727 [main] INFO  ee.v22.utils.FileUtils  - Getting file from test.keystore
+2015-12-03 18:07:02.727 [main] INFO  ee.v22.utils.FileUtils  - File test.keystore does not exist. Trying to load from classpath.
+2015-12-03 18:07:02.748 [main] INFO  ee.v22.utils.FileUtils  - Getting file from /tmp/testFileForGetFileAsStrem1786123958326583934.v22
+2015-12-03 18:07:02.748 [main] INFO  ee.v22.utils.FileUtils  - Getting file from wrong.xml
+2015-12-03 18:07:02.748 [main] INFO  ee.v22.utils.FileUtils  - File wrong.xml does not exist. Trying to load from classpath.
+2015-12-03 18:07:02.879 [qtp202125197-15] ERROR ee.v22.rest.errorhandling.GenericExceptionMapper  - Handling error
+javax.ws.rs.NotAuthorizedException: HTTP 401 Unauthorized
+	at org.glassfish.jersey.server.filter.RolesAllowedDynamicFeature$RolesAllowedRequestFilter.filter(RolesAllowedDynamicFeature.java:140)
+	at org.glassfish.jersey.server.ContainerFilteringStage.apply(ContainerFilteringStage.java:132)
+	at org.glassfish.jersey.server.ContainerFilteringStage.apply(ContainerFilteringStage.java:68)
+	at org.glassfish.jersey.process.internal.Stages.process(Stages.java:197)
+	at org.glassfish.jersey.server.ServerRuntime$2.run(ServerRuntime.java:301)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:271)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:267)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:315)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:297)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:267)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:317)
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:292)
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:1139)
+	at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:460)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:386)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:334)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:221)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:808)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1669)
+	at com.google.inject.servlet.FilterChainInvocation.doFilter(FilterChainInvocation.java:89)
+	at com.google.inject.servlet.ManagedFilterPipeline.dispatch(ManagedFilterPipeline.java:119)
+	at com.google.inject.servlet.GuiceFilter$1.call(GuiceFilter.java:133)
+	at com.google.inject.servlet.GuiceFilter$1.call(GuiceFilter.java:130)
+	at com.google.inject.servlet.GuiceFilter$Context.call(GuiceFilter.java:203)
+	at com.google.inject.servlet.GuiceFilter.doFilter(GuiceFilter.java:130)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:585)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.eclipse.jetty.server.Server.handle(Server.java:497)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:310)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:257)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	at java.lang.Thread.run(Thread.java:745)
+2015-12-03 18:07:03.059 [main] INFO  ee.v22.service.MobileIDSOAPService  - GetMobileAuthenticateStatusResponse response is missing a Status field.
+2015-12-03 18:07:03.065 [main] INFO  ee.v22.service.MobileIDSOAPService  - SOAPResponse Fault 301: User is not a Mobile-ID client
+2015-12-03 18:07:03.069 [main] WARN  ee.v22.service.MobileIDSOAPService  - MobileAuthenticate response is not OK.
+2015-12-03 18:07:03.290 [main] WARN  ee.v22.service.MobileIDSOAPService  - MobileAuthenticate response is missing one or more required fields.
+2015-12-03 18:07:03.298 [main] INFO  ee.v22.service.UserService  - Creating user: username = john.smith; name = John; surname = Smith; idCode = idCode
+2015-12-03 18:07:03.345 [main] INFO  ee.v22.service.LoginService  - User null with id 66677788899 logged in.
+2015-12-03 18:07:03.346 [main] INFO  ee.v22.service.LoginService  - Authentication not valid.
+2015-12-03 18:07:03.350 [main] INFO  org.eclipse.jetty.server.ServerConnector  - Stopped ServerConnector@4a8a60bc{HTTP/1.1}{0.0.0.0:1986}
+2015-12-03 18:07:03.354 [main] INFO  org.eclipse.jetty.server.handler.ContextHandler  - Stopped o.e.j.s.ServletContextHandler@40dd3977{/,null,UNAVAILABLE}
+2015-12-03 18:07:03.357 [main] INFO  ee.v22.server.EmbeddedJetty  - Starting jetty on port 0
+2015-12-03 18:07:03.358 [main] INFO  org.eclipse.jetty.server.Server  - jetty-9.2.10.v20150310
+2015-12-03 18:07:03.488 [main] INFO  org.eclipse.jetty.server.handler.ContextHandler  - Started o.e.j.s.ServletContextHandler@1fb71788{/,null,AVAILABLE}
+2015-12-03 18:07:03.489 [main] INFO  org.eclipse.jetty.server.ServerConnector  - Started ServerConnector@8cb7185{HTTP/1.1}{0.0.0.0:52686}
+2015-12-03 18:07:03.494 [main] INFO  org.eclipse.jetty.server.Server  - Started @10360ms
+2015-12-03 18:07:03.497 [main] INFO  org.eclipse.jetty.server.ServerConnector  - Stopped ServerConnector@8cb7185{HTTP/1.1}{0.0.0.0:0}
+2015-12-03 18:07:03.498 [main] INFO  org.eclipse.jetty.server.handler.ContextHandler  - Stopped o.e.j.s.ServletContextHandler@1fb71788{/,null,UNAVAILABLE}
+2015-12-03 18:07:03.500 [main] INFO  ee.v22.server.EmbeddedJetty  - Starting jetty on port 0
+2015-12-03 18:07:03.501 [main] INFO  org.eclipse.jetty.server.Server  - jetty-9.2.10.v20150310
+2015-12-03 18:07:03.644 [main] INFO  org.eclipse.jetty.server.handler.ContextHandler  - Started o.e.j.s.ServletContextHandler@1450ffa3{/,null,AVAILABLE}
+2015-12-03 18:07:03.645 [main] INFO  org.eclipse.jetty.server.ServerConnector  - Started ServerConnector@4e756867{HTTP/1.1}{0.0.0.0:37536}
+2015-12-03 18:07:03.646 [main] INFO  org.eclipse.jetty.server.Server  - Started @10516ms
+2015-12-03 18:07:03.646 [main] INFO  org.eclipse.jetty.server.ServerConnector  - Stopped ServerConnector@4e756867{HTTP/1.1}{0.0.0.0:0}
+2015-12-03 18:07:03.648 [main] INFO  org.eclipse.jetty.server.handler.ContextHandler  - Stopped o.e.j.s.ServletContextHandler@1450ffa3{/,null,UNAVAILABLE}
+2015-12-03 18:07:03.657 [main] INFO  ee.v22.server.EmbeddedJetty  - Starting jetty on port 1986
+2015-12-03 18:07:03.660 [main] INFO  org.eclipse.jetty.server.Server  - jetty-9.2.10.v20150310
+2015-12-03 18:07:03.788 [main] INFO  org.eclipse.jetty.server.handler.ContextHandler  - Started o.e.j.s.ServletContextHandler@5cfa2ac5{/,null,AVAILABLE}
+2015-12-03 18:07:03.790 [main] INFO  org.eclipse.jetty.server.ServerConnector  - Started ServerConnector@4cc89246{HTTP/1.1}{0.0.0.0:1986}
+2015-12-03 18:07:03.791 [main] INFO  org.eclipse.jetty.server.Server  - Started @10661ms
+2015-12-03 18:07:03.798 [shutdown-hook] INFO  ee.v22.ApplicationLauncher  - Stopping server...
+2015-12-03 18:07:03.799 [Thread-11] INFO  ee.v22.ApplicationManager  - Stopping application on port [1987]
+2015-12-03 18:07:03.800 [shutdown-hook] INFO  org.eclipse.jetty.server.ServerConnector  - Stopped ServerConnector@4cc89246{HTTP/1.1}{0.0.0.0:1986}
+2015-12-03 18:07:03.800 [Thread-11] INFO  ee.v22.ApplicationManager  - Stop command sent to application
+2015-12-03 18:07:03.816 [shutdown-hook] INFO  org.eclipse.jetty.server.handler.ContextHandler  - Stopped o.e.j.s.ServletContextHandler@5cfa2ac5{/,null,UNAVAILABLE}

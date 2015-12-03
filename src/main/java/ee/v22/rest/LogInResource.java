@@ -1,11 +1,5 @@
 package ee.v22.rest;
 
-import ee.v22.model.AuthenticatedUser;
-import ee.v22.model.mobileid.MobileIDSecurityCodes;
-import ee.v22.service.AuthenticatedUserService;
-import ee.v22.service.LoginService;
-import org.opensaml.saml2.binding.encoding.HTTPRedirectDeflateEncoder;
-
 import javax.inject.Inject;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -13,6 +7,13 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
 import javax.xml.soap.SOAPException;
+
+import org.opensaml.saml2.binding.encoding.HTTPRedirectDeflateEncoder;
+
+import ee.v22.model.AuthenticatedUser;
+import ee.v22.model.mobileid.MobileIDSecurityCodes;
+import ee.v22.service.AuthenticatedUserService;
+import ee.v22.service.LoginService;
 
 @Path("login")
 public class LogInResource extends BaseResource {
@@ -25,7 +26,6 @@ public class LogInResource extends BaseResource {
 
     @Inject
     private AuthenticatedUserService authenticatedUserService;
-
 
     @GET
     @Path("/idCard")
@@ -52,9 +52,8 @@ public class LogInResource extends BaseResource {
     @Path("/mobileId")
     @Produces(MediaType.APPLICATION_JSON)
     public MobileIDSecurityCodes mobileIDAuthenticate(@QueryParam("phoneNumber") String phoneNumber,
-                                                      @QueryParam("idCode") String idCode, @QueryParam("language") String languageCode) throws Exception {
-        //return loginService.mobileIDAuthenticate(phoneNumber, idCode, languageService.getLanguage(languageCode));
-        return null;
+            @QueryParam("idCode") String idCode) throws Exception {
+        return loginService.mobileIDAuthenticate(phoneNumber, idCode);
     }
 
     @GET

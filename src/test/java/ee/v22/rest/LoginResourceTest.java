@@ -2,18 +2,14 @@ package ee.v22.rest;
 
 import static java.nio.charset.StandardCharsets.UTF_8;
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertNull;
-import static org.junit.Assert.assertTrue;
-import static org.junit.Assert.fail;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.UnsupportedEncodingException;
-import java.net.URI;
 import java.net.URLEncoder;
 import java.util.ArrayList;
 import java.util.List;
@@ -34,17 +30,8 @@ import javax.ws.rs.ext.Provider;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 
-import ee.v22.dao.AuthenticationStateDAO;
-import ee.v22.model.AuthenticatedUser;
-import ee.v22.model.AuthenticationState;
-import ee.v22.model.User;
-import ee.v22.utils.ConfigurationProperties;
 import org.apache.commons.configuration.Configuration;
-import org.apache.http.NameValuePair;
-import org.apache.http.client.utils.URLEncodedUtils;
 import org.glassfish.jersey.internal.util.collection.MultivaluedStringMap;
-import org.joda.time.DateTime;
-import org.joda.time.Interval;
 import org.junit.Test;
 import org.opensaml.saml2.core.AuthnRequest;
 import org.opensaml.xml.XMLObject;
@@ -55,6 +42,9 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 
 import ee.v22.common.test.ResourceIntegrationTestBase;
+import ee.v22.dao.AuthenticationStateDAO;
+import ee.v22.model.AuthenticatedUser;
+import ee.v22.model.User;
 import ee.v22.model.mobileid.MobileIDSecurityCodes;
 
 public class LoginResourceTest extends ResourceIntegrationTestBase {
@@ -90,10 +80,6 @@ public class LoginResourceTest extends ResourceIntegrationTestBase {
         assertEquals("peeter.paan2", authenticatedUser.getUser().getUsername());
     }
 
-
-
-
-
     @Test
     public void authenticateNoRelayState() {
         MultivaluedMap<String, String> formParams = new MultivaluedStringMap();
@@ -113,7 +99,6 @@ public class LoginResourceTest extends ResourceIntegrationTestBase {
         assertNull(response.getHeaderString("Location"));
     }
 
-
     @Test
     public void getAuthenticatedUser() {
         String token = "token";
@@ -132,56 +117,53 @@ public class LoginResourceTest extends ResourceIntegrationTestBase {
         });
         assertNull(authenticatedUser);
     }
-//
-//    @Test
-//    public void mobileIDAuthenticate() {
-//        String phoneNumber = "+37255551234";
-//        String idCode = "22334455667";
-//        String language = "est";
-//        Response response = doGet(String.format("login/mobileId?phoneNumber=%s&idCode=%s&language=%s",
-//                encodeQuery(phoneNumber), idCode, language));
-//        MobileIDSecurityCodes mobileIDSecurityCodes = response.readEntity(new GenericType<MobileIDSecurityCodes>() {
-//        });
-//
-//        assertNotNull(mobileIDSecurityCodes.getToken());
-//        assertNotNull(mobileIDSecurityCodes.getChallengeId());
-//
-//        Response isValid = doGet(String.format("login/mobileId/isValid?token=%s", mobileIDSecurityCodes.getToken()));
-//        AuthenticatedUser authenticatedUser = isValid.readEntity(new GenericType<AuthenticatedUser>() {
-//        });
-//
-//        assertNotNull(authenticatedUser.getToken());
-//        User user = authenticatedUser.getUser();
-//        assertEquals(idCode, user.getIdCode());
-//        assertEquals("Matt", user.getName());
-//        assertEquals("Smith", user.getSurname());
-//        assertNotNull(user.getUsername());
-//    }
 
-//    @Test
-//    public void mobileIDAuthenticateNotValid() {
-//        String phoneNumber = "+37244441234";
-//        String idCode = "33445566778";
-//        String language = "est";
-//        Response response = doGet(String.format("login/mobileId?phoneNumber=%s&idCode=%s&language=%s",
-//                encodeQuery(phoneNumber), idCode, language));
-//        MobileIDSecurityCodes mobileIDSecurityCodes = response.readEntity(new GenericType<MobileIDSecurityCodes>() {
-//        });
-//
-//        assertNotNull(mobileIDSecurityCodes.getToken());
-//        assertNotNull(mobileIDSecurityCodes.getChallengeId());
-//
-//        Response isValid = doGet(String.format("login/mobileId/isValid?token=%s", mobileIDSecurityCodes.getToken()));
-//        assertEquals(204, isValid.getStatus());
-//    }
+    @Test
+    public void mobileIDAuthenticate() {
+        String phoneNumber = "+37255551234";
+        String idCode = "22334455667";
+        Response response = doGet(
+                String.format("login/mobileId?phoneNumber=%s&idCode=%s", encodeQuery(phoneNumber), idCode));
+        MobileIDSecurityCodes mobileIDSecurityCodes = response.readEntity(new GenericType<MobileIDSecurityCodes>() {
+        });
+
+        assertNotNull(mobileIDSecurityCodes.getToken());
+        assertNotNull(mobileIDSecurityCodes.getChallengeId());
+
+        Response isValid = doGet(String.format("login/mobileId/isValid?token=%s", mobileIDSecurityCodes.getToken()));
+        AuthenticatedUser authenticatedUser = isValid.readEntity(new GenericType<AuthenticatedUser>() {
+        });
+
+        assertNotNull(authenticatedUser.getToken());
+        User user = authenticatedUser.getUser();
+        assertEquals(idCode, user.getIdCode());
+        assertEquals("Matt", user.getName());
+        assertEquals("Smith", user.getSurname());
+        assertNotNull(user.getUsername());
+    }
+
+    @Test
+    public void mobileIDAuthenticateNotValid() {
+        String phoneNumber = "+37244441234";
+        String idCode = "33445566778";
+        Response response = doGet(
+                String.format("login/mobileId?phoneNumber=%s&idCode=%s", encodeQuery(phoneNumber), idCode));
+        MobileIDSecurityCodes mobileIDSecurityCodes = response.readEntity(new GenericType<MobileIDSecurityCodes>() {
+        });
+
+        assertNotNull(mobileIDSecurityCodes.getToken());
+        assertNotNull(mobileIDSecurityCodes.getChallengeId());
+
+        Response isValid = doGet(String.format("login/mobileId/isValid?token=%s", mobileIDSecurityCodes.getToken()));
+        assertEquals(204, isValid.getStatus());
+    }
 
     @Test
     public void mobileIDAuthenticateMissingResponseFields() {
         String phoneNumber = "+37233331234";
         String idCode = "44556677889";
-        String language = "est";
-        Response response = doGet(String.format("login/mobileId?phoneNumber=%s&idCode=%s&language=%s",
-                encodeQuery(phoneNumber), idCode, language));
+        Response response = doGet(
+                String.format("login/mobileId?phoneNumber=%s&idCode=%s", encodeQuery(phoneNumber), idCode));
         assertEquals(204, response.getStatus());
     }
 
@@ -189,21 +171,19 @@ public class LoginResourceTest extends ResourceIntegrationTestBase {
     public void mobileIDAuthenticateInvalidPhoneNumber() {
         String phoneNumber = "+3721";
         String idCode = "55667788990";
-        String language = "est";
-        Response response = doGet(String.format("login/mobileId?phoneNumber=%s&idCode=%s&language=%s",
-                encodeQuery(phoneNumber), idCode, language));
+        Response response = doGet(
+                String.format("login/mobileId?phoneNumber=%s&idCode=%s", encodeQuery(phoneNumber), idCode));
         assertEquals(204, response.getStatus());
     }
 
-//    @Test
-//    public void mobileIDAuthenticateNonEstonianPhoneNumber() {
-//        String phoneNumber = "+37077778888";
-//        String idCode = "66778899001";
-//        String language = "eng";
-//        Response response = doGet(String.format("login/mobileId?phoneNumber=%s&idCode=%s&language=%s",
-//                encodeQuery(phoneNumber), idCode, language));
-//        assertEquals(204, response.getStatus());
-//    }
+    @Test
+    public void mobileIDAuthenticateNonEstonianPhoneNumber() {
+        String phoneNumber = "+37077778888";
+        String idCode = "66778899001";
+        Response response = doGet(
+                String.format("login/mobileId?phoneNumber=%s&idCode=%s", encodeQuery(phoneNumber), idCode));
+        assertEquals(204, response.getStatus());
+    }
 
     @Test
     public void mobileIDIsAuthenticatedInvalidSessionCode() {

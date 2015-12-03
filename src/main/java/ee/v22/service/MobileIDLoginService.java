@@ -8,7 +8,6 @@ import javax.xml.soap.SOAPException;
 
 import ee.v22.dao.AuthenticationStateDAO;
 import ee.v22.model.AuthenticationState;
-import ee.v22.model.Language;
 import org.joda.time.DateTime;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -30,7 +29,7 @@ public class MobileIDLoginService {
 
     private SecureRandom random = new SecureRandom();
 
-    public MobileIDSecurityCodes authenticate(String phoneNumber, String idCode, Language language) throws Exception {
+    public MobileIDSecurityCodes authenticate(String phoneNumber, String idCode) throws Exception {
         if (!phoneNumber.startsWith("+")) {
             phoneNumber = ESTONIAN_CALLING_CODE + phoneNumber;
         }
@@ -40,8 +39,7 @@ public class MobileIDLoginService {
             return null;
         }
 
-        MobileAuthenticateResponse mobileAuthenticateResponse = mobileIDSOAPService.authenticate(phoneNumber, idCode,
-                language);
+        MobileAuthenticateResponse mobileAuthenticateResponse = mobileIDSOAPService.authenticate(phoneNumber, idCode);
 
         if (mobileAuthenticateResponse == null) {
             return null;

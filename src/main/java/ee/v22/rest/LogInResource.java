@@ -3,7 +3,6 @@ package ee.v22.rest;
 import ee.v22.model.AuthenticatedUser;
 import ee.v22.model.mobileid.MobileIDSecurityCodes;
 import ee.v22.service.AuthenticatedUserService;
-import ee.v22.service.LanguageService;
 import ee.v22.service.LoginService;
 import org.opensaml.saml2.binding.encoding.HTTPRedirectDeflateEncoder;
 
@@ -27,8 +26,6 @@ public class LogInResource extends BaseResource {
     @Inject
     private AuthenticatedUserService authenticatedUserService;
 
-    @Inject
-    private LanguageService languageService;
 
     @GET
     @Path("/idCard")
@@ -55,8 +52,9 @@ public class LogInResource extends BaseResource {
     @Path("/mobileId")
     @Produces(MediaType.APPLICATION_JSON)
     public MobileIDSecurityCodes mobileIDAuthenticate(@QueryParam("phoneNumber") String phoneNumber,
-            @QueryParam("idCode") String idCode, @QueryParam("language") String languageCode) throws Exception {
-        return loginService.mobileIDAuthenticate(phoneNumber, idCode, languageService.getLanguage(languageCode));
+                                                      @QueryParam("idCode") String idCode, @QueryParam("language") String languageCode) throws Exception {
+        //return loginService.mobileIDAuthenticate(phoneNumber, idCode, languageService.getLanguage(languageCode));
+        return null;
     }
 
     @GET

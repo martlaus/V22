@@ -7,5 +7,41 @@
     </database-info>
     <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact"/>
     <schema name="" catalog="v22"/>
+    <table name="AuthenticatedUser" schema="" catalog="v22" type="TABLE">
+      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="user_id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="token" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="firstLogin" sqlType="TINYINT" precision="3" scale="0" nullable="true" jdbcType="-6" def="MA=="/>
+      <column name="homeOrganization" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="mails" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="affiliations" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="scopedAffiliations" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="AuthenticatedUser_ibfk_1" columns="user_id" ref-table="User" ref-schema="" ref-catalog="v22" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <index name="token" unique="true" columns="token"/>
+    </table>
+    <table name="AuthenticationState" schema="" catalog="v22" type="TABLE">
+      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="token" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="created" sqlType="TIMESTAMP" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+      <column name="name" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="surname" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="idCode" sqlType="VARCHAR" precision="11" scale="0" nullable="true" jdbcType="12"/>
+      <column name="sessionCode" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <index name="token" unique="true" columns="token"/>
+    </table>
+    <table name="User" schema="" catalog="v22" type="TABLE">
+      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="userName" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="name" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="surName" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="idCode" sqlType="VARCHAR" precision="11" scale="0" nullable="false" jdbcType="12"/>
+      <column name="role" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <exported-key name="AuthenticatedUser_ibfk_1" table="AuthenticatedUser" schema="" catalog="v22" columns="user_id"/>
+      <index name="idCode" unique="true" columns="idCode"/>
+      <index name="userName" unique="true" columns="userName"/>
+    </table>
   </data-source>
 </component>

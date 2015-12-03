@@ -18,7 +18,8 @@ import ee.v22.guice.GuiceInjector;
 
 @Provider
 @Priority(Priorities.AUTHENTICATION)
-public class SecurityFilter implements ContainerRequestFilter {
+public class
+        SecurityFilter implements ContainerRequestFilter {
 
     private static final int HTTP_AUTHENTICATION_TIMEOUT = 419;
 

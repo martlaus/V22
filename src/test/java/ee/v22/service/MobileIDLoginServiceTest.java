@@ -14,7 +14,6 @@ import static org.junit.Assert.assertTrue;
 import javax.xml.soap.SOAPException;
 
 import ee.v22.model.AuthenticationState;
-import ee.v22.model.Language;
 import org.easymock.Capture;
 import org.easymock.EasyMock;
 import org.easymock.EasyMockRunner;
@@ -45,8 +44,7 @@ public class MobileIDLoginServiceTest {
     public void authenticate() throws Exception {
         String phoneNumber = "+37255501234";
         String idCode = "88881010888";
-        Language language = new Language();
-        language.setCode("est");
+
 
         MobileAuthenticateResponse mobileAuthenticateResponse = new MobileAuthenticateResponse();
         mobileAuthenticateResponse.setSessionCode("789560251");
@@ -58,14 +56,14 @@ public class MobileIDLoginServiceTest {
         mobileAuthenticateResponse.setUserCommonName("JAAN,SEPP,88881010888");
         mobileAuthenticateResponse.setChallengeID("4321");
 
-        expect(mobileIDSOAPService.authenticate(phoneNumber, idCode, language)).andReturn(mobileAuthenticateResponse);
+        expect(mobileIDSOAPService.authenticate(phoneNumber, idCode)).andReturn(mobileAuthenticateResponse);
 
         Capture<AuthenticationState> capturedAuthenticationState = newCapture();
         expectCreateAuthenticationState(capturedAuthenticationState);
 
         replayAll();
 
-        MobileIDSecurityCodes mobileIDSecurityCodes = mobileIDLoginService.authenticate(phoneNumber, idCode, language);
+        MobileIDSecurityCodes mobileIDSecurityCodes = mobileIDLoginService.authenticate(phoneNumber, idCode);
 
         verifyAll();
 
@@ -77,8 +75,7 @@ public class MobileIDLoginServiceTest {
     public void authenticateWithoutCallingCode() throws Exception {
         String phoneNumber = "5554321";
         String idCode = "11110000111";
-        Language language = new Language();
-        language.setCode("est");
+
 
         MobileAuthenticateResponse mobileAuthenticateResponse = new MobileAuthenticateResponse();
         mobileAuthenticateResponse.setSessionCode("789560251");
@@ -90,7 +87,7 @@ public class MobileIDLoginServiceTest {
         mobileAuthenticateResponse.setUserCommonName("JAAN,SEPP,11110000111");
         mobileAuthenticateResponse.setChallengeID("4321");
 
-        expect(mobileIDSOAPService.authenticate(ESTONIAN_CALLING_CODE + phoneNumber, idCode, language))
+        expect(mobileIDSOAPService.authenticate(ESTONIAN_CALLING_CODE + phoneNumber, idCode))
                 .andReturn(mobileAuthenticateResponse);
 
         Capture<AuthenticationState> capturedAuthenticationState = newCapture();
@@ -98,7 +95,7 @@ public class MobileIDLoginServiceTest {
 
         replayAll();
 
-        MobileIDSecurityCodes mobileIDSecurityCodes = mobileIDLoginService.authenticate(phoneNumber, idCode, language);
+        MobileIDSecurityCodes mobileIDSecurityCodes = mobileIDLoginService.authenticate(phoneNumber, idCode);
 
         verifyAll();
 
@@ -110,12 +107,11 @@ public class MobileIDLoginServiceTest {
     public void authenticateNonEstonianPhoneNumber() throws Exception {
         String phoneNumber = "+33355501234";
         String idCode = "99991010888";
-        Language language = new Language();
-        language.setCode("eng");
+
 
         replayAll();
 
-        MobileIDSecurityCodes mobileIDSecurityCodes = mobileIDLoginService.authenticate(phoneNumber, idCode, language);
+        MobileIDSecurityCodes mobileIDSecurityCodes = mobileIDLoginService.authenticate(phoneNumber, idCode);
 
         verifyAll();
 

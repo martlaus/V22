@@ -19,7 +19,6 @@ import ee.v22.dao.AuthenticationStateDAO;
 import ee.v22.exceptions.DuplicateTokenException;
 import ee.v22.model.AuthenticatedUser;
 import ee.v22.model.AuthenticationState;
-import ee.v22.model.Language;
 import ee.v22.model.User;
 import ee.v22.model.mobileid.MobileIDSecurityCodes;
 
@@ -130,9 +129,9 @@ public class LoginService {
         return returnedAuthenticatedUser;
     }
 
-    public MobileIDSecurityCodes mobileIDAuthenticate(String phoneNumber, String idCode, Language language)
+    public MobileIDSecurityCodes mobileIDAuthenticate(String phoneNumber, String idCode)
             throws Exception {
-        return mobileIDLoginService.authenticate(phoneNumber, idCode, language);
+        return mobileIDLoginService.authenticate(phoneNumber, idCode);
     }
 
     public AuthenticatedUser validateMobileIDAuthentication(String token) throws SOAPException {

@@ -16,7 +16,7 @@ public class V22Application extends ResourceConfig {
     @Inject
     public V22Application(ServiceLocator serviceLocator) {
         // Set package to look for resources in
-        packages("ee.hm.v22");
+        packages("ee.v22");
 
         GuiceBridge.getGuiceBridge().initializeGuiceBridge(serviceLocator);
 

@@ -10,14 +10,6 @@ public class RestModule extends ServletModule {
 
     @Override
     protected void configureServlets() {
-        bind(MaterialService.class);
-        bind(TranslationService.class);
-        bind(PageService.class);
-        bind(LanguageService.class);
-        bind(TagService.class);
-        bind(TaxonService.class);
-        bind(ResourceTypeService.class);
-        bind(LicenseTypeService.class);
         bind(UserService.class);
         bind(LoginService.class);
         bind(HTTPRedirectDeflateEncoder.class);

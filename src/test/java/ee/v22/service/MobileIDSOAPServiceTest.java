@@ -26,7 +26,6 @@ import javax.xml.soap.SOAPException;
 import javax.xml.soap.SOAPMessage;
 
 import ee.v22.model.AuthenticationState;
-import ee.v22.model.Language;
 import ee.v22.utils.ConfigurationProperties;
 import org.apache.commons.configuration.Configuration;
 import org.easymock.Capture;
@@ -46,9 +45,6 @@ public class MobileIDSOAPServiceTest {
     private MobileIDSOAPServicePartialMock mobileIDSOAPService = new MobileIDSOAPServicePartialMock();
 
     @Mock
-    private LanguageService languageService;
-
-    @Mock
     private Configuration configuration;
 
     @Mock
@@ -58,8 +54,7 @@ public class MobileIDSOAPServiceTest {
     public void authenticate() throws Exception {
         String phoneNumber = "+37255550000";
         String idCode = "55882128025";
-        Language language = new Language();
-        language.setCode("rus");
+
         String serviceName = "ServiceNameHere";
         String messageToDisplay = "Special message";
         String endpoint = "https://www.example.com:9876/Service";
@@ -83,8 +78,7 @@ public class MobileIDSOAPServiceTest {
 
         replayAll();
 
-        MobileAuthenticateResponse mobileAuthenticateResponse = mobileIDSOAPService.authenticate(phoneNumber, idCode,
-                language);
+        MobileAuthenticateResponse mobileAuthenticateResponse = mobileIDSOAPService.authenticate(phoneNumber, idCode);
 
         verifyAll();
 
@@ -95,7 +89,6 @@ public class MobileIDSOAPServiceTest {
         assertEquals(6, request.size());
         assertEquals(idCode, request.get("IDCode"));
         assertEquals(phoneNumber, request.get("PhoneNo"));
-        assertEquals(language.getCode().toUpperCase(), request.get("Language"));
         assertEquals(serviceName, request.get("ServiceName"));
         assertEquals(MOBILE_AUTHENTICATE_MESSAGING_MODE, request.get("MessagingMode"));
         assertEquals(messageToDisplay, request.get("MessageToDisplay"));
@@ -105,8 +98,6 @@ public class MobileIDSOAPServiceTest {
     public void authenticateNotSupportedLanguageAndMessageEmpty() throws Exception {
         String phoneNumber = "+37255550000";
         String idCode = "55882128025";
-        Language language = new Language();
-        language.setCode("www");
         String serviceName = "ServiceNameHere";
         String messageToDisplay = "";
         String endpoint = "https://www.example.com:9876/Service";
@@ -123,9 +114,6 @@ public class MobileIDSOAPServiceTest {
         response.put("UserCN", "RICHARD,SMITH,55882128025");
         response.put("ChallengeID", "6723");
 
-        Language languageEstonian = new Language();
-        languageEstonian.setCode("est");
-        expect(languageService.getLanguage("est")).andReturn(languageEstonian);
 
         SOAPMessage responseMessage = createMobileAuthenticateResponse(response);
 
@@ -134,8 +122,7 @@ public class MobileIDSOAPServiceTest {
 
         replayAll();
 
-        MobileAuthenticateResponse mobileAuthenticateResponse = mobileIDSOAPService.authenticate(phoneNumber, idCode,
-                language);
+        MobileAuthenticateResponse mobileAuthenticateResponse = mobileIDSOAPService.authenticate(phoneNumber, idCode);
 
         verifyAll();
 
@@ -146,7 +133,6 @@ public class MobileIDSOAPServiceTest {
         assertEquals(5, request.size());
         assertEquals(idCode, request.get("IDCode"));
         assertEquals(phoneNumber, request.get("PhoneNo"));
-        assertEquals(languageEstonian.getCode().toUpperCase(), request.get("Language"));
         assertEquals(serviceName, request.get("ServiceName"));
         assertEquals(MOBILE_AUTHENTICATE_MESSAGING_MODE, request.get("MessagingMode"));
     }
@@ -155,7 +141,6 @@ public class MobileIDSOAPServiceTest {
     public void authenticateNullLanguage() throws Exception {
         String phoneNumber = "+37255550000";
         String idCode = "55882128025";
-        Language language = null;
         String serviceName = "ServiceNameHere";
         String messageToDisplay = "Special message";
         String endpoint = "https://www.example.com:9876/Service";
@@ -172,10 +157,6 @@ public class MobileIDSOAPServiceTest {
         response.put("UserCN", "RICHARD,SMITH,55882128025");
         response.put("ChallengeID", "6723");
 
-        Language languageEstonian = new Language();
-        languageEstonian.setCode("est");
-        expect(languageService.getLanguage("est")).andReturn(languageEstonian);
-
         SOAPMessage responseMessage = createMobileAuthenticateResponse(response);
 
         expectConfiguration(serviceName, messageToDisplay, endpoint);
@@ -183,8 +164,7 @@ public class MobileIDSOAPServiceTest {
 
         replayAll();
 
-        MobileAuthenticateResponse mobileAuthenticateResponse = mobileIDSOAPService.authenticate(phoneNumber, idCode,
-                language);
+        MobileAuthenticateResponse mobileAuthenticateResponse = mobileIDSOAPService.authenticate(phoneNumber, idCode);
 
         verifyAll();
 
@@ -195,7 +175,6 @@ public class MobileIDSOAPServiceTest {
         assertEquals(6, request.size());
         assertEquals(idCode, request.get("IDCode"));
         assertEquals(phoneNumber, request.get("PhoneNo"));
-        assertEquals(languageEstonian.getCode().toUpperCase(), request.get("Language"));
         assertEquals(serviceName, request.get("ServiceName"));
         assertEquals(MOBILE_AUTHENTICATE_MESSAGING_MODE, request.get("MessagingMode"));
         assertEquals(messageToDisplay, request.get("MessageToDisplay"));
@@ -205,8 +184,7 @@ public class MobileIDSOAPServiceTest {
     public void authenticateResponseMissingFields() throws Exception {
         String phoneNumber = "+37255550000";
         String idCode = "55882128025";
-        Language language = new Language();
-        language.setCode("rus");
+
         String serviceName = "ServiceNameHere";
         String messageToDisplay = "Special message";
         String endpoint = "https://www.example.com:9876/Service";
@@ -235,8 +213,7 @@ public class MobileIDSOAPServiceTest {
 
         replayAll();
 
-        MobileAuthenticateResponse mobileAuthenticateResponse = mobileIDSOAPService.authenticate(phoneNumber, idCode,
-                language);
+        MobileAuthenticateResponse mobileAuthenticateResponse = mobileIDSOAPService.authenticate(phoneNumber, idCode);
 
         verifyAll();
 
@@ -247,8 +224,7 @@ public class MobileIDSOAPServiceTest {
     public void authenticateFault() throws Exception {
         String phoneNumber = "+37255550000";
         String idCode = "55882128025";
-        Language language = new Language();
-        language.setCode("rus");
+
         String serviceName = "ServiceNameHere";
         String messageToDisplay = "Special message";
         String endpoint = "https://www.example.com:9876/Service";
@@ -273,8 +249,7 @@ public class MobileIDSOAPServiceTest {
 
         replayAll();
 
-        MobileAuthenticateResponse mobileAuthenticateResponse = mobileIDSOAPService.authenticate(phoneNumber, idCode,
-                language);
+        MobileAuthenticateResponse mobileAuthenticateResponse = mobileIDSOAPService.authenticate(phoneNumber, idCode);
 
         verifyAll();
 
@@ -285,8 +260,7 @@ public class MobileIDSOAPServiceTest {
     public void authenticateStatusNotOK() throws Exception {
         String phoneNumber = "+37255550000";
         String idCode = "55882128025";
-        Language language = new Language();
-        language.setCode("rus");
+
         String serviceName = "ServiceNameHere";
         String messageToDisplay = "Special message";
         String endpoint = "https://www.example.com:9876/Service";
@@ -310,8 +284,7 @@ public class MobileIDSOAPServiceTest {
 
         replayAll();
 
-        MobileAuthenticateResponse mobileAuthenticateResponse = mobileIDSOAPService.authenticate(phoneNumber, idCode,
-                language);
+        MobileAuthenticateResponse mobileAuthenticateResponse = mobileIDSOAPService.authenticate(phoneNumber, idCode);
 
         verifyAll();
 
@@ -573,7 +546,7 @@ public class MobileIDSOAPServiceTest {
     }
 
     private void replayAll(Object... mocks) {
-        replay(languageService, configuration, connection);
+        replay(configuration, connection);
 
         if (mocks != null) {
             for (Object object : mocks) {
@@ -583,7 +556,7 @@ public class MobileIDSOAPServiceTest {
     }
 
     private void verifyAll(Object... mocks) {
-        verify(languageService, configuration, connection);
+        verify(configuration, connection);
 
         if (mocks != null) {
             for (Object object : mocks) {

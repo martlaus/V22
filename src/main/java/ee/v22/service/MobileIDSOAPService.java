@@ -21,7 +21,6 @@ import javax.xml.soap.SOAPMessage;
 import javax.xml.soap.SOAPPart;
 
 import ee.v22.model.AuthenticationState;
-import ee.v22.model.Language;
 import ee.v22.model.mobileid.soap.GetMobileAuthenticateStatusResponse;
 import ee.v22.model.mobileid.soap.MobileAuthenticateResponse;
 import ee.v22.utils.ConfigurationProperties;
@@ -44,8 +43,6 @@ public class MobileIDSOAPService {
      */
     private static final Collection<String> supportedLanguages = Arrays.asList("est", "eng", "rus", "lit");
 
-    @Inject
-    private LanguageService languageService;
 
     @Inject
     private Configuration configuration;
@@ -53,16 +50,13 @@ public class MobileIDSOAPService {
     @Inject
     private SOAPConnection connection;
 
-    public MobileAuthenticateResponse authenticate(String phoneNumber, String idCode, Language language)
+    public MobileAuthenticateResponse authenticate(String phoneNumber, String idCode)
             throws SOAPException {
-        if (language == null || !supportedLanguages.contains(language.getCode())) {
-            language = languageService.getLanguage("est");
-        }
+
 
         Map<String, String> childElements = new HashMap<>();
         childElements.put("IDCode", idCode);
         childElements.put("PhoneNo", phoneNumber);
-        childElements.put("Language", language.getCode().toUpperCase());
         childElements.put("ServiceName", configuration.getString(ConfigurationProperties.MOBILEID_SERVICENAME));
         childElements.put("MessagingMode", MOBILE_AUTHENTICATE_MESSAGING_MODE);
         String messageToDisplay = configuration.getString(ConfigurationProperties.MOBILEID_MESSAGE_TO_DISPLAY);

@@ -26,6 +26,9 @@ public class User {
     @Column(unique = true, nullable = false)
     private String idCode;
 
+    @Column(unique = true)
+    private String googleID;
+
     @Enumerated(EnumType.STRING)
     private Role role;
 
@@ -67,6 +70,14 @@ public class User {
 
     public void setUsername(String username) {
         this.username = username;
+    }
+
+    public String getGoogleID() {
+        return googleID;
+    }
+
+    public void setGoogleID(String googleID) {
+        this.googleID = googleID;
     }
 
     public Role getRole() {

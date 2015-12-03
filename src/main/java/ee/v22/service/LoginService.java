@@ -35,6 +35,9 @@ public class LoginService {
     private MobileIDLoginService mobileIDLoginService;
 
     @Inject
+    private GoogleService googleService;
+
+    @Inject
     private AuthenticatedUserDAO authenticatedUserDAO;
 
     @Inject
@@ -129,8 +132,7 @@ public class LoginService {
         return returnedAuthenticatedUser;
     }
 
-    public MobileIDSecurityCodes mobileIDAuthenticate(String phoneNumber, String idCode)
-            throws Exception {
+    public MobileIDSecurityCodes mobileIDAuthenticate(String phoneNumber, String idCode) throws Exception {
         return mobileIDLoginService.authenticate(phoneNumber, idCode);
     }
 
@@ -141,6 +143,20 @@ public class LoginService {
         }
         AuthenticationState authenticationState = authenticationStateDAO.findAuthenticationStateByToken(token);
         return logIn(authenticationState);
+    }
+
+    public AuthenticatedUser googleAuthenticate(String token) {
+        AuthenticatedUser authenticatedUser = null;
+
+        String googleID = googleService.getUserID(token);
+        if (googleID != null) {
+            User user = userService.getUserByGoogleID(googleID);
+            if (user != null) {
+                authenticatedUser = logIn(user.getIdCode(), user.getName(), user.getSurname());
+            }
+        }
+
+        return authenticatedUser;
     }
 
 }

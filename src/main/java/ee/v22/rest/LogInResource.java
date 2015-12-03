@@ -8,8 +8,6 @@ import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
 import javax.xml.soap.SOAPException;
 
-import org.opensaml.saml2.binding.encoding.HTTPRedirectDeflateEncoder;
-
 import ee.v22.model.AuthenticatedUser;
 import ee.v22.model.mobileid.MobileIDSecurityCodes;
 import ee.v22.service.AuthenticatedUserService;
@@ -20,9 +18,6 @@ public class LogInResource extends BaseResource {
 
     @Inject
     private LoginService loginService;
-
-    @Inject
-    private HTTPRedirectDeflateEncoder encoder;
 
     @Inject
     private AuthenticatedUserService authenticatedUserService;
@@ -61,6 +56,13 @@ public class LogInResource extends BaseResource {
     @Produces(MediaType.APPLICATION_JSON)
     public AuthenticatedUser validateMobileIDAuthentication(@QueryParam("token") String token) throws SOAPException {
         return loginService.validateMobileIDAuthentication(token);
+    }
+
+    @GET
+    @Path("/google")
+    @Produces(MediaType.APPLICATION_JSON)
+    public AuthenticatedUser googleLogin(@QueryParam("token") String token) {
+        return loginService.googleAuthenticate(token);
     }
 
     protected String getIdCodeFromRequest() {

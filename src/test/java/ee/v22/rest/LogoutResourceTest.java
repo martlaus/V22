@@ -13,23 +13,23 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.ext.Provider;
 
-import ee.v22.model.AuthenticatedUser;
 import org.junit.Test;
 
 import ee.v22.common.test.ResourceIntegrationTestBase;
+import ee.v22.model.AuthenticatedUser;
 
 public class LogoutResourceTest extends ResourceIntegrationTestBase {
 
     @Test
     public void testLogout() {
-//        Response response = doGet("dev/login/39011220011");
-//        AuthenticatedUser authenticatedUser = response.readEntity(new GenericType<AuthenticatedUser>() {
-//        });
-//        assertNotNull(authenticatedUser.getToken());
-//        String token = authenticatedUser.getToken();
-//
-//        getTarget("logout", new LogoutFilter(token)).request().accept(MediaType.APPLICATION_JSON_TYPE).post(null);
-//
+        Response response = doGet("dev/login/39011220011");
+        AuthenticatedUser authenticatedUser = response.readEntity(new GenericType<AuthenticatedUser>() {
+        });
+        assertNotNull(authenticatedUser.getToken());
+        String token = authenticatedUser.getToken();
+
+        getTarget("logout", new LogoutFilter(token)).request().accept(MediaType.APPLICATION_JSON_TYPE).post(null);
+
     }
 
     @Provider

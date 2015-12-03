@@ -28,12 +28,26 @@ public class UserDAO {
     }
 
     public User findUserByUsername(String username) {
-        TypedQuery<User> findByUsername = entityManager.createQuery(
-                "SELECT u FROM User u WHERE u.username = :username", User.class);
+        TypedQuery<User> findByUsername = entityManager.createQuery("SELECT u FROM User u WHERE u.username = :username",
+                User.class);
 
         User user = null;
         try {
             user = findByUsername.setParameter("username", username).getSingleResult();
+        } catch (Exception e) {
+            // ignore
+        }
+
+        return user;
+    }
+
+    public User findUserByGoogleID(String googleID) {
+        TypedQuery<User> findByGoogleID = entityManager.createQuery("SELECT u FROM User u WHERE u.googleID = :googleID",
+                User.class);
+
+        User user = null;
+        try {
+            user = findByGoogleID.setParameter("googleID", googleID).getSingleResult();
         } catch (Exception e) {
             // ignore
         }
@@ -51,8 +65,8 @@ public class UserDAO {
      * @return the count of users with the same username, excluding the number
      */
     public Long countUsersWithSameUsername(String username) {
-        TypedQuery<User> findByUsername = entityManager.createQuery(
-                "SELECT u FROM User u WHERE u.username LIKE :username", User.class);
+        TypedQuery<User> findByUsername = entityManager
+                .createQuery("SELECT u FROM User u WHERE u.username LIKE :username", User.class);
 
         List<User> users = findByUsername.setParameter("username", username + "%").getResultList();
 

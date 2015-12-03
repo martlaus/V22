@@ -6,12 +6,12 @@ import java.text.Normalizer;
 
 import javax.inject.Inject;
 
-import ee.v22.model.Role;
 import org.apache.commons.lang3.text.WordUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import ee.v22.dao.UserDAO;
+import ee.v22.model.Role;
 import ee.v22.model.User;
 
 public class UserService {
@@ -27,6 +27,10 @@ public class UserService {
 
     public User getUserByUsername(String username) {
         return userDAO.findUserByUsername(username);
+    }
+
+    public User getUserByGoogleID(String googleID) {
+        return userDAO.findUserByGoogleID(googleID);
     }
 
     public User create(String idCode, String name, String surname) {

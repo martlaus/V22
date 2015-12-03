@@ -2783,3 +2783,5 @@ insert into User (id, idCode, name, role, surname, username) values (null, ?, ?,
 2015-12-03 15:20:11.295 [qtp874981105-21] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [peeter.paan]
 2015-12-03 15:20:11.332 [qtp874981105-22] DEBUG org.hibernate.SQL  - select user0_.id as id1_2_, user0_.idCode as idCode2_2_, user0_.name as name3_2_, user0_.role as role4_2_, user0_.surname as surname5_2_, user0_.username as username6_2_ from User user0_ where user0_.username=?
 2015-12-03 15:20:11.333 [qtp874981105-22] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [voldemar.vapustav]
+2015-12-03 15:22:39.009 [qtp1414967210-18] DEBUG org.hibernate.SQL  - select user0_.id as id1_2_, user0_.idCode as idCode2_2_, user0_.name as name3_2_, user0_.role as role4_2_, user0_.surname as surname5_2_, user0_.username as username6_2_ from User user0_ where user0_.username=?
+2015-12-03 15:22:39.012 [qtp1414967210-18] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [mati.maasikas]

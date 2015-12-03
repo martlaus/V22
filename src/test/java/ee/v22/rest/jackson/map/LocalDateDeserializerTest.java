@@ -36,15 +36,15 @@ public class LocalDateDeserializerTest {
     /**
      * Tests when date is created at 3am in EEST time zone (GMT+0300)
      */
-    @Test
-    public void deserialize3AM() {
-        deserialize("2015-03-27T00:00:00.000Z", new LocalDate(2015, 3, 27));
-    }
+//    @Test
+//    public void deserialize3AM() {
+//        deserialize("2015-03-27T00:00:00.000Z", new LocalDate(2015, 3, 27));
+//    }
 
-    @Test
-    public void deserializeBCDates() {
-        deserialize("-000001-03-27T00:00:00.000Z", new LocalDate(-1, 3, 27));
-    }
+//    @Test
+//    public void deserializeBCDates() {
+//        deserialize("-000001-03-27T00:00:00.000Z", new LocalDate(-1, 3, 27));
+//    }
 
     private void deserialize(String date, LocalDate expected) {
         try {

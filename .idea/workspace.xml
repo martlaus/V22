@@ -2,11 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c23d3812-57e6-476d-9fb9-d1276e64336e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/ee/v22/rest/LoginResourceTest.java" afterPath="$PROJECT_DIR$/src/test/java/ee/v22/rest/LoginResourceTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/ee/v22/rest/LogoutResourceTest.java" afterPath="$PROJECT_DIR$/src/test/java/ee/v22/rest/LogoutResourceTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/ee/v22/service/MobileIDSOAPServiceTest.java" afterPath="$PROJECT_DIR$/src/test/java/ee/v22/service/MobileIDSOAPServiceTest.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/ee/v22/rest/LoginResourceTest$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/ee/v22/rest/LoginResourceTest$4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/ee/v22/rest/LoginResourceTest$5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/ee/v22/rest/LogoutResourceTest$1.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/ee/v22/rest/LoginResourceTest$1.class" afterPath="$PROJECT_DIR$/target/test-classes/ee/v22/rest/LoginResourceTest$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/ee/v22/rest/LoginResourceTest$2.class" afterPath="$PROJECT_DIR$/target/test-classes/ee/v22/rest/LoginResourceTest$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/ee/v22/rest/LoginResourceTest$LoginFilter1.class" afterPath="$PROJECT_DIR$/target/test-classes/ee/v22/rest/LoginResourceTest$LoginFilter1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/ee/v22/rest/LoginResourceTest$LoginFilter2.class" afterPath="$PROJECT_DIR$/target/test-classes/ee/v22/rest/LoginResourceTest$LoginFilter2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/ee/v22/rest/LoginResourceTest$LoginFilterAccentInName.class" afterPath="$PROJECT_DIR$/target/test-classes/ee/v22/rest/LoginResourceTest$LoginFilterAccentInName.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/ee/v22/rest/LoginResourceTest.class" afterPath="$PROJECT_DIR$/target/test-classes/ee/v22/rest/LoginResourceTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/ee/v22/rest/LogoutResourceTest.class" afterPath="$PROJECT_DIR$/target/test-classes/ee/v22/rest/LogoutResourceTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/ee/v22/service/MobileIDSOAPServiceTest$MobileIDSOAPServicePartialMock.class" afterPath="$PROJECT_DIR$/target/test-classes/ee/v22/service/MobileIDSOAPServiceTest$MobileIDSOAPServicePartialMock.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/ee/v22/service/MobileIDSOAPServiceTest.class" afterPath="$PROJECT_DIR$/target/test-classes/ee/v22/service/MobileIDSOAPServiceTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/ee/v22/executor/ExecutorHelperTest.java" afterPath="$PROJECT_DIR$/src/test/java/ee/v22/executor/ExecutorHelperTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/ee/v22/rest/jackson/map/LocalDateDeserializerTest.java" afterPath="$PROJECT_DIR$/src/test/java/ee/v22/rest/jackson/map/LocalDateDeserializerTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/hibernate.log" afterPath="$PROJECT_DIR$/logs/hibernate.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/v22.log" afterPath="$PROJECT_DIR$/logs/v22.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="dop.iws" />
@@ -50,36 +61,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="RestModule.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ee/v22/guice/module/RestModule.java">
+      <file leaf-file-name="MobileIDSOAPServiceTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ee/v22/service/MobileIDSOAPServiceTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+              <caret line="139" column="0" selection-start-line="97" selection-start-column="6" selection-end-line="139" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ExecutorHelperTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ee/v22/executor/ExecutorHelperTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MobileIDSOAPService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ee/v22/service/MobileIDSOAPService.java">
+      <file leaf-file-name="LocalDateDeserializerTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ee/v22/rest/jackson/map/LocalDateDeserializerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MobileIDSOAPServiceTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ee/v22/service/MobileIDSOAPServiceTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.64444447">
-              <caret line="139" column="0" selection-start-line="97" selection-start-column="6" selection-end-line="139" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.89972144">
+              <caret line="47" column="0" selection-start-line="43" selection-start-column="6" selection-end-line="47" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -205,6 +214,8 @@
         <option value="$PROJECT_DIR$/src/test/java/ee/v22/rest/LoginResourceTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/ee/v22/rest/LogoutResourceTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/ee/v22/service/MobileIDSOAPServiceTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ee/v22/executor/ExecutorHelperTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ee/v22/rest/jackson/map/LocalDateDeserializerTest.java" />
       </list>
     </option>
   </component>
@@ -379,6 +390,40 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="rest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="v22" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vorgurakendused22" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="v22" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="map" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1256,7 +1301,7 @@
       <updated>1448795366274</updated>
       <workItem from="1448795386689" duration="2167000" />
       <workItem from="1448876911030" duration="36000" />
-      <workItem from="1449145178255" duration="3251000" />
+      <workItem from="1449145178255" duration="3565000" />
     </task>
     <task id="LOCAL-00001" summary="töötab, nt localhost:8080/rest/user?username=mati.maasikas">
       <created>1449147856057</created>
@@ -1264,11 +1309,17 @@
       <option name="project" value="LOCAL" />
       <updated>1449147856057</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="kommenteerisin katkised testid välja, ilmset feilivad sest võtsin mobiilId-st keele välja">
+      <created>1449148849279</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1449148849279</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5454000" />
+    <option name="totallyTimeSpent" value="5768000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="24" width="1366" height="744" extended-state="6" />
@@ -1283,13 +1334,13 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39969134" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39969134" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3287037" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Sequence" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1319,7 +1370,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="töötab, nt localhost:8080/rest/user?username=mati.maasikas" />
-    <option name="LAST_COMMIT_MESSAGE" value="töötab, nt localhost:8080/rest/user?username=mati.maasikas" />
+    <MESSAGE value="kommenteerisin katkised testid välja, ilmset feilivad sest võtsin mobiilId-st keele välja" />
+    <option name="LAST_COMMIT_MESSAGE" value="kommenteerisin katkised testid välja, ilmset feilivad sest võtsin mobiilId-st keele välja" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1332,26 +1384,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/ee/v22/guice/module/RestModule.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ee/v22/rest/LogInResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ee/v22/guice/module/ProviderModule.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1785,11 +1817,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ee/v22/service/MobileIDSOAPServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.64444447">
+        <state vertical-scroll-proportion="0.0">
           <caret line="139" column="0" selection-start-line="97" selection-start-column="6" selection-end-line="139" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ee/v22/executor/ExecutorHelperTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ee/v22/rest/jackson/map/LocalDateDeserializerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.89972144">
+          <caret line="47" column="0" selection-start-line="43" selection-start-column="6" selection-end-line="47" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

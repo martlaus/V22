@@ -2,22 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c23d3812-57e6-476d-9fb9-d1276e64336e" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/ee/v22/rest/LoginResourceTest$3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/ee/v22/rest/LoginResourceTest$4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/ee/v22/rest/LoginResourceTest$5.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/ee/v22/rest/LogoutResourceTest$1.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/ee/v22/rest/LoginResourceTest$1.class" afterPath="$PROJECT_DIR$/target/test-classes/ee/v22/rest/LoginResourceTest$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/ee/v22/rest/LoginResourceTest$2.class" afterPath="$PROJECT_DIR$/target/test-classes/ee/v22/rest/LoginResourceTest$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/ee/v22/rest/LoginResourceTest$LoginFilter1.class" afterPath="$PROJECT_DIR$/target/test-classes/ee/v22/rest/LoginResourceTest$LoginFilter1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/ee/v22/rest/LoginResourceTest$LoginFilter2.class" afterPath="$PROJECT_DIR$/target/test-classes/ee/v22/rest/LoginResourceTest$LoginFilter2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/ee/v22/rest/LoginResourceTest$LoginFilterAccentInName.class" afterPath="$PROJECT_DIR$/target/test-classes/ee/v22/rest/LoginResourceTest$LoginFilterAccentInName.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/ee/v22/rest/LoginResourceTest.class" afterPath="$PROJECT_DIR$/target/test-classes/ee/v22/rest/LoginResourceTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/ee/v22/rest/LogoutResourceTest.class" afterPath="$PROJECT_DIR$/target/test-classes/ee/v22/rest/LogoutResourceTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/ee/v22/service/MobileIDSOAPServiceTest$MobileIDSOAPServicePartialMock.class" afterPath="$PROJECT_DIR$/target/test-classes/ee/v22/service/MobileIDSOAPServiceTest$MobileIDSOAPServicePartialMock.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/ee/v22/service/MobileIDSOAPServiceTest.class" afterPath="$PROJECT_DIR$/target/test-classes/ee/v22/service/MobileIDSOAPServiceTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/ee/v22/executor/ExecutorHelperTest.java" afterPath="$PROJECT_DIR$/src/test/java/ee/v22/executor/ExecutorHelperTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/ee/v22/rest/jackson/map/LocalDateDeserializerTest.java" afterPath="$PROJECT_DIR$/src/test/java/ee/v22/rest/jackson/map/LocalDateDeserializerTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/hibernate.log" afterPath="$PROJECT_DIR$/logs/hibernate.log" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/ee/v22/executor/ExecutorHelperTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/ee/v22/rest/jackson/map/DateTimeDeserializerTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/ee/v22/rest/jackson/map/DateTimeSerializerTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/ee/v22/rest/jackson/map/LocalDateDeserializerTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/ee/v22/rest/jackson/map/LocalDateSerializerTest.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="dop.iws" />
@@ -61,34 +50,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MobileIDSOAPServiceTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MobileIDSOAPServiceTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/ee/v22/service/MobileIDSOAPServiceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="139" column="0" selection-start-line="97" selection-start-column="6" selection-end-line="139" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.42618385">
+              <caret line="133" column="54" selection-start-line="133" selection-start-column="54" selection-end-line="133" selection-end-column="54" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ExecutorHelperTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ee/v22/executor/ExecutorHelperTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LocalDateDeserializerTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ee/v22/rest/jackson/map/LocalDateDeserializerTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.89972144">
-              <caret line="47" column="0" selection-start-line="43" selection-start-column="6" selection-end-line="47" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -419,71 +388,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="rest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="map" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="v22" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vorgurakendused22" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="v22" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="guice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="v22" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vorgurakendused22" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="v22" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="executor" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1301,7 +1206,7 @@
       <updated>1448795366274</updated>
       <workItem from="1448795386689" duration="2167000" />
       <workItem from="1448876911030" duration="36000" />
-      <workItem from="1449145178255" duration="3565000" />
+      <workItem from="1449145178255" duration="4217000" />
     </task>
     <task id="LOCAL-00001" summary="töötab, nt localhost:8080/rest/user?username=mati.maasikas">
       <created>1449147856057</created>
@@ -1315,11 +1220,17 @@
       <option name="project" value="LOCAL" />
       <updated>1449148849279</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="võtsin teste välja">
+      <created>1449149150514</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1449149150514</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5768000" />
+    <option name="totallyTimeSpent" value="6420000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="24" width="1366" height="744" extended-state="6" />
@@ -1371,7 +1282,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="töötab, nt localhost:8080/rest/user?username=mati.maasikas" />
     <MESSAGE value="kommenteerisin katkised testid välja, ilmset feilivad sest võtsin mobiilId-st keele välja" />
-    <option name="LAST_COMMIT_MESSAGE" value="kommenteerisin katkised testid välja, ilmset feilivad sest võtsin mobiilId-st keele välja" />
+    <MESSAGE value="võtsin teste välja" />
+    <option name="LAST_COMMIT_MESSAGE" value="võtsin teste välja" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1817,27 +1729,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ee/v22/service/MobileIDSOAPServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="139" column="0" selection-start-line="97" selection-start-column="6" selection-end-line="139" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.42618385">
+          <caret line="133" column="54" selection-start-line="133" selection-start-column="54" selection-end-line="133" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ee/v22/executor/ExecutorHelperTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ee/v22/rest/jackson/map/LocalDateDeserializerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.89972144">
-          <caret line="47" column="0" selection-start-line="43" selection-start-column="6" selection-end-line="47" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>

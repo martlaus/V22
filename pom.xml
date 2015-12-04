@@ -217,7 +217,7 @@
 					<failOnMissingWebXml>false</failOnMissingWebXml>
 					<archive>
 						<manifest>
-							<mainClass>ee.hm.v22.ApplicationLauncher</mainClass>
+							<mainClass>ee.v22.ApplicationLauncher</mainClass>
 						</manifest>
 					</archive>
 					<finalName>${project.name}</finalName>
@@ -233,7 +233,7 @@
 	                <archive>
 	                  <manifest>
 	                    <addClasspath>true</addClasspath>
-	                    <mainClass>ee.hm.v22.ApplicationLauncher</mainClass>
+	                    <mainClass>ee.v22.ApplicationLauncher</mainClass>
 	                  </manifest>
 	                </archive>
 	               	<finalName>v22</finalName>
@@ -293,7 +293,7 @@
 						<artifactId>maven-jar-plugin</artifactId>
 						<configuration>
 							<excludes>
-								<exclude>ee/hm/v22/rest/DevelopmentLoginResource.class</exclude>
+								<exclude>ee/v22/rest/DevelopmentLoginResource.class</exclude>
 							</excludes>
 						</configuration>
 					</plugin>

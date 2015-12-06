@@ -23,7 +23,7 @@ public class ApplicationLauncher {
 
     private static final Logger logger = LoggerFactory.getLogger(ApplicationLauncher.class);
 
-    private static final int DEFAULT_SERVER_PORT = 8080;
+    private static final int DEFAULT_SERVER_PORT = 7070;
     private static final int MATERIAL_SYNCHRONIZATION_HOUR_OF_DAY = 1;
 
     @Inject

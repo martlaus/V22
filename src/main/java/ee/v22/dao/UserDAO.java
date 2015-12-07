@@ -55,6 +55,22 @@ public class UserDAO {
         return user;
     }
 
+    /*
+     * Remove this googleID from whoever has it
+     */
+    public void unlinkGoogleID(String googleID) {
+        User previouslyLinkedUser = findUserByGoogleID(googleID);
+        if (previouslyLinkedUser != null) {
+            previouslyLinkedUser.setGoogleID(null);
+            update(previouslyLinkedUser);
+        }
+
+        // If we don't flush, we might get an unique constraint violation when
+        // someone tries to use the same googleID on a different user in the
+        // same transaction.
+        entityManager.flush();
+    }
+
     /**
      * Counts the amount of users who have the same username, excluding the
      * number at the end. For example, users <i>john.smith</i> and
@@ -85,4 +101,5 @@ public class UserDAO {
     public void delete(User user) {
         entityManager.remove(user);
     }
+
 }

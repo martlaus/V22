@@ -55,6 +55,16 @@ public class UserService {
         return userDAO.update(user);
     }
 
+    public synchronized User linkGoogleIDToUser(User user, String googleID) {
+        unlinkGoogleID(googleID);
+        user.setGoogleID(googleID);
+        return userDAO.update(user);
+    }
+
+    private void unlinkGoogleID(String googleID) {
+        userDAO.unlinkGoogleID(googleID);
+    }
+
     protected String generateUsername(String name, String surname) {
         String username = name.trim().toLowerCase() + "." + surname.trim().toLowerCase();
         username = username.replaceAll("\\s+", ".");

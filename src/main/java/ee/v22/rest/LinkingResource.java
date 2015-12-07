@@ -11,7 +11,9 @@ import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
+import ee.v22.model.User;
 import ee.v22.service.GoogleService;
+import ee.v22.service.UserService;
 
 @Path("link")
 @RolesAllowed("USER")
@@ -20,13 +22,17 @@ public class LinkingResource extends BaseResource {
     @Inject
     private GoogleService googleService;
 
+    @Inject
+    private UserService userService;
+
     @POST
     @Path("/google")
     @Produces(MediaType.APPLICATION_JSON)
     public Response linkGoogle(@QueryParam("token") String token) throws Exception {
         String googleID = googleService.getUserID(token);
         if (googleID != null) {
-            getAuthenticatedUser().getUser().setGoogleID(googleID);
+            User user = getAuthenticatedUser().getUser();
+            userService.linkGoogleIDToUser(user, googleID);
             return Response.ok(getAuthenticatedUser()).build();
         } else {
             return Response.status(HttpURLConnection.HTTP_BAD_REQUEST).build();

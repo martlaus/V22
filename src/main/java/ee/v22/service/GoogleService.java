@@ -34,13 +34,8 @@ public class GoogleService {
             GoogleIdToken idToken = verifier.verify(token);
             if (idToken != null) {
                 Payload payload = idToken.getPayload();
-                if (payload.getHostedDomain()
-                        .equals(configuration.getString(ConfigurationProperties.GOOGLE_APPS_DOMAIN_NAME))) {
-                    logger.info("User ID: " + payload.getSubject());
-                    userID = payload.getSubject();
-                } else {
-                    logger.info("Invalid ID token.");
-                }
+                logger.info("User ID: " + payload.getSubject());
+                userID = payload.getSubject();
             } else {
                 logger.info("Invalid ID token.");
             }

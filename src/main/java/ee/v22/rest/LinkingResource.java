@@ -27,7 +27,7 @@ public class LinkingResource extends BaseResource {
         String googleID = googleService.getUserID(token);
         if (googleID != null) {
             getAuthenticatedUser().getUser().setGoogleID(googleID);
-            return Response.ok().build();
+            return Response.ok(getAuthenticatedUser()).build();
         } else {
             return Response.status(HttpURLConnection.HTTP_BAD_REQUEST).build();
         }

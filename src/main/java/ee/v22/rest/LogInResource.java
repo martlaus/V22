@@ -65,6 +65,13 @@ public class LogInResource extends BaseResource {
         return loginService.googleAuthenticate(token);
     }
 
+    @GET
+    @Path("/facebook")
+    @Produces(MediaType.APPLICATION_JSON)
+    public AuthenticatedUser facebookLogin(@QueryParam("token") String token) {
+        return loginService.facebookAuthenticate(token);
+    }
+
     protected String getIdCodeFromRequest() {
         String[] values = getRequest().getHeader("SSL_CLIENT_S_DN").split(",");
         return values[0].split("=")[1];

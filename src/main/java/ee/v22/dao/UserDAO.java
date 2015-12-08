@@ -55,6 +55,20 @@ public class UserDAO {
         return user;
     }
 
+    public User findUserByFacebookID(String facebookID) {
+        TypedQuery<User> findByFacebookID = entityManager
+                .createQuery("SELECT u FROM User u WHERE u.facebookID = :facebookID", User.class);
+
+        User user = null;
+        try {
+            user = findByFacebookID.setParameter("facebookID", facebookID).getSingleResult();
+        } catch (Exception e) {
+            // ignore
+        }
+
+        return user;
+    }
+
     /*
      * Remove this googleID from whoever has it
      */
@@ -67,6 +81,22 @@ public class UserDAO {
 
         // If we don't flush, we might get an unique constraint violation when
         // someone tries to use the same googleID on a different user in the
+        // same transaction.
+        entityManager.flush();
+    }
+
+    /*
+     * Remove this facebookID from whoever has it
+     */
+    public void unlinkFacebookID(String facebookID) {
+        User previouslyLinkedUser = findUserByFacebookID(facebookID);
+        if (previouslyLinkedUser != null) {
+            previouslyLinkedUser.setFacebookID(null);
+            update(previouslyLinkedUser);
+        }
+
+        // If we don't flush, we might get an unique constraint violation when
+        // someone tries to use the same facebookID on a different user in the
         // same transaction.
         entityManager.flush();
     }

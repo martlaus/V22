@@ -33,6 +33,10 @@ public class UserService {
         return userDAO.findUserByGoogleID(googleID);
     }
 
+    public User getUserByFacebookID(String facebookID) {
+        return userDAO.findUserByFacebookID(facebookID);
+    }
+
     public User create(String idCode, String name, String surname) {
         User user = new User();
         user.setIdCode(idCode);
@@ -56,13 +60,15 @@ public class UserService {
     }
 
     public synchronized User linkGoogleIDToUser(User user, String googleID) {
-        unlinkGoogleID(googleID);
+        userDAO.unlinkGoogleID(googleID);
         user.setGoogleID(googleID);
         return userDAO.update(user);
     }
 
-    private void unlinkGoogleID(String googleID) {
-        userDAO.unlinkGoogleID(googleID);
+    public synchronized User linkFacebookIDToUser(User user, String facebookID) {
+        userDAO.unlinkFacebookID(facebookID);
+        user.setFacebookID(facebookID);
+        return userDAO.update(user);
     }
 
     protected String generateUsername(String name, String surname) {

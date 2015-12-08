@@ -12,6 +12,7 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
 import ee.v22.model.User;
+import ee.v22.service.FacebookService;
 import ee.v22.service.GoogleService;
 import ee.v22.service.UserService;
 
@@ -23,6 +24,9 @@ public class LinkingResource extends BaseResource {
     private GoogleService googleService;
 
     @Inject
+    private FacebookService facebookService;
+
+    @Inject
     private UserService userService;
 
     @POST
@@ -30,9 +34,27 @@ public class LinkingResource extends BaseResource {
     @Produces(MediaType.APPLICATION_JSON)
     public Response linkGoogle(@QueryParam("token") String token) throws Exception {
         String googleID = googleService.getUserID(token);
+
         if (googleID != null) {
             User user = getAuthenticatedUser().getUser();
             userService.linkGoogleIDToUser(user, googleID);
+
+            return Response.ok(getAuthenticatedUser()).build();
+        } else {
+            return Response.status(HttpURLConnection.HTTP_BAD_REQUEST).build();
+        }
+    }
+
+    @POST
+    @Path("/facebook")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response linkFacebook(@QueryParam("token") String token) throws Exception {
+        String facebookID = facebookService.getUserID(token);
+
+        if (facebookID != null) {
+            User user = getAuthenticatedUser().getUser();
+            userService.linkFacebookIDToUser(user, facebookID);
+
             return Response.ok(getAuthenticatedUser()).build();
         } else {
             return Response.status(HttpURLConnection.HTTP_BAD_REQUEST).build();

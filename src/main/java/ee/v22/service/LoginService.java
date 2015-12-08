@@ -38,6 +38,9 @@ public class LoginService {
     private GoogleService googleService;
 
     @Inject
+    private FacebookService facebookService;
+
+    @Inject
     private AuthenticatedUserDAO authenticatedUserDAO;
 
     @Inject
@@ -151,6 +154,20 @@ public class LoginService {
         String googleID = googleService.getUserID(token);
         if (googleID != null) {
             User user = userService.getUserByGoogleID(googleID);
+            if (user != null) {
+                authenticatedUser = logIn(user.getIdCode(), user.getName(), user.getSurname());
+            }
+        }
+
+        return authenticatedUser;
+    }
+
+    public AuthenticatedUser facebookAuthenticate(String token) {
+        AuthenticatedUser authenticatedUser = null;
+
+        String facebookID = facebookService.getUserID(token);
+        if (facebookID != null) {
+            User user = userService.getUserByFacebookID(facebookID);
             if (user != null) {
                 authenticatedUser = logIn(user.getIdCode(), user.getName(), user.getSurname());
             }

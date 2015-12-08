@@ -6,6 +6,7 @@ import com.google.inject.servlet.ServletModule;
 
 import ee.v22.guice.GuiceInjector;
 import ee.v22.service.AuthenticatedUserService;
+import ee.v22.service.FacebookService;
 import ee.v22.service.GoogleService;
 import ee.v22.service.LoginService;
 import ee.v22.service.LogoutService;
@@ -26,5 +27,6 @@ public class RestModule extends ServletModule {
         bind(MobileIDLoginService.class);
         bind(MobileIDSOAPService.class);
         bind(GoogleService.class);
+        bind(FacebookService.class);
     }
 }

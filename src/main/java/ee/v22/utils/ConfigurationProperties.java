@@ -40,4 +40,8 @@ public interface ConfigurationProperties {
     String GOOGLE_CLIENT_ID = "google.clientID";
     String GOOGLE_APPS_DOMAIN_NAME = "google.appsDomainName";
 
+    // Facebook
+    String FACEBOOK_APP_ID = "facebook.appID";
+    String FACEBOOK_APP_SECRET = "facebook.appSecret";
+
 }

@@ -33,6 +33,10 @@ public class UserService {
         return userDAO.findUserByGoogleID(googleID);
     }
 
+    public User getUserByGoogleEmail(String googleEmail) {
+        return userDAO.findUserByGoogleEmail(googleEmail);
+    }
+
     public User getUserByFacebookID(String facebookID) {
         return userDAO.findUserByFacebookID(facebookID);
     }
@@ -62,6 +66,12 @@ public class UserService {
     public synchronized User linkGoogleIDToUser(User user, String googleID) {
         userDAO.unlinkGoogleID(googleID);
         user.setGoogleID(googleID);
+        return userDAO.update(user);
+    }
+
+    public synchronized User linkGoogleEmailToUser(User user, String googleEmail) {
+        userDAO.unlinkGoogleEmail(googleEmail);
+        user.setGoogleEmail(googleEmail);
         return userDAO.update(user);
     }
 

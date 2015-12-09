@@ -46,6 +46,27 @@ public class GoogleService {
         return userID;
     }
 
+    public String getUserEmail(String token) {
+        String userEmail = null;
+
+        try {
+            GoogleIdTokenVerifier verifier = newVerifier();
+
+            GoogleIdToken idToken = verifier.verify(token);
+            if (idToken != null) {
+                Payload payload = idToken.getPayload();
+                logger.info("User e-mail: " + payload.getEmail());
+                userEmail = payload.getEmail();
+            } else {
+                logger.info("Invalid ID token.");
+            }
+        } catch (Exception e) {
+            logger.warn("Exception verifying google id token.");
+        }
+
+        return userEmail;
+    }
+
     private GoogleIdTokenVerifier newVerifier() throws Exception {
         HttpTransport transport = GoogleNetHttpTransport.newTrustedTransport();
         JsonFactory jsonFactory = JacksonFactory.getDefaultInstance();

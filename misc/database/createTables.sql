@@ -14,6 +14,7 @@ CREATE TABLE User (
   surName          VARCHAR(255)        NOT NULL,
   idCode           VARCHAR(11)  UNIQUE NOT NULL,
   googleID         VARCHAR(255) UNIQUE,
+  googleEmail      VARCHAR(255) UNIQUE,
   facebookID       VARCHAR(255) UNIQUE,
   role             VARCHAR(255)        NOT NULL
 );

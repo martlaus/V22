@@ -34,10 +34,12 @@ public class LinkingResource extends BaseResource {
     @Produces(MediaType.APPLICATION_JSON)
     public Response linkGoogle(@QueryParam("token") String token) throws Exception {
         String googleID = googleService.getUserID(token);
+        String googleEmail = googleService.getUserEmail(token);
 
         if (googleID != null) {
             User user = getAuthenticatedUser().getUser();
             userService.linkGoogleIDToUser(user, googleID);
+            userService.linkGoogleEmailToUser(user, googleEmail);
 
             return Response.ok(getAuthenticatedUser()).build();
         } else {

@@ -55,6 +55,20 @@ public class UserDAO {
         return user;
     }
 
+    public User findUserByGoogleEmail(String googleEmail) {
+        TypedQuery<User> findByGoogleEmail = entityManager
+                .createQuery("SELECT u FROM User u WHERE u.googleEmail = :googleEmail", User.class);
+
+        User user = null;
+        try {
+            user = findByGoogleEmail.setParameter("googleEmail", googleEmail).getSingleResult();
+        } catch (Exception e) {
+            // ignore
+        }
+
+        return user;
+    }
+
     public User findUserByFacebookID(String facebookID) {
         TypedQuery<User> findByFacebookID = entityManager
                 .createQuery("SELECT u FROM User u WHERE u.facebookID = :facebookID", User.class);
@@ -76,6 +90,22 @@ public class UserDAO {
         User previouslyLinkedUser = findUserByGoogleID(googleID);
         if (previouslyLinkedUser != null) {
             previouslyLinkedUser.setGoogleID(null);
+            update(previouslyLinkedUser);
+        }
+
+        // If we don't flush, we might get an unique constraint violation when
+        // someone tries to use the same googleID on a different user in the
+        // same transaction.
+        entityManager.flush();
+    }
+
+    /*
+     * Remove this googleEmail from whoever has it
+     */
+    public void unlinkGoogleEmail(String googleEmail) {
+        User previouslyLinkedUser = findUserByGoogleEmail(googleEmail);
+        if (previouslyLinkedUser != null) {
+            previouslyLinkedUser.setGoogleEmail(null);
             update(previouslyLinkedUser);
         }
 

@@ -29,25 +29,36 @@ public class UserResource extends BaseResource {
     private AuthenticatedUserService authenticatedUserService;
 
     @GET
+    @Path("/getByUsername")
     @Produces(MediaType.APPLICATION_JSON)
-    public User get(@QueryParam("username") String username) {
+    public User getByUsername(@QueryParam("username") String username) {
         if (isBlank(username)) {
             throwBadRequestException("Username parameter is mandatory.");
         }
 
-        User user = userService.getUserByUsername(username);
-        User newUser = null;
+        return userService.getUserByUsername(username);
+    }
 
-        if (user != null) {
-            // Return only some fields
-            newUser = new User();
-            newUser.setId(user.getId());
-            newUser.setUsername(user.getUsername());
-            newUser.setName(user.getName());
-            newUser.setSurname(user.getSurname());
+    @GET
+    @Path("/getByGoogleEmail")
+    @Produces(MediaType.APPLICATION_JSON)
+    public User getByGoogleEmail(@QueryParam("googleEmail") String googleEmail) {
+        if (isBlank(googleEmail)) {
+            throwBadRequestException("Google email parameter is mandatory.");
         }
 
-        return newUser;
+        return userService.getUserByGoogleEmail(googleEmail);
+    }
+
+    @GET
+    @Path("/getByFacebookID")
+    @Produces(MediaType.APPLICATION_JSON)
+    public User getByFacebookID(@QueryParam("facebookID") String facebookID) {
+        if (isBlank(facebookID)) {
+            throwBadRequestException("Facebook ID parameter is mandatory.");
+        }
+
+        return userService.getUserByFacebookID(facebookID);
     }
 
     @GET

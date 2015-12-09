@@ -30,6 +30,9 @@ public class User {
     private String googleID;
 
     @Column(unique = true)
+    private String googleEmail;
+
+    @Column(unique = true)
     private String facebookID;
 
     @Enumerated(EnumType.STRING)
@@ -89,6 +92,14 @@ public class User {
 
     public void setRole(Role role) {
         this.role = role;
+    }
+
+    public String getGoogleEmail() {
+        return googleEmail;
+    }
+
+    public void setGoogleEmail(String googleEmail) {
+        this.googleEmail = googleEmail;
     }
 
     public String getFacebookID() {

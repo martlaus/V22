@@ -30,7 +30,6 @@ CREATE TABLE AuthenticatedUser (
 
   FOREIGN KEY (user_id)
   REFERENCES User (id)
-    ON DELETE RESTRICT
     ON DELETE CASCADE
 );
 
